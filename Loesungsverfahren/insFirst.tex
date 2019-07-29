@@ -1,0 +1,18 @@
+\section{Insert-First-Verfahren}
+% Was ist das Min Dist Verfahren?
+    % Nodes werden in der Reihenfolge ihres Auftretens in den Graphen eingefügt
+    % Insert-First = dadurch insert-random  
+% Wie funktioniert es
+    % Ein neuer Graph mit einem Pfad der länge n wird erzeugt
+    % Die Nodes des Pfades des Graphen seien Y1,Y2,Y3,Y4...
+    % Die erst Node des Pfads wird mit der ersten Node in der Liste der Verfügbaren Nodes befüllt (= Ausgangs-Node)
+    % Die zweite Node wird ebenso aus den verfügbaren Nodes angehängt (ist nun an zweiter Stelle)
+    % Nun wird durch die restlichen Verfügbaren Nodes iteriert
+    % Node X sei Gegenstand des momentanen Iterationdurchlaufs 
+    % Für X wird beginnend mit Y2 die Distanz zwischen Yn-1 und X + Distanz zwischen Yn und X errechnet
+    % resultierend aus diesen Berechnungen wird die beste Stelle gesucht, um X in den Pfad einzufügen
+% Teile des Quellcodes zeigen
+
+\subsection{Funktionsweise}
+
+\subsection{Ergebnisse und Schwächen}

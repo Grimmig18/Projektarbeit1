@@ -1,0 +1,21 @@
+\section{Insert-Furthest-Verfahren}
+% Was ist das Insert-Furthest-Verfahren?
+    % Nodes werden anhand ihrer Entfernung zur vorherigen Node in den Graphen eingefügt
+    % Die am weitest entfernten werden zuerst eingefügt
+% Was ist das Insert-Furthest-Verfahren
+    % Zu Beginn wird wieder die Erste Node in den Pfad eingefügt, um von ihr ausgehend den restlichen Pfad zu bilden
+    % anders als bei Insert First muss bzw. kann hier aber nicht auch die zweite Node eingefügt werden, da diese erst noch ermittelt werden muss
+    % Spezifische Auswahl der nächsten einzufügenden Node
+    % Die als nächstes eingefügt Node ist immer die, die am weitesten von der zuletzt eingefügten Node entfernt ist 
+    % Allerdings muss hier vorher die Bedingung geprüft werden, ob die am weitesten Entfernte node nicht schon im Pfad ist
+    % Die am weistesten Entfernte Node wird dann genau wie bei Min Dist ist den bereits existierenden Pfad an der besten verfügbaren Stelle eingefügt
+    % Ermittlung der Besten Stelle, in die Node Y eingefügt werden: 
+        % Es wird durch alle bereits im Graphen vorhandenen Nodes iteriert
+        % Die Node der momentanen Iteration X2, ihr Vorgänger X1
+        % Die Distanz berechnet sich aus der Entfernung von X1 zu Y addiert mit der Entfernung von Y zu X2
+        % Es wird davon ausgegangen, dass X1 immer definiert, also teil des bereits bestehenden Graphen ist, ist 
+        % X2 muss nicht zwangweise definiert sein, kann also auch null sein
+        % Ist dies der fall wird für die Distanz zwischen Y und X2 0 angenommen
+
+\subsection{Funktionsweise} 
+\subsection{Ergebnis und Schwächen}
