@@ -91,22 +91,48 @@
 \makeatother
 
 %		LISTINGS
+\usepackage{color}
 \usepackage{listings}	%Format Listings properly
+% Color
+\definecolor{Gray}{RGB}{119, 162, 247}
+\definecolor{Blue}{RGB}{209, 227, 255}
+\definecolor{DarkBlue}{RGB}{38, 58, 209}
+\definecolor{Green}{RGB}{184, 255, 222}
+\definecolor{Red}{RGB}{255, 206, 184} 
+\definecolor{DarkPurple}{rgb}{0.4,0.2,0.6}
+\definecolor{GreenCom}{rgb}{0.3,0.5,0.3} 
+\definecolor{OrangeString}{RGB}{212, 158, 21}
+ 
+
 \renewcommand{\lstlistingname}{Quelltext} 
 \renewcommand{\lstlistlistingname}{Quelltextverzeichnis}
 \lstset{numbers=left,
-	numberstyle=\tiny,
-	captionpos=b,
-	basicstyle=\ttfamily\small}
-
+  numberstyle=\tiny,
+  language=Java,
+  frame=single,
+    captionpos=b,
+  basicstyle=\ttfamily\small,
+  keywordstyle=\bfseries\color{DarkBlue},
+  commentstyle=\itshape\color{GreenCom},
+  stringstyle=\color{OrangeString},
+  aboveskip=30pt,
+  belowskip=30pt,
+  breaklines=true
+}
 
 %		EXTRA PACKAGES
+\usepackage{scrextend}
+\usepackage{subfig}
 \usepackage{lipsum}    %Blindtext
 \usepackage{graphicx} % use various graphics formats
 \usepackage[german]{varioref} 	% nicer references \vref
 \usepackage{caption}	%better Captions
 \usepackage{booktabs} %nicer Tabs
 \usepackage{array}
+\usepackage[T1]{fontenc}
+\usepackage{mwe}    % loads »blindtext« and »graphicx«
+\usepackage{subfig}
+
 %\newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
 
 

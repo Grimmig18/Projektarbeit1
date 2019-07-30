@@ -62,68 +62,34 @@ Durch das ermitteln der Distanzen zu den bereits eingefügten Knoten wird bekann
 \end{addmargin}
 für den Graphen.
 
-\subsection{Ergebnisse und Schwächen} \label{insert-first-erg}
+\subsection{Ergebnisse und Schwächen}
 Bei dem Einsatz des oben beschriebenen Algorithmus kommt es Ergebnissen, die in ihrer Qualität nah an die optimale Lösung herankommen, teilweise aber auch weit von ihr abweichen können.
 
     
 
 \begin{figure}[!ht]
     \begin{center}
-        \subfloat[$m = 2$\label{subfig-1:m2-BAD}]{%
-        \includegraphics[width=0.35\textwidth]{./Bilder/insert_first_BAD_ex_1.PNG}
-        }
-        \hfil
-        \subfloat[$m = 3$\label{subfig-2:m3-BAD}]{%
-        \includegraphics[width=0.35\textwidth]{./Bilder/insert_first_BAD_ex_2.PNG}
-        }
-        \\
-        \subfloat[$m = 4$\label{subfig-3:m4-BAD}]{%
-        \includegraphics[width=0.35\textwidth]{./Bilder/insert_first_BAD_ex_3.PNG}
-        }
-        \hfil
-        \subfloat[$m = 5$\label{subfig-4:m5-BAD}]{%
-        \includegraphics[width=0.35\textwidth]{./Bilder/insert_first_BAD_ex_4.PNG}
-        }
-        \caption{Insert-First führt zu schlechtem Ergebnis}
-        \label{fig:insert-bad}
-    \end{center}
-\end{figure}
+    \subfloat[$m = 2$\label{subfig-1:m2}]{%
+      \includegraphics[width=0.4\textwidth]{./Bilder/insert_first_BAD_ex_1.PNG}
+    }
+    \hfil
+    \subfloat[$m = 3$\label{subfig-2:m3}]{%
+      \includegraphics[width=0.4\textwidth]{./Bilder/insert_first_BAD_ex_2.PNG}
+    }
+    \\
+    \subfloat[$m = 4$\label{subfig-3:m4}]{%
+      \includegraphics[width=0.4\textwidth]{./Bilder/insert_first_BAD_ex_3.PNG}
+    }
+    \hfil
+    \subfloat[$m = 5$\label{subfig-4:m5}]{%
+      \includegraphics[width=0.4\textwidth]{./Bilder/insert_first_BAD_ex_4.PNG}
+    }
+    \caption{Insert-First führt zu schlechtem Ergebnis}
+    \label{fig:dummy}
+\end{center}
 
-Auf \vref{subfig-3:m4-BAD} lässt sich erkennen, dass das Einfügen des vierten Knoten $K_4$ nicht optimal geschieht. 
-Besser für $m = 4$ wäre hier der Pfad $K_1, K_3, K_2, K_4$. 
-Dieser wird allerdings nicht das Insert-First-Verfahren gebildet, da dies eine Änderung des Graphen in \vref{subfig-2:m3-BAD} erfordern würde. 
-Dies ist allerdings nicht möglich, da $K_4$ nur zwischen bereits im Pfad des Graphen vorhandenen Knoten eingefügt werden kann. 
-Hier lässt sich auch das grundlegende Problem des Algorithmus erkennen: Das Erstellen einer Route ohne vorherige Betrachtung der Gesamtheit der Knoten. Einzelne Teilschritte des Graphen können gut erzeugt werden, wie beispielsweise im Schritt von \vref{subfig-1:m2-BAD} zu \vref{subfig-2:m3-BAD}. Andere hingegen, wie vorher erwähnt, nicht. Grund hierfür ist, was sich aus menschlicher Sicht als \enquote{Verplanen} bezeichnen lässt, oder spezifischer,
- die Weise, auf die der Anfang eines graphen generiert wird, der später aufgrund seiner Beschaffenheit zu Komplikationen führt. Am konkreten Beispiel führt die generierte Reihenfolge $K_1, K_2, K_3$ in \vref{subfig-2:m3-BAD} dazu, dass $K_4$ nur unter einen vergleichsweise großen Gesamtdistanzzuwachs in den Graphen eingefügt werden kann. \\\\
-Konträr zu diesem schlechten Beispiel ist der Insert-First-Algorithmus auch in der Lage gute bis optimale Ergebnisse zu generieren. 
+  \end{figure}
 
-\begin{figure}[h!]
-    \begin{center}
-        \subfloat[$m = 2$\label{subfig-1:m2-GOOD}]{%
-        \includegraphics[width=0.35\textwidth]{./Bilder/insert_first_ex_1.PNG}
-        }
-        \hfil
-        \subfloat[$m = 3$\label{subfig-2:m3-GOOD}]{%
-        \includegraphics[width=0.35\textwidth]{./Bilder/insert_first_ex_2.PNG}
-        }\\
-%     \end{center}
-% \end{figure}
-% \begin{figure}[!h]\ContinuedFloat
-%     \begin{center}
-        \subfloat[$m = 4$\label{subfig-3:m4-GOOD}]{%
-        \includegraphics[width=0.35\textwidth]{./Bilder/insert_first_ex_3.PNG}
-        }
-        \hfil
-        \subfloat[$m = 5$\label{subfig-4:m5-GOOD}]{%
-        \includegraphics[width=0.35\textwidth]{./Bilder/insert_first_ex_4.PNG}
-        }
-        \caption{Insert-First führt zu guten Ergebnis}
-        \label{fig:insert-good}
-    \end{center}
-\end{figure}
-% TODO: Check the Position of Good example, needs to be under the text
-Am Beispiel in \vref{fig:insert-good} lässt sich erkennen, wie der Insert-First-Algorithmus einen optimalen Pfad mit den gegebenen Knoten generiert. 
-Gerade im Schritt von \vref{subfig-3:m4-GOOD} zu \vref{subfig-4:m5-GOOD} ist ein funktionierendes und korrektes Einfügen des Knotens in den Graphen zu sehen. 
-Hier wird der aktuelle Knoten mit geringem Zuwachs der schlussendlichen Gesamtdistanz in den Graphen eingefügt. \\\\
-Für die Bewertung des Algorithmus müssen also beide Seiten betrachtet werden. 
-Zwar ist Insert-First in der Lage eine gute oder auch optimale Route zu erstellen, allerdings beeinflusst die Reihenfolge der Betrachtung der Knoten stark die Qualität des Endergebnisses.
+  Auf \vref{subfig-3:m4} lässt sich erkennen, dass das Einfügen des vierten Knoten $K_4$ nicht optimal geschieht. Besser für $m = 4$ wäre hier der Pfad $K_1, K_3, K_2, K_4$. 
+  Dieser wird allerdings nicht das Insert-First-Verfahren gebildet, da dies eine Änderung des Graphen in \vref{subfig-2:m3} erfordern würde. 
+  Dies ist allerdings nicht möglich, da $K_4$ nur zwischen bereits im Pfad des Graphen vorhandenen Knoten eingefügt werden kann.

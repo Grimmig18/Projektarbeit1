@@ -39,7 +39,7 @@
 	"node": {
 		"prefix": "node",
 		"body": [
-			"Koten"
+			"Knoten"
 		],
 		"description": "Inserts \"Knoten\" instead of \"Node\", because German"
 	}
