@@ -17,8 +17,18 @@
         % X2 muss nicht zwangweise definiert sein, kann also auch null sein
         % Ist dies der fall wird für die Distanz zwischen Y und X2 0 angenommen
 
-Aufbauend auf den Erkenntnissen des Insert-First-Verfahrens können experimentell einige Verbesserungsideen abgeleitet und ihre Auswirkung auf die Erzeugung eines Graphen betrachtet werden. 
-Das Insert-Furthest-Verfahren greift genau diesen Ansatz auf, um den Auswirkungen der in \ref{insert-first-erg} beschriebenen Schwächen entgegenzuwirken.
+Aufbauend auf den Erkenntnissen des Insert-First-Verfahrens können experimentell einige Verbesserungsideen abgeleitet und ihre Auswirkungen auf das Erzeugen eines Graphen betrachtet werden.
+Beim Insert-First-Verfahren wurde festgestellt, dass eine große Schwäche des Algorithmus die Reihenfolge der Betrachtung der Knoten sein kann.
+Ein möglicher Ansatz, dieser in \vref{insert-first-erg} beschriebenen Schwäche entgegenzuwirken, ist die Einführung eines Kriteriums zur Betrachtung der Knoten.
+Eine mögliche Umsetzung eines solchen Kriteriums ist das Insert-Furthest-Verfahren. 
+Hier wird der als nächstes einzufügende Knoten ($K_i$) durch seine Distanz zum Vorgänger ($K_{i-1}$) bestimmt.
 
-\subsection{Funktionsweise} 
+\subsection{Funktionsweise}
+Ähnlich dem Insert-First-Verfahrens wird auch hier ein Graph mit einer Liste von Knoten udn einem zu Beginn leerem Pfad erzeugt.
+Auch hier wird wieder der erste Knoten der Liste $K_1$ als initialer Knoten des Pfades gesetzt.
+Der nächste zu betrachtende Knoten ist nun aber nicht $K_2$, sondern wird durch die Distanz zu $K_1$ bestimmt.
+Ausgewählt wird der Knoten, der am weitesten von $K_1$, bzw. allgemein am weistesten von $K_{i-1}$, entfernt ist und nicht bereits Teil des Pfads ist.
+Dieser Knoten wird nun auf die gleiche Weise wie die Knoten beim Insert-First-Verfahren in den Pfad des Graphen eingefügt; die Stelle mit der geringsten Distanzerhöhung für den Graphen wird gesucht und $K_i$ an dieser Stelle nach dem in \vref{code:mergeIntojava} beschriebenen Verfahren eingefügt.\\
+Der Gedanke hinter der dieser Veränderung ist der Versuch Knoten mit größerer Vorraussicht als im Insert-First-Verfahren in den Pfad des Graphen einzufügen.
+Dass dies zur Generierung einer besseren Route beitragen kann lässt sich am Beispiel in \vref{fig:insert-bad} erkennen.
 \subsection{Ergebnis und Schwächen}

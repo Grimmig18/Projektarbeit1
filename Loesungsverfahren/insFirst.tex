@@ -14,36 +14,44 @@
 % Teile des Quellcodes zeigen
 
 Das Insert-First-Verfahren ist ein heuristischer Lösungsansatz des \ac{TSP}s, bei dem das Betrachten der Knoten zum Aufbau eines Graphen in zufälliger Reihenfolge, bzw. in der Reihenfolge ihrer Erzeugung geschieht.
-Dabei wird immer ein Knoten betrachtet und in Abhängigkeit von seiner Entfernung zu den anderen Knoten in den Graphen eingefügt.
+Dabei wird zu einem Zeitpunkt genau ein Knoten betrachtet und an der für ihn bestmöglichen Stelle in den bereits bestehenden Graphen eingefügt.
 
 \subsection{Funktionsweise}
-Zu Beginn des Insert-First-Verfahrens wird ein neuer Graph erzeugt, welcher als Eingabewerte eine Liste von Knoten, hier bezeichnet als \lstinline{nodes}, mit $K_1, K_2,  \ldots ,K_n$ und der Länge $n$ erhält. 
-Dadurch wird festgelegt, dass der Graph $n$ Knoten enthalten wird.
-Nun wird der $K_1$, der erste Knoten aus der Liste in den Graph an erster Stelle eingefügt. 
+Zu Beginn des Insert-First-Verfahrens wird ein neuer Graph erzeugt, welcher als Eingabewerte eine Liste mit den Knoten $K_1, K_2,  \ldots ,K_n$, hier bezeichnet als \lstinline{nodes} und der Länge $n$ erhält. 
+Jeder Graph ist mit einem Pfad (oder auch \lstinline{path}) der Länge $n$ assoziiert, der die Reihenfolge der Knoten bestimmt. 
+Nun wird $K_1$, der erste Knoten aus der übergebenen Liste in den Pfad des Graphs an erster Stelle eingefügt. 
 Dies geschieht so oder ähnlich bei allen Verfahren, um einen statischen Ausgangspunkt zu gewährleisten und somit vergleichbare Ergebnisse zu erzielen.
-Anschließend wird noch der zweite Knoten angehängt.
+Anschließend wird noch der zweite Knoten, $K_2$ angehängt.
+
 \begin{lstlisting}[caption={Zuweisung des ersten und zweiten Knotens}]
 path[0] = nodes[0];
 path[1] = nodes[1];  
 \end{lstlisting}
+
 Das Vorgehen für das Einfügen der restlichen Knoten lässt sich wie folgt beschreiben: 
-Sei $G$ ein Graph mit übergebener Liste von Knoten  $K_1,\ldots,K_n$ und bereits eingefügten Knoten $K_1,\ldots,K_m$ mit $2 > m < n$, später im Programm als \lstinline{path} bezeichnet. 
+Sei $G$ ein Graph mit übergebener Liste von Knoten  $K_1,\ldots,K_n$ und bereits teilweise befülltem Pfad $K_1,\ldots,K_m$ mit $2 > m < n$.
 Die Knoten, die noch eingefügt werden müssen, werden in der Reihenfolge ihres Auftretens in der übergebenen Liste in den Graphen eingefügt, womit der als nächstes einzufügende Knoten immer $K_{i}$ mit $i = m + 1$ ist.
 \\
-Um die Stelle zu ermitteln, in die $K_i$ eingefügt werden soll, müssen die Distanzen zu Vorgänger und Nachfolger berechnet und die geringste Entfernung ermittelt werden. 
-Hierzu wird durch die Knoten beginnend mit $K_2$ bis $K_{m+1}$ iteriert. Dabei sei $K_j$ der Knoten des aktuellen Iterationdurchlaufs. 
-Nun wird die Distanz zwischen $K_{j-1}$ und $K_i$ mit der Distanz zwischen  $K_{j}$ und $K_i$ addiert. Hierbei muss beachtet werden, dass bei der Betrachtung von $K_{j=m+1}$ keine wirkliche Distanz zu $K_i$ errechnet werden kann, da nur $m$ Knoten im Graphen sind. Stattdessen wird angenommen, dass die Distanz 0 beträgt, sodass ein Anfügen an das Ende des Graphen simuliert wird.
-\\
-In Java Quellcode bedeutet dies konkret:
-\begin{lstlisting}[caption={Ermittlung der Distanzen}, label={lst:distjava}]
-double currentDistance = 
-    ((path[j] != null) ? distances.getDistanceById(path[j], nodes[i]) : 0)
-    + distances.getDistanceById(path[j - 1], nodes[i]);
+Um die beste Stelle zu ermitteln, in die $K_i$ eingefügt werden soll, wird für jede mögliche Stelle die Distanzerhöhung berechnet, zu der das Einfügen von $K_i$ an dieser Stelle führen würde.
+Um die beste Stelle zu ermitteln, in die $K_i$ eingefügt werden soll, wird für jeden möglichen Index, also jede mögliche Stelle, die Gesamtdistanz des entstehenden Graphen berechnet. 
+% Aus den so berechneten Möglichkeiten wird die mit der geringsten Distanz vermerkt und ausgewählt.
+% % Um die Stelle zu ermitteln, in die $K_i$ eingefügt werden soll, müssen die Distanzen zu Vorgänger und Nachfolger berechnet und die geringste Entfernung ermittelt werden. 
+% % Hierzu wird durch die Knoten beginnend mit $K_2$ bis $K_{m+1}$ iteriert. Dabei sei $K_j$ der Knoten des aktuellen Iterationdurchlaufs. 
+% % Nun wird die Distanz zwischen $K_{j-1}$ und $K_i$ mit der Distanz zwischen  $K_{j}$ und $K_i$ addiert. Hierbei muss beachtet werden, dass bei der Betrachtung von $K_{j=m+1}$ keine wirkliche Distanz zu $K_i$ errechnet werden kann, da nur $m$ Knoten im Graphen sind. Stattdessen wird angenommen, dass die Distanz 0 beträgt, sodass ein Anfügen an das Ende des Graphen simuliert wird.
+% \\
+% In Java Quellcode bedeutet dies konkret:
+% \begin{lstlisting}[caption={Ermittlung der Distanzen}, label={lst:distjava}]
+% double currentDistance = 
+%     ((path[j] != null) ? distances.getDistanceById(path[j], nodes[i]) : 0)
+%     + distances.getDistanceById(path[j - 1], nodes[i]);
 
-\end{lstlisting}
-Das niedrigste Ergebnis von \lstinline{currentDistance} wird zusammen mit dem dazugehörigen Index vermerkt. Nachdem die niedrigste Distanz für $K_i$ errechnet wurde kann anhand des Index' der Knoten an der besten Stelle in den Graphen eingefügt werden. 
-Einfügen bedeutet hier, dass alle Knoten, deren Index gleich oder höher dem niedrigsten Index für $K_i$ ist nach hinten verschoben werden. Nachdem alle Knoten auf diese Weise nach hinten verschoben wurden, kann $K_i$ an die Stelle des niedrigsten Index eingefügt werden, ohne, dass andere Knoten verloren gehen.
-\begin{lstlisting}[caption={Einfügen von Knoten in einen bestehenden Graph}, label={lst:mergeIntojava}]
+% \end{lstlisting}
+Das niedrigste Ergebnis dieser Möglichkeiten wird zusammen mit dem dazugehörigen Index $j$ vermerkt. 
+Nachdem die niedrigste Distanz für $K_i$ errechnet wurde kann anhand des Index' der Knoten an der bestmöglichen Stelle in den Graphen eingefügt werden. 
+Einfügen bedeutet hier, dass alle Knoten, deren Index gleich oder höher $j$ ist nach hinten verschoben werden. 
+Nachdem alle Knoten auf diese Weise nach hinten verschoben wurden, kann $K_i$ an der Stelle $j$ eingefügt werden, ohne, dass andere Knoten verloren gehen. 
+Konkret sieht das im Java Quellcode wie folgt aus:
+\begin{lstlisting}[caption={Einfügen von Knoten in einen bestehenden Graph}, label={code:mergeIntojava}]
 private static Node[] mergeNodeIntoGraph(Node[] path, Node node, int index) {
     for (int i = path.length - 2; i >= index; i--) {
         path[i + 1] = path[i];
@@ -56,33 +64,32 @@ Beispielhaft sähe das mit den vorher festgelegten Bezeichnungen wie folgt aus:
 \begin{addmargin}[1em]{2em}
 \lstinline{path = } $K_1, K_2, K_4, K_3$ und $K_{i = 5}$ 
 \end{addmargin}
-Durch das ermitteln der Distanzen zu den bereits eingefügten Knoten wird bekannt, dass $K_i$ am besten zwischen $K_4$ und $K_3$ eingefügt werden soll, also der Index $4$ vermerkt wird. Durch das Einfügen nach \vref{lst:mergeIntojava} entsteht folgender Pfad:
+Durch das ermitteln der Gesamtdistanzen in Abhängigkeit zu den möglichen Einfügestellen wird bekannt, dass $K_{i=5}$ mit dem Index $j=4$, also zwischen $K_4$ und $K_3$ bestmöglich eingefügt werden kann. 
+Durch das Einfügen nach \vref{code:mergeIntojava} entsteht folgender Pfad:
 \begin{addmargin}[1em]{2em}
 \lstinline{path = } $K_1, K_2, K_4, K_5, K_3$
 \end{addmargin}
 für den Graphen.
 
 \subsection{Ergebnisse und Schwächen} \label{insert-first-erg}
-Bei dem Einsatz des oben beschriebenen Algorithmus kommt es Ergebnissen, die in ihrer Qualität nah an die optimale Lösung herankommen, teilweise aber auch weit von ihr abweichen können.
+Bei dem Einsatz des oben beschriebenen Algorithmus kommt es Ergebnissen, die in ihrer Qualität nah an die optimale Lösung herankommen, teilweise aber auch weit von ihr abweichen können.  
 
-    
-
-\begin{figure}[!ht]
+\begin{figure}[H]
     \begin{center}
         \subfloat[$m = 2$\label{subfig-1:m2-BAD}]{%
-        \includegraphics[width=0.35\textwidth]{./Bilder/insert_first_BAD_ex_1.PNG}
+        \includegraphics[width=0.35\textwidth]{./Bilder/insertFirst/insert_first_BAD_ex_1.PNG}
         }
         \hfil
         \subfloat[$m = 3$\label{subfig-2:m3-BAD}]{%
-        \includegraphics[width=0.35\textwidth]{./Bilder/insert_first_BAD_ex_2.PNG}
+        \includegraphics[width=0.35\textwidth]{./Bilder/insertFirst/insert_first_BAD_ex_2.PNG}
         }
         \\
         \subfloat[$m = 4$\label{subfig-3:m4-BAD}]{%
-        \includegraphics[width=0.35\textwidth]{./Bilder/insert_first_BAD_ex_3.PNG}
+        \includegraphics[width=0.35\textwidth]{./Bilder/insertFirst/insert_first_BAD_ex_3.PNG}
         }
         \hfil
         \subfloat[$m = 5$\label{subfig-4:m5-BAD}]{%
-        \includegraphics[width=0.35\textwidth]{./Bilder/insert_first_BAD_ex_4.PNG}
+        \includegraphics[width=0.35\textwidth]{./Bilder/insertFirst/insert_first_BAD_ex_4.PNG}
         }
         \caption{Insert-First führt zu schlechtem Ergebnis}
         \label{fig:insert-bad}
@@ -91,31 +98,34 @@ Bei dem Einsatz des oben beschriebenen Algorithmus kommt es Ergebnissen, die in 
 
 Auf \vref{subfig-3:m4-BAD} lässt sich erkennen, dass das Einfügen des vierten Knoten $K_4$ nicht optimal geschieht. 
 Besser für $m = 4$ wäre hier der Pfad $K_1, K_3, K_2, K_4$. 
-Dieser wird allerdings nicht das Insert-First-Verfahren gebildet, da dies eine Änderung des Graphen in \vref{subfig-2:m3-BAD} erfordern würde. 
+Dieser wird allerdings nicht durch das Insert-First-Verfahren gebildet, da dies eine Änderung des bereits erzeugten Graphen in \vref{subfig-2:m3-BAD} erfordern würde. 
 Dies ist allerdings nicht möglich, da $K_4$ nur zwischen bereits im Pfad des Graphen vorhandenen Knoten eingefügt werden kann. 
-Hier lässt sich auch das grundlegende Problem des Algorithmus erkennen: Das Erstellen einer Route ohne vorherige Betrachtung der Gesamtheit der Knoten. Einzelne Teilschritte des Graphen können gut erzeugt werden, wie beispielsweise im Schritt von \vref{subfig-1:m2-BAD} zu \vref{subfig-2:m3-BAD}. Andere hingegen, wie vorher erwähnt, nicht. Grund hierfür ist, was sich aus menschlicher Sicht als \enquote{Verplanen} bezeichnen lässt, oder spezifischer,
- die Weise, auf die der Anfang eines graphen generiert wird, der später aufgrund seiner Beschaffenheit zu Komplikationen führt. Am konkreten Beispiel führt die generierte Reihenfolge $K_1, K_2, K_3$ in \vref{subfig-2:m3-BAD} dazu, dass $K_4$ nur unter einen vergleichsweise großen Gesamtdistanzzuwachs in den Graphen eingefügt werden kann. \\\\
+Hier lässt sich auch das grundlegende Problem des Algorithmus erkennen: Das Erstellen einer Route ohne vorherige Betrachtung der Gesamtheit der Knoten. 
+Einzelne Teilschritte des Graphen können gut erzeugt werden, wie beispielsweise im Schritt von \vref{subfig-1:m2-BAD} zu \vref{subfig-2:m3-BAD}. 
+Andere hingegen, wie vorher erwähnt, nicht. Grund hierfür ist etwas, das sich als Ignoranz der Zukunft oder auch Tunnelblick auf den jetzigen Knoten $K_i$ bezeichnen lässt. 
+Spezifischer bedeutet das, dass frühe Einfügen von Knoten in den Pfad eines Graphen kann später zu Komplikationen führen, da es objektiv besser gewesen wäre einen anderen Knoten früher einzufügen.
+Am konkreten Beispiel führt die generierte Reihenfolge von \lstinline{path =} $K_1, K_2, K_3$ in \vref{subfig-2:m3-BAD} dazu, dass $K_4$ nur unter einen vergleichsweise großen Gesamtdistanzzuwachs in den Graphen eingefügt werden kann. \\\\
 Konträr zu diesem schlechten Beispiel ist der Insert-First-Algorithmus auch in der Lage gute bis optimale Ergebnisse zu generieren. 
 
-\begin{figure}[h!]
+\begin{figure}[H]
     \begin{center}
         \subfloat[$m = 2$\label{subfig-1:m2-GOOD}]{%
-        \includegraphics[width=0.35\textwidth]{./Bilder/insert_first_ex_1.PNG}
+        \includegraphics[width=0.35\textwidth]{./Bilder/insertFirst/insert_first_ex_1.PNG}
         }
         \hfil
         \subfloat[$m = 3$\label{subfig-2:m3-GOOD}]{%
-        \includegraphics[width=0.35\textwidth]{./Bilder/insert_first_ex_2.PNG}
+        \includegraphics[width=0.35\textwidth]{./Bilder/insertFirst/insert_first_ex_2.PNG}
         }\\
 %     \end{center}
 % \end{figure}
 % \begin{figure}[!h]\ContinuedFloat
 %     \begin{center}
         \subfloat[$m = 4$\label{subfig-3:m4-GOOD}]{%
-        \includegraphics[width=0.35\textwidth]{./Bilder/insert_first_ex_3.PNG}
+        \includegraphics[width=0.35\textwidth]{./Bilder/insertFirst/insert_first_ex_3.PNG}
         }
         \hfil
         \subfloat[$m = 5$\label{subfig-4:m5-GOOD}]{%
-        \includegraphics[width=0.35\textwidth]{./Bilder/insert_first_ex_4.PNG}
+        \includegraphics[width=0.35\textwidth]{./Bilder/insertFirst/insert_first_ex_4.PNG}
         }
         \caption{Insert-First führt zu guten Ergebnis}
         \label{fig:insert-good}
@@ -123,7 +133,7 @@ Konträr zu diesem schlechten Beispiel ist der Insert-First-Algorithmus auch in 
 \end{figure}
 % TODO: Check the Position of Good example, needs to be under the text
 Am Beispiel in \vref{fig:insert-good} lässt sich erkennen, wie der Insert-First-Algorithmus einen optimalen Pfad mit den gegebenen Knoten generiert. 
-Gerade im Schritt von \vref{subfig-3:m4-GOOD} zu \vref{subfig-4:m5-GOOD} ist ein funktionierendes und korrektes Einfügen des Knotens in den Graphen zu sehen. 
+Gerade im Schritt von \vref{subfig-3:m4-GOOD} zu \vref{subfig-4:m5-GOOD} ist ein funktionierendes und korrektes Einfügen des Knotens in den Graphen zu sehen, bei dem der Anstieg der Gesamtdistanz der Route sehr gering gehalten wird. 
 Hier wird der aktuelle Knoten mit geringem Zuwachs der schlussendlichen Gesamtdistanz in den Graphen eingefügt. \\\\
 Für die Bewertung des Algorithmus müssen also beide Seiten betrachtet werden. 
 Zwar ist Insert-First in der Lage eine gute oder auch optimale Route zu erstellen, allerdings beeinflusst die Reihenfolge der Betrachtung der Knoten stark die Qualität des Endergebnisses.
