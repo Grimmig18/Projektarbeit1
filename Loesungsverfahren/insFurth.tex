@@ -19,16 +19,80 @@
 
 Aufbauend auf den Erkenntnissen des Insert-First-Verfahrens können experimentell einige Verbesserungsideen abgeleitet und ihre Auswirkungen auf das Erzeugen eines Graphen betrachtet werden.
 Beim Insert-First-Verfahren wurde festgestellt, dass eine große Schwäche des Algorithmus die Reihenfolge der Betrachtung der Knoten sein kann.
-Ein möglicher Ansatz, dieser in \vref{insert-first-erg} beschriebenen Schwäche entgegenzuwirken, ist die Einführung eines Kriteriums zur Betrachtung der Knoten.
+Ein möglicher Ansatz, dieser in \vref{sec:inserst-first-erg} beschriebenen Schwäche entgegenzuwirken, ist die Einführung eines Kriteriums zur Betrachtung der Knoten.
 Eine mögliche Umsetzung eines solchen Kriteriums ist das Insert-Furthest-Verfahren. 
 Hier wird der als nächstes einzufügende Knoten ($K_i$) durch seine Distanz zum Vorgänger ($K_{i-1}$) bestimmt.
 
-\subsection{Funktionsweise}
+\subsection{Funktionsweise} \label{sec:insert-furthest-funkt}
 Ähnlich dem Insert-First-Verfahrens wird auch hier ein Graph mit einer Liste von Knoten udn einem zu Beginn leerem Pfad erzeugt.
 Auch hier wird wieder der erste Knoten der Liste $K_1$ als initialer Knoten des Pfades gesetzt.
 Der nächste zu betrachtende Knoten ist nun aber nicht $K_2$, sondern wird durch die Distanz zu $K_1$ bestimmt.
 Ausgewählt wird der Knoten, der am weitesten von $K_1$, bzw. allgemein am weistesten von $K_{i-1}$, entfernt ist und nicht bereits Teil des Pfads ist.
 Dieser Knoten wird nun auf die gleiche Weise wie die Knoten beim Insert-First-Verfahren in den Pfad des Graphen eingefügt; die Stelle mit der geringsten Distanzerhöhung für den Graphen wird gesucht und $K_i$ an dieser Stelle nach dem in \vref{code:mergeIntojava} beschriebenen Verfahren eingefügt.\\
 Der Gedanke hinter der dieser Veränderung ist der Versuch Knoten mit größerer Vorraussicht als im Insert-First-Verfahren in den Pfad des Graphen einzufügen.
-Dass dies zur Generierung einer besseren Route beitragen kann lässt sich am Beispiel in \vref{fig:insert-bad} erkennen.
+Ziel ist es mit den ersten paar Knoten einen Pfad zu generieren, der einen großen Teil der Fläche überspannt, auf der sich Knoten befinden.
+Das kann insofern zu einem besserem Ergebnis führen, dass die ersten Knoten zwar unter einer, relativ zur schlussendlichen Gesamtlänge des Graphen, hohen Distanzerhöhung eingefügt werden, die nachfolgenden Knoten aber durch geringe Umwege des bestehenden Pfads in den Graphen eingebunden werden können.
+Auf diese Weise sollen Komplikationen beim Einfügen der letzten Knoten verhindert werden und so suboptimale Graphen wie in \vref{fig:insert-first-bad} umgangen werden.
+
 \subsection{Ergebnis und Schwächen}
+Testet man des Insert-Furthest-Verfahren anhand der Knoten des Beispiels \vref{fig:insert-first-bad} wird sichtbar, dass der Algorithmus tatsächlich in der Lage ist einen besseren Pfad zu generieren als das Insert-First-Verfahren.
+
+\begin{figure}[H]
+    \begin{center}
+        % \subfloat[$m = 2$\label{subfig:insert-first-BAD-m2}]{%
+        % \includegraphics[width=0.35\textwidth]{./Bilder/insertFurthest/insert_furthest_ex_1.PNG}
+        % }
+        % \hfil
+        \subfloat[$m = 2$\label{subfig:insert-furthest-BAD-m2}]{%
+        \includegraphics[width=0.35\textwidth]{./Bilder/insertFurthest/insert_furthest_ex_2.PNG}
+        }
+        % \\
+        % \subfloat[$m = 4$\label{subfig:insert-first-BAD-m4}]{%
+        % \includegraphics[width=0.35\textwidth]{./Bilder/insertFurthest/insert_furthest_ex_3.PNG}
+        % }
+        \hfil
+        \subfloat[$m = 5$\label{subfig:insert-furthest-BAD-m5}]{%
+        \includegraphics[width=0.35\textwidth]{./Bilder/insertFurthest/insert_furthest_ex_5.PNG}
+        }
+        \caption{Insert-First führt zu schlechtem Ergebnis}
+        \label{fig:insert-furthest-good}
+    \end{center}
+\end{figure}
+
+% TODO: Alle Schritte/Bilder in den Anhang
+In \vref{subfig:insert-furthest-BAD-m2} ist zu erkennen, dass, anstatt wie in \vref{subfig:insert-first-BAD-m2} $K_2$ als erster Knoten, $K_4$ eingefügt wird.
+Dieses Verhalten ist nach der in \vref{sec:insert-furthest-funkt} definierten Funktionsweise zu erwarten, da $K_4$ der Knoten mit der größten Distanz zu $K_1$ ist und daher als erstes in den Pfad des Graphen eingefügt wird.
+Nach der Ausführung aller Schritte des Algorithmus erhält man den in \vref{subfig:insert-furthest-BAD-m5} zu sehenden Graphen.
+Dieser hat eine Gesamtdistanz von 13,327 \ac{LE} und ist somit im Vergleich mit dem in \vref{fig:insert-first-bad} durch das Insert-First-Verfahren erzeugten Graph 2,618 \ac{LE} oder 16,41\% kürzer.
+\\\\
+Ebenso wie das Insert-First-Verfahren kann das Insert-Furthest-Verfahren auch Graphen generieren die in ihrer Gesamtdistanz vom Optimum abweichen. Am folgenden Beispiel wird deutlich, dass auch dieser Algorithmus von ähnlichen Schwächen betroffen ist.
+\begin{figure}[H]
+    \begin{center}
+        % \subfloat[$m = 2$\label{subfig:insert-first-BAD-m2}]{%
+        % \includegraphics[width=0.35\textwidth]{./Bilder/insertFurthest/insert_furthest_ex_1.PNG}
+        % }
+        % \hfil
+        \subfloat[$m = 4$\label{subfig:insert-furthest-BAD-m2}]{%
+        \includegraphics[width=0.35\textwidth]{./Bilder/insertFurthest/insert_furthest_ex_BAD_4.PNG}
+        }
+        % \\
+        % \subfloat[$m = 4$\label{subfig:insert-first-BAD-m4}]{%
+        % \includegraphics[width=0.35\textwidth]{./Bilder/insertFurthest/insert_furthest_ex_3.PNG}
+        % }
+        \hfil
+        \subfloat[$m = 5$\label{subfig:insert-furthest-BAD-m5}]{%
+        \includegraphics[width=0.35\textwidth]{./Bilder/insertFurthest/insert_furthest_ex_BAD_5.PNG}
+        }
+        \caption{Insert-First führt zu schlechtem Ergebnis}
+        \label{fig:insert-furthest-bad}
+    \end{center}
+\end{figure}
+% TODO: Bilder in den Angang
+Die der Abbildung \vref{fig:insert-furthest-bad} vorhergehenden Schritte $m=1$ bis $m=3$ sind im Anhang zu finden. 
+\\\\
+Auch hier lässt sich das Problem der Reihenfolge beobachten, welches in \vref{sec:inserst-first-erg} beschrieben wurde.
+Durch das Einfügen des letzten Knotens $K_4$ in den Pfad entsteht ein suboptimaler Graph.
+In diesem konkreten Beispiel ist das mit dem menschlichen Auge jedoch nicht sofort ersichtlich.
+Vergleicht man aber die Distanzen zwischen den Knoten $K_4$ und $K_1$ (6,129 \ac{LE}) mit den zwischen $K_1$ und $K_2$ (5,019 \ac{LE}) wird schnell ersichtlich, dass eine Verminderung der Distanz durch das Umlegen der Knoten erreicht werden kann.
+Verursacht wird dies dadurch, dass $K_4$ als letztes in den Graphen eingefügt wird.
+Die optimale Route, \lstinline{path =} $K_1, K_3, K_4, K_2, K_1$, würde es jedoch erfordern, dass $K_4$ früher betrachtet und in den Pfad eingefügt wird.
