@@ -1,4 +1,4 @@
-\section{Insert-Furthest-Verfahren}
+\section{Insert-Furthest-Verfahren} \label{sec:insert-furthest-verfahren}
 % Was ist das Insert-Furthest-Verfahren?
     % Nodes werden anhand ihrer Entfernung zur vorherigen Node in den Graphen eingefügt
     % Die am weitest entfernten werden zuerst eingefügt
@@ -94,5 +94,13 @@ Auch hier lässt sich das Problem der Reihenfolge beobachten, welches in \vref{s
 Durch das Einfügen des letzten Knotens $K_4$ in den Pfad entsteht ein suboptimaler Graph.
 In diesem konkreten Beispiel ist das mit dem menschlichen Auge jedoch nicht sofort ersichtlich.
 Vergleicht man aber die Distanzen zwischen den Knoten $K_4$ und $K_1$ (6,129 \ac{LE}) mit den zwischen $K_1$ und $K_2$ (5,019 \ac{LE}) wird schnell ersichtlich, dass eine Verminderung der Distanz durch das Umlegen der Knoten erreicht werden kann.
-Verursacht wird dies dadurch, dass $K_4$ als letztes in den Graphen eingefügt wird.
-Die optimale Route, \lstinline{path =} $K_1, K_3, K_4, K_2, K_1$, würde es jedoch erfordern, dass $K_4$ früher betrachtet und in den Pfad eingefügt wird.
+Verursacht wird diese Abweichung vom Optimum dadurch, dass $K_4$ als letztes in den Graphen eingefügt wird, da der Knoten sich, relativ zu den restlichen Knoten, in der Mitte der Fläche befindet und somit aufgrund seiner geringeren Entfernung vom Algorithmus als betrachtet wird.
+Die optimale Route
+\begin{addmargin}[1em]{2em}
+    \lstinline{path = } $K_1, K_3, K_4, K_2, K_1$ 
+    \end{addmargin}
+ würde es jedoch erfordern, dass $K_4$ früher betrachtet und in den Pfad eingefügt wird.
+Der durch den Algorithmus erzeugte Graph hat eine Gesamtlänge von 21,138 \ac{LE}, während durch das Umlegen zum optimalen Graph eine Länge von 20,028 \ac{LE}, also Reduktion der Distanz um 1,11 \ac{LE} oder 5,251\% erreicht werden kann.
+\\\\
+Das Insert-Furthest-Verfahren verhält sich in einigen Fällen, wie in \vref{fig:insert-furthest-good} gezeigt, besser als das Insert-First-Verfahren, weist aber immer noch eindeutige Schwächen, gerade im Bezug auf die Reihenfolge der Betrachtung der Knoten.
+Das Beispiel in \vref{fig:insert-furthest-bad} zeigt deutlich, wie auch hier die Positionierung der Knoten Einfluss auf das Endergebnis hat.

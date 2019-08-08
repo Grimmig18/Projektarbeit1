@@ -1,4 +1,4 @@
-\section{Insert-First-Verfahren}
+\section{Insert-First-Verfahren} \label{sec:insert-first-verfahren}
 % Was ist das Min Dist Verfahren?
     % Nodes werden in der Reihenfolge ihres Auftretens in den Graphen eingefügt
     % Insert-First = dadurch insert-random  
@@ -76,6 +76,7 @@ Bevor einige durch den Algorithmus generierte Beispiele betrachtet werden, wird 
 Alle gezeigten Knoten befinden sich auf einem zweidimensionalem Fläche mit den Maßen zehn mal zehn \ac{LE}.
 Folglich kann jedem Knoten eine X- und Y-Koordinate zwischen jeweils null und zehn zugeordnet werden. 
 Dementsprechend bewegen sich auch die Gesamtdistanzen er gezeigten Graphen in dieser Größenordnung.
+Weiterhin werden aus Gründen der Übersichtlichkeit für den Großteil der folgenden Beispiele nur Graphen mit fünf Knoten betrachtet.
 \\\\
 Bei dem Einsatz des oben beschriebenen Algorithmus kommt es zu Ergebnissen, die in ihrer Qualität nah an die optimale Lösung herankommen, teilweise aber auch weit von ihr abweichen können.  
 
@@ -103,7 +104,10 @@ Bei dem Einsatz des oben beschriebenen Algorithmus kommt es zu Ergebnissen, die 
 
 % TODO: Alle Schritte/Bilder in den Anhang
 Auf \vref{subfig:insert-first-BAD-m4} lässt sich erkennen, dass das Einfügen des vierten Knoten $K_4$ nicht optimal geschieht. 
-Besser für $m = 4$ wäre hier der Pfad $K_1, K_3, K_2, K_4$. 
+Besser für $m = 4$ wäre hier der Pfad 
+\begin{addmargin}[1em]{2em}
+    \lstinline{path = } $K_1, K_3, K_2, K_4$. 
+    \end{addmargin}
 Dieser wird allerdings nicht durch das Insert-First-Verfahren gebildet, da dies eine Änderung des bereits erzeugten Graphen in \vref{subfig:insert-first-BAD-m3} erfordern würde. 
 Dies ist jedoch nicht möglich, da $K_4$ nur zwischen bereits im Pfad des Graphen vorhandenen Knoten eingefügt werden kann, sodass der schlussendlich generierte Graph eine Gesamtlänge von 15,945 \ac{LE} hat.
 Hier lässt sich auch das grundlegende Problem des Algorithmus erkennen: Das Erstellen einer Route ohne vorherige Betrachtung der Gesamtheit der Knoten. 
@@ -111,7 +115,11 @@ Einzelne Teilschritte des Graphen können gut erzeugt werden, wie beispielsweise
 Andere hingegen, wie vorher erwähnt, nicht. 
 Grund hierfür ist die alleinige Betrachtung des Knotens $K_i$. 
 Spezifischer bedeutet das, dass das frühe Einfügen von Knoten in den Pfad eines Graphen später zu Komplikationen führen kann, da es objektiv besser gewesen wäre einen anderen Knoten früher einzufügen.
-Am konkreten Beispiel führt die generierte Reihenfolge von \lstinline{path =} $K_1, K_2, K_3$ in \vref{subfig:insert-first-BAD-m3} dazu, dass $K_4$ nur unter einen vergleichsweise großen Gesamtdistanzzuwachs in den Graphen eingefügt werden kann. 
+Am konkreten Beispiel führt die generierte Reihenfolge von 
+\begin{addmargin}[1em]{2em}
+    \lstinline{path = } $K_1, K_2, K_3$. 
+    \end{addmargin}
+in \vref{subfig:insert-first-BAD-m3} dazu, dass $K_4$ nur unter einen vergleichsweise großen Gesamtdistanzzuwachs in den Graphen eingefügt werden kann. 
 \\\\
 Konträr zu diesem schlechten Beispiel ist der Insert-First-Algorithmus auch in der Lage gute bis optimale Ergebnisse zu generieren. 
 
