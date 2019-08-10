@@ -24,11 +24,57 @@ Eine mögliche Umsetzung eines solchen Kriteriums ist das Insert-Furthest-Verfah
 Hier wird der als nächstes einzufügende Knoten ($K_i$) durch seine Distanz zum Vorgänger ($K_{i-1}$) bestimmt.
 
 \subsection{Funktionsweise} \label{sec:insert-furthest-funkt}
+% \subsection{Funktionsweise}
+\begin{algorithm}
+    \caption{Insert-Furthest-Algorithmus}
+    \label{alg:insert-furthest}
+    \begin{algorithmic}[1]
+        \Require Graph $G$, Pfad $P$
+        \Require $G = K_1,K_2,\ldots,K_n$, $n > 2$
+        \State $P_1 \gets K_1$
+        \Comment Setzen der ersten beiden Knoten
+        \State $P_2 \gets K_2$
+        % Find furthest
+        \\
+        \State $i \gets -1$
+        \State $d_i \gets -1$
+        \For{$a \gets 2$, $a \leq n$, $a \gets a +1$}
+            \State $d_C \gets$ distance($K_a$, $P_m$)
+            \Comment Distanz zwischen $K_a$ und dem letzten Knoten in $P$, $P_m$
+            \If{($K_a \not \in P$ \textbf{and} $d_C > d_i$) \textbf{or} $i = -1$}
+                \State $d_i \gets d_C$
+                \State $i \gets a$
+            \EndIf
+        \EndFor
+
+        \For{$a \gets 2$, $a \leq n$, $a \gets a + 1$}
+            \State $j \gets -1$
+            \Comment Index der geringsten Distanz
+            \State $d_S$ $\gets -1$
+            \Comment Geringste Distanz
+            \For{$b \gets 1$, $b \leq n$, $b \gets b +1$} 
+                \State $d_C \gets$ mergeAt($P$, $b$, $K_a$) distance
+                \Comment Gesamtdistanz, wenn $K_a$ am Index $b$ in $P$ eingefügt werden würde
+                %simulateMerge($P$, $b$, $G_a$).getTotalDistance()
+                \If{$j =-1$ \textbf{or} $d_C < d_S$}
+                    \State $d_S$ $\gets$ $d_C$
+                    \Comment Kürzeste Distanz wird übernommen
+                    \State $j \gets b$
+                    \Comment Und ihr Index
+                \EndIf
+            \EndFor
+            \State $P \gets$ mergeAt($P$, $j$, $K_a$)
+            \Comment $K_a$ wird am Index $j$ in $P$ eingefügt
+        \EndFor \\
+        \Return new Graph($P$)
+        \Comment Graph mit Pfad $P$ wird zurückgegeben
+    \end{algorithmic}
+\end{algorithm}
 Ähnlich dem Insert-First-Verfahrens wird auch hier ein Graph mit einer Liste von Knoten udn einem zu Beginn leerem Pfad erzeugt.
 Auch hier wird wieder der erste Knoten der Liste $K_1$ als initialer Knoten des Pfades gesetzt.
 Der nächste zu betrachtende Knoten ist nun aber nicht $K_2$, sondern wird durch die Distanz zu $K_1$ bestimmt.
 Ausgewählt wird der Knoten, der am weitesten von $K_1$, bzw. allgemein am weistesten von $K_{i-1}$, entfernt ist und nicht bereits Teil des Pfads ist.
-Dieser Knoten wird nun auf die gleiche Weise wie die Knoten beim Insert-First-Verfahren in den Pfad des Graphen eingefügt; die Stelle mit der geringsten Distanzerhöhung für den Graphen wird gesucht und $K_i$ an dieser Stelle nach dem in \vref{code:mergeIntojava} beschriebenen Verfahren eingefügt.\\
+Dieser Knoten wird nun auf die gleiche Weise wie die Knoten beim Insert-First-Verfahren in den Pfad des Graphen eingefügt; die Stelle mit der geringsten Distanzerhöhung für den Graphen wird gesucht und $K_i$ an dieser Stelle nach dem in \vref{alg:merge-node-into-path} beschriebenen Verfahren eingefügt.\\
 Der Gedanke hinter der dieser Veränderung ist der Versuch Knoten mit größerer Vorraussicht als im Insert-First-Verfahren in den Pfad des Graphen einzufügen.
 Ziel ist es mit den ersten paar Knoten einen Pfad zu generieren, der einen großen Teil der Fläche überspannt, auf der sich Knoten befinden.
 Das kann insofern zu einem besserem Ergebnis führen, dass die ersten Knoten zwar unter einer, relativ zur schlussendlichen Gesamtlänge des Graphen, hohen Distanzerhöhung eingefügt werden, die nachfolgenden Knoten aber durch geringe Umwege des bestehenden Pfads in den Graphen eingebunden werden können.

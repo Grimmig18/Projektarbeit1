@@ -55,4 +55,5 @@ könnte eine Verringerung der Distanz im Vergleich zum vorherigen Resultat um 3,
 Auch hier wird der suboptimal geplante Pfad durch die Reihenfolge der Betrachtung der Knoten verursacht.
 Im konkreten Beispiel werden die ersten vier Knoten $K_1, K_2, K_4$ und $K_5$ zu einem für sich optimalen Pfad zusammengefügt.
 $K_3$ wird aufgrund seiner hohen Distanz zu den übrigen Knoten als letztes in den Pfad eingefügt.
-Das hat hier zur Folge, dass $K_3$, als letzter Knoten des Pfads, nach dem von ihm am weitesten entfernten Knoten eingefügt wird, was zu einem hohen Zuwachs der Gesamtdistanz führt.
+Im gezeigten Beispiel kommt es also genau zu der Umkehrung des Problems, welches beim Insert-Furthest Algorithmus besteht; dort werden Knoten aufgrund ihrer zu niedrigen Distanz teilweise zu spät eingefügt.
+Diese Problem hat hier zur Folge, dass $K_3$ als letzter Knoten des Pfads nach dem von ihm am weitesten entfernten Knoten eingefügt wird, was zu einem hohen Zuwachs der Gesamtdistanz führt.

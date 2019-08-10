@@ -17,19 +17,53 @@ Das Insert-First-Verfahren ist ein heuristischer Lösungsansatz des \ac{TSP}s, b
 Dabei wird zu einem Zeitpunkt genau ein Knoten betrachtet und an der für ihn bestmöglichen Stelle in den bereits bestehenden Graphen eingefügt.
 
 \subsection{Funktionsweise}
-Zu Beginn des Insert-First-Verfahrens wird ein neuer Graph erzeugt, welcher als Eingabewerte eine Liste mit den Knoten $K_1, K_2,  \ldots ,K_n$, hier bezeichnet als \lstinline{nodes} und der Länge $n$ erhält. 
-Jeder Graph ist mit einem Pfad (oder auch \lstinline{path}) der Länge $n$ assoziiert, der die Reihenfolge der Knoten bestimmt. 
+\begin{algorithm}
+    \caption{Insert-First-Algorithmus}
+    \label{alg:insert-first}
+    \begin{algorithmic}[1]
+        \Require Graph $G$, Pfad $P$
+        \Require $G = K_1,K_2,\ldots,K_n$, $n > 2$
+        % \ENSURE $G$ length $> 2$
+        \State $P_1 \gets K_1$
+        \Comment Setzen der ersten beiden Knoten
+        \State $P_2 \gets K_2$
+        \For{$a \gets 2$, $a \leq n$, $a \gets a + 1$}
+            \State $j_S \gets -1$
+            \Comment Index der geringsten Distanz
+            \State $d_S$ $\gets -1$
+            \Comment Geringste Distanz
+            \For{$b \gets 1$, $b \leq n$, $b \gets b +1$} 
+                \State $d_C \gets$ mergeAt($P$, $b$, $K_a$) distance
+                \Comment Gesamtdistanz, wenn $K_a$ am Index $b$ in $P$ eingefügt werden würde (siehe Alg. \vref{alg:merge-node-into-path})
+                %simulateMerge($P$, $b$, $G_a$).getTotalDistance()
+                \If{$j_S =-1$ \textbf{or} $d_C < d_S$}
+                    \State $d_S$ $\gets$ $d_C$
+                    \Comment Kürzeste Distanz wird übernommen
+                    \State $j_S \gets b$
+                    \Comment Und ihr Index
+                \EndIf
+            \EndFor
+            \State $P \gets$ mergeAt($P$, $j_S$, $K_a$)
+            \Comment $K_a$ wird am Index $j_S$ in $P$ eingefügt
+        \EndFor \\
+        \Return new Graph($P$)
+        \Comment Graph mit Pfad $P$ wird zurückgegeben
+    \end{algorithmic}
+\end{algorithm}
+% Zu Beginn des Insert-First-Verfahrens wird ein neuer Graph erzeugt, welcher als Eingabewerte eine Liste mit den Knoten $K_1, K_2,  \ldots ,K_n$, hier bezeichnet als \lstinline{nodes} und der Länge $n$ erhält.
+Als Eingabe erhält der Algorithmus einen Graphen mit einer ungeordneten Liste von $n$ Knoten $K_1,K_2,\ldots,K_n$ mit $n > 2$.
+Jeder Graph ist mit einem Pfad $P$ der Länge $n$ assoziiert, der die Reihenfolge der Knoten bestimmt im Ergebnis des Algorithmus bestimmt. 
 Nun wird $K_1$, der erste Knoten aus der übergebenen Liste in den Pfad des Graphs an erster Stelle eingefügt. 
 Dies geschieht so oder ähnlich bei allen Verfahren, um einen statischen Ausgangspunkt zu gewährleisten und somit vergleichbare Ergebnisse zu erzielen.
 Anschließend wird noch der zweite Knoten, $K_2$ angehängt.
 
-\begin{lstlisting}[caption={Zuweisung des ersten und zweiten Knotens}]
-path[0] = nodes[0];
-path[1] = nodes[1];  
-\end{lstlisting}
+% \begin{lstlisting}[caption={Zuweisung des ersten und zweiten Knotens}]
+% path[0] = nodes[0];
+% path[1] = nodes[1];  
+% \end{lstlisting}
 
 Das Vorgehen für das Einfügen der restlichen Knoten lässt sich wie folgt beschreiben: 
-Sei $G$ ein Graph mit übergebener Liste von Knoten  $K_1,\ldots,K_n$ und bereits teilweise befülltem Pfad $K_1,\ldots,K_m$ mit $2 > m < n$.
+Sei $G$ ein Graph mit einer ungeordneten Menge von $n$ Knoten  $K_1,K_2,\ldots,K_n$ und bereits teilweise befülltem Pfad $K_1,\ldots,K_m$ mit $m \geq 2$ und $m < n$.
 Die Knoten, die noch eingefügt werden müssen, werden in der Reihenfolge ihres Auftretens in der übergebenen Liste in den Graphen eingefügt, womit der als nächstes einzufügende Knoten immer $K_{i}$ mit $i = m + 1$ ist.
 \\
 Um die beste Stelle zu ermitteln, in die $K_i$ eingefügt werden soll, wird für jede mögliche Stelle die Distanzerhöhung berechnet, zu der das Einfügen von $K_i$ an dieser Stelle führen würde.
@@ -50,24 +84,23 @@ Das niedrigste Ergebnis dieser Möglichkeiten wird zusammen mit dem dazugehörig
 Nachdem die niedrigste Distanz für $K_i$ errechnet wurde kann anhand des Index' der Knoten an der bestmöglichen Stelle in den Graphen eingefügt werden. 
 Einfügen bedeutet hier, dass alle Knoten, deren Index gleich oder höher $j$ ist nach hinten verschoben werden. 
 Nachdem alle Knoten auf diese Weise nach hinten verschoben wurden, kann $K_i$ an der Stelle $j$ eingefügt werden, ohne, dass andere Knoten verloren gehen. 
-Konkret sieht das im Java Quellcode wie folgt aus:
-\begin{lstlisting}[caption={Einfügen von Knoten in einen bestehenden Graph}, label={code:mergeIntojava}]
-private static Node[] mergeNodeIntoGraph(Node[] path, Node node, int index) {
-    for (int i = path.length - 2; i >= index; i--) {
-        path[i + 1] = path[i];
-    }
-    path[index] = node;
-    return path;
-}
-\end{lstlisting}
+% \begin{lstlisting}[caption={Einfügen von Knoten in einen bestehenden Graph}, label={code:mergeIntojava}]
+% private static Node[] mergeNodeIntoGraph(Node[] path, Node node, int index) {
+%     for (int i = path.length - 2; i >= index; i--) {
+%         path[i + 1] = path[i];
+%     }
+%     path[index] = node;
+%     return path;
+% }
+% \end{lstlisting}
 Beispielhaft sähe das mit den vorher festgelegten Bezeichnungen wie folgt aus: 
 \begin{addmargin}[1em]{2em}
-\lstinline{path = } $K_1, K_2, K_4, K_3$ und $K_{i = 5}$ 
+$P= K_1, K_2, K_4, K_3$ und $K_{i = 5}$ 
 \end{addmargin}
 Durch das ermitteln der Gesamtdistanzen in Abhängigkeit zu den möglichen Einfügestellen wird bekannt, dass $K_{i=5}$ mit dem Index $j=4$, also zwischen $K_4$ und $K_3$ bestmöglich eingefügt werden kann. 
-Durch das Einfügen nach \vref{code:mergeIntojava} entsteht folgender Pfad:
+Durch das Einfügen nach \vref{alg:merge-node-into-path} entsteht folgender Pfad:
 \begin{addmargin}[1em]{2em}
-\lstinline{path = } $K_1, K_2, K_4, K_5, K_3$
+$P=K_1, K_2, K_4, K_5, K_3$
 \end{addmargin}
 für den Graphen.
 
@@ -106,7 +139,7 @@ Bei dem Einsatz des oben beschriebenen Algorithmus kommt es zu Ergebnissen, die 
 Auf \vref{subfig:insert-first-BAD-m4} lässt sich erkennen, dass das Einfügen des vierten Knoten $K_4$ nicht optimal geschieht. 
 Besser für $m = 4$ wäre hier der Pfad 
 \begin{addmargin}[1em]{2em}
-    \lstinline{path = } $K_1, K_3, K_2, K_4$. 
+    $P=K_1, K_3, K_2, K_4$. 
     \end{addmargin}
 Dieser wird allerdings nicht durch das Insert-First-Verfahren gebildet, da dies eine Änderung des bereits erzeugten Graphen in \vref{subfig:insert-first-BAD-m3} erfordern würde. 
 Dies ist jedoch nicht möglich, da $K_4$ nur zwischen bereits im Pfad des Graphen vorhandenen Knoten eingefügt werden kann, sodass der schlussendlich generierte Graph eine Gesamtlänge von 15,945 \ac{LE} hat.
@@ -117,7 +150,7 @@ Grund hierfür ist die alleinige Betrachtung des Knotens $K_i$.
 Spezifischer bedeutet das, dass das frühe Einfügen von Knoten in den Pfad eines Graphen später zu Komplikationen führen kann, da es objektiv besser gewesen wäre einen anderen Knoten früher einzufügen.
 Am konkreten Beispiel führt die generierte Reihenfolge von 
 \begin{addmargin}[1em]{2em}
-    \lstinline{path = } $K_1, K_2, K_3$. 
+    $P=K_1, K_2, K_3$. 
     \end{addmargin}
 in \vref{subfig:insert-first-BAD-m3} dazu, dass $K_4$ nur unter einen vergleichsweise großen Gesamtdistanzzuwachs in den Graphen eingefügt werden kann. 
 \\\\
@@ -132,6 +165,10 @@ Konträr zu diesem schlechten Beispiel ist der Insert-First-Algorithmus auch in 
         \subfloat[$m = 3$\label{subfig:insert-first-GOOD-m3}]{%
         \includegraphics[width=0.35\textwidth]{./Bilder/insertFirst/insert_first_ex_2.PNG}
         }\\
+%     \end{center}
+% \end{figure}
+% \begin{figure}
+%     \begin{center}\ContinuedFloat
         \subfloat[$m = 4$\label{subfig:insert-first-GOOD-m4}]{%
         \includegraphics[width=0.35\textwidth]{./Bilder/insertFirst/insert_first_ex_3.PNG}
         }
@@ -152,3 +189,46 @@ Die scheint zwar höher als das vorherige schlechte beispiel, das liegt aber an 
 \\\\
 Für die Bewertung des Algorithmus müssen also beide Seiten betrachtet werden. 
 Zwar ist Insert-First in der Lage eine gute oder auch optimale Route zu erstellen, allerdings beeinflusst die Reihenfolge der Betrachtung der Knoten stark die Qualität des Endergebnisses.
+
+% Insert First Algorithmus als Pseudocode
+% \begin{algorithm}
+%     \begin{algorithmic}
+%         \caption{test Algorithm}
+%         \If{$a = b$}
+%             \State $b \gets 1$
+%         \EndIf
+%         \For{$a=2$, $a < G$ length, $a = a + 1$}
+%             \State $a \gets b$
+%         \EndFor
+%         \Require test
+%     \end{algorithmic}
+% \end{algorithm}
+% \begin{algorithm}
+%     \caption{Insert-First-Algorithmus}
+%     \label{alg:insert-first}
+%     \begin{algorithmic}[1]
+%         \Require Graph $G$, Pfad $P$
+%         \Require $G = K_1,\ldots,K_n$, $n > 2$
+%         % \ENSURE $G$ length $> 2$
+%         \State $P_1 \gets K_1$
+%         \Comment Setzen der ersten beiden Knoten
+%         \State $P_2 \gets K_2$
+%         \For{$a \gets 2$, $a \leq n$, $a \gets a + 1$}
+%             \State $j \gets -1$
+%             \Comment Index der geringsten Distanz
+%             \State $d_S$ $\gets -1$
+%             \Comment Geringste Distanz
+%             \For{$b \gets 1$, $b \leq n$, $b \gets b +1$} 
+%                 \State $d_C \gets$ mergeAt($P$, $b$, $K_a$) distance
+%                 \Comment Gesamtdistanz, wenn $K_a$ am Index $b$ in $P$ eingefügt werden würde
+%                 %simulateMerge($P$, $b$, $G_a$).getTotalDistance()
+%                 \If{$j =-1$ \textbf{or} $d_C < d_S$}
+%                     \State $j \gets b$
+%                     \State $d_S$ $\gets$ $d_C$
+%                 \EndIf
+%             \EndFor
+%             \State $P \gets$ mergeAt($P$, $j$, $K_a$) 
+%         \EndFor \\
+%         \Return new Graph($P$)
+%     \end{algorithmic}
+% \end{algorithm}
