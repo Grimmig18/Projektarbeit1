@@ -13,35 +13,35 @@
 
 % -------------------------------------------------------------- 
 % INSERT CLOSEST BAD COMPLETE
-\begin{figure}[h]
+\begin{figure}[H]
     \begin{center}
         \subfloat[$m = 2$\label{app:subfig:insert-closest-BAD-m1}]{%
         \includegraphics[width=0.6\textwidth]{./Bilder/insertClosest/insert_closest_ex_BAD_1.PNG}
         }
     \end{center}
 \end{figure}
-\begin{figure}\ContinuedFloat
+\begin{figure}[H]\ContinuedFloat
     \begin{center}
         \subfloat[$m = 3$\label{app:subfig:insert-closest-BAD-m2}]{%
         \includegraphics[width=0.6\textwidth]{./Bilder/insertClosest/insert_closest_ex_BAD_2.PNG}
         }
     \end{center}
 \end{figure}
-\begin{figure}\ContinuedFloat
+\begin{figure}[H]\ContinuedFloat
     \begin{center}
         \subfloat[$m = 4$\label{app:subfig:insert-closest-BAD-m3}]{%
         \includegraphics[width=0.6\textwidth]{./Bilder/insertClosest/insert_closest_ex_BAD_3.PNG}
         }
     \end{center}
 \end{figure}
-\begin{figure}\ContinuedFloat
+\begin{figure}[H]\ContinuedFloat
     \begin{center}
         \subfloat[$m = 5$\label{app:subfig:insert-closest-BAD-m4}]{%
         \includegraphics[width=0.55\textwidth]{./Bilder/insertClosest/insert_closest_ex_BAD_4.PNG}
         }
     \end{center}
 \end{figure}
-\begin{figure}\ContinuedFloat
+\begin{figure}[H]\ContinuedFloat
     \begin{center}
         \subfloat[$m = 5$\label{app:subfig:insert-closest-BAD-m5}]{%
         \includegraphics[width=0.55\textwidth]{./Bilder/insertClosest/insert_closest_ex_BAD_5.PNG}
@@ -53,14 +53,14 @@
 
 % -------------------------------------------------------------- 
 % Crossover Example 40 Nodes
-\begin{figure}[h]
+\begin{figure}[H]
     \begin{center}
         \subfloat[Pfad mit einem Crossover\label{app:subfig:40-nodes-with-crossover}]{%
         \includegraphics[width=0.55\textwidth]{./Bilder/crossover/40_nodes_with_crossover}
         }
     \end{center}
 \end{figure}
-\begin{figure}\ContinuedFloat
+\begin{figure}[H]\ContinuedFloat
     \begin{center}
         \subfloat[Pfad mit aufgelöstem Crossover\label{app:subfig:40-nodes-without-crossover}]{%
         \includegraphics[width=0.55\textwidth]{./Bilder/crossover/40_nodes_without_crossover.PNG}
@@ -69,18 +69,84 @@
     \end{center}
 \end{figure}\label{app:fig:40-nodes-crossover-example}
 
+% -------------------------------------------------------------- 
+% After Control Example 40 Nodes
+
+\begin{figure}[H]
+    \begin{center}
+        \subfloat[Teilpfad vor Nachbesserung\label{app:subfig:40-nodes-before-after-control}]{
+            \includegraphics[width=0.3\textwidth]{Bilder/afterControl/before_after_control.PNG}
+        }
+    \end{center}
+\end{figure}
+
+\begin{figure}[H]\ContinuedFloat
+    \begin{center}
+        \subfloat[Teilpfad nach Nachbesserung\label{app:subfig:40-nodes-after-after-control}]{
+            \includegraphics[width=0.3\textwidth]{Bilder/afterControl/after_after_control.PNG}
+        }
+    \end{center}
+    \caption{Beispiel für eine Nachbesserung, Teilpfad}
+\end{figure}
+
 \section{Algorithmen}
-\begin{algorithm}[h]
-    \caption{Einfügen eines Knoten in einen Pfad}
+\begin{algorithm}
+    \caption{Einfügen eines neuen Knoten in einen Pfad}
     \label{alg:merge-node-into-path}
     \begin{algorithmic}[1]
-        \Require Pfad $P = K_1,\ldots,K_n$
-        \Require Knoten $K^*$, Index $i$, $i \leq n$
+        \Require Pfad $P = p_1,\ldots,p_n$ mit $\forall p \in G$
+        \Comment Jedes p ist Knoten in Graph $G$
+        \Require Knoten $K^*$, Index $i$, $i \leq n + 1$
+        \Comment neuer Knoten $K^*$, einzufügen an Index $i$
         \For{$a \gets n$, $a \geq i$, $a \gets a+1$}
-            \State $P_{a+1} \gets P_a$
+            \State $p_{a+1} \gets p_a$
         \EndFor
-        \State $P_i \gets K^*$ \\
+        \State $p_i \gets K^*$ \\
         \Return $P$
     \end{algorithmic}
 \end{algorithm}
 
+\begin{algorithm}
+    \caption{Tauschen von Knoten auf einem Graph zwischen zwei eingegebenen Knoten}
+    \label{alg:swap-nodes-inbetween}
+    \begin{algorithmic}[1]
+        \Require Graph $G$, Knotenpaare $A_1,A_2$ und $B_1,B_2$
+        \Require $G=K_1,K_2,\cdots,K_n$, $n>4$
+        \State $i_{A_2} \gets$ \textsc{index}($A_2$)
+        \State $i_{B_1} \gets$ \textsc{index}($B_1$)
+        \If{$i_{A_2} > i_{B_1}$}
+            \State \textsc{swap}($i_{A_2}$, $i_{B_1}$) 
+            \Comment \textsc{swap} weißt beiden Parametern den Wert des anderen zu
+        \EndIf
+        \While{$i_{A_2} < i_{B_1}$}
+            \State \textsc{swap}($K_{i_{A_2}}$,$K_{i_{B_1}}$)
+        \EndWhile
+    \end{algorithmic}
+\end{algorithm}
+
+\begin{algorithm}
+    \caption{Berechnung der Distanz zwischen zwei Knoten}
+    \label{alg:calc-distance-two-nodes}
+    \begin{algorithmic}[1]
+        \Require Knoten $A$, Knoten $B$
+        % \Require $P=p_1,\cdots,\p_n$, $n \geq 2$
+        \State $d \gets \sqrt{|x_A - x_B|^2 + |y_A - y_B|^2}$\\
+        \Return $d$
+        % \State 
+    \end{algorithmic}
+\end{algorithm}
+
+\begin{algorithm}
+    \caption{Berechnung der Gesamtdistanz eines Pfads}
+    \label{alg:calc-total-distance}
+    \begin{algorithmic}[1]
+        \Require Pfad $P$
+        \Require $P=p_1,\cdots,p_n$, $n \geq 2$
+        \State sum $\gets 0$
+        \For{$a \gets 2$, $a \leq n$, $a \gets a + 1$}
+            \State sum $\gets sum + \textrm{\textsc{distance}}(p_{a-1}, p_a)$
+        \EndFor\\
+        \Return sum
+        % \State 
+    \end{algorithmic}
+\end{algorithm}

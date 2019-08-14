@@ -7,11 +7,12 @@
         % Dann nun wird die Node gesucht, welche am Nächsten an der ersten Node ist
         % Dazu wird einfach durch alle Nodes iteriert, die Entfernungen berechnet und dadurch die Node mit der geringsten Entfernung ermittelt
         % Diese wird dann an den Graphen angehängt, das heißt in die erste leere Stelle eingefügt
+    \subsection{Funktionsweise}
 Aufbauend auf den durch das Insert-First- und Insert-Furthest-Verfahren gewonnen Erkenntnissen ist es mögliche weitere Variationen der Heuristik zu entwickeln und deren Ergebnisse zu betrachten.
 Da sowohl in \vref{sec:insert-first-verfahren} als auch in \vref{sec:insert-furthest-verfahren} festgestellt wurde, dass ein Grund für suboptimal erstellte Routen die Reihenfolge der Betrachtung der Knoten ist, wird für das Insert-Closest-Verfahren eine weitere anderes Kriterium für eben diese Reihenfolge festgelegt.
 Wie der Name des Verfahrens schon suggeriert, geschieht hier die Auswahl der Knoten wieder nach ihrer Distanz.
 
-\subsection{Funktionsweise}
+
 Das Insert-Closest-Verfahren bezeichnet im Grundprinzip die Umkehrung des Insert-Furthest-Prinzips. 
 Anstatt des am weitesten entfernten Knotens wird hier der dem aktuellen Knoten nächste betrachtet.
 \\
@@ -22,13 +23,63 @@ Der als nächstes einzufügende Knoten wird wie beim Insert-Furthest-Verfahren d
 Für das Insert-Closest-Verfahren wird der dem Vorherigen Knoten nächste Knoten, unter der Bedingung, dass dieser nicht bereits Teil des Graph ist, in den Pfad eingefügt.
 Um die beste Stelle zum Einfügen des Knotens zu ermitteln wird das gleiche Verfahren wie bei den beiden vorherigen Algorithmen angewandt; die Stelle, die den geringsten Anstieg für die Gesamtdistanz des Pfads wird ausgewählt.
 Auch das Vorgehen beim Einfügen orientiert sich hier an den vorherigen Algorithmen.
-Der aktuelle Knoten $K_i$ wird nach dem in \vref{code:mergeIntojava} dargestelltem Prinzip an dem vorher festgelegten Index $j$ in den Graph eingefügt.
+Der aktuelle Knoten $K_i$ wird nach dem in \vref{alg:merge-node-into-path} dargestelltem Prinzip an dem vorher festgelegten Index $j$ in den Graph eingefügt.
+\\
+Der beschriebene Algorithmus befindet sich als Pseudocode in etwas ausführlicher Version unter \ac{Alg.} \vref{alg:insert-furthest}.
+\begin{algorithm}
+    \caption{Insert-Closest-Algorithmus}
+    \label{alg:insert-closest}
+    \begin{algorithmic}[1]
+        \Require Graph $G$, Pfad $P$
+        \Require $G = K_1,K_2,\ldots,K_n$, $n > 2$
+        \State $p_1 \gets K_1$
+        \Comment Setzen des ersten Knoten
+        % Find furthest
+        \State $i \gets -1$
+        \State $d_i \gets -1$
+
+        \For{$a \gets 1$, $a \leq n$, $a \gets a + 1$}
+            % Main Loop
+            % find Furthest from last
+            \State $j_S \gets -1$
+            \State $d_S \gets -1$
+
+            \For{$b \gets 2$, $b \leq n$, $b \gets b + 1$}
+                \Comment Finde $K_b$ mit der geringsten Distanz zu $p_m$
+                \State $d_C \gets$ \textsc{distance}($K_b$, $p_m$)
+                \Comment Distanz zwischen $K_b$ und letztem Knoten $p_m$
+                \If{$K_b \not \in P$ \textbf{and} ($j_S = -1$ \textbf(or) $d_C > d_S$)}
+                    \State $d_S \gets d_C$
+                    \State $j_S \gets b$
+                \EndIf
+            \EndFor
+
+            \State $i_S \gets -1$
+            \State $d_S \gets -1$
+
+            \For{$b \gets 2$, $b < n$, $b \gets b + 1$}
+                \State $d_C \gets$ \textsc{mergeAt}($P$, $b$, $K_{j_F}$) \textsc{distance}
+                \If{$i_S = -1$ \textbf{or} $d_C < d_S$}
+                    \State $i_S \gets b$
+                    \State $d_S \gets d_C$
+                \EndIf
+            \EndFor
+            \State $P \gets$ \textsc{mergeAt}($P$, $K_{j_S}$, $i_S$)
+            \Comment Siehe Alg. \vref{alg:merge-node-into-path}
+        \EndFor \\
+        \Return new Graph($P$)
+    \end{algorithmic}
+\end{algorithm}
+
+\subsection{Zeitkomplexität}
+Da es sich beim Insert-Closest-Algorithmus im eine Abwandlung des Insert-Furthest handelt, ist die Struktur beider Algorithmen gleich -- nur eine Bedingung ändert sich.
+Daher kann auch für diesen Algorithmus eine Zeitkomplexität von $$O(n) = n^2$$ angenommen werden, womit auch dieser Algorithmus wie Insert-First skaliert.
 
 \subsection{Ergebnis und Schwächen}
 Auch die Ergebnisse dieses Algorithmus gestalten sich sehr divers.
 Wie bei den beiden anderen Verfahren entstehen hier Graphen, die nahe an die Optimale Route heranreichen oder ihr teilweise auch entsprechen, aber auch solche, die weit von der optimalen Lösung abweichen.
-Übergibt man dem Algorithmus beispielsweise die gleichen Knoten wie in \vref{fig:insert-first-bad}, einem Szenario, bei dem der Insert-First Algorithmus einen suboptimalen Graph generiert, kommt der Insert-Closest Algorithmus, so wie der Insert-Furthest Algorithmus auch, auf die optimale Route.\\
-So wie die anderen Algorithmen stößt auch der Insert-Closest Algorithmus bei bestimmten Konstellationen von Knoten an seine Grenzen.
+Übergibt man dem Algorithmus beispielsweise die gleichen Knoten wie in Abbildung \vref{fig:insert-first-bad}, einem Szenario, bei dem der Insert-First Algorithmus einen suboptimalen Graph generiert, kommt der Insert-Closest Algorithmus, so wie der Insert-Furthest Algorithmus auch, auf die optimale Route.\\
+So wie die anderen Algorithmen stößt aber auch der Insert-Closest Algorithmus bei bestimmten Konstellationen von Knoten an seine Grenzen.
 
 \begin{figure}
     \begin{center}
@@ -44,13 +95,13 @@ So wie die anderen Algorithmen stößt auch der Insert-Closest Algorithmus bei b
     \end{center}
 \end{figure}
 
-Wie in \vref{fig:insert-closest-BAD} zu sehen ist, plant der Algorithmus einen Pfad, der deutlich erkennbar nicht optimal ist.
+Wie in Abbildung \vref{fig:insert-closest-BAD} zu sehen ist, plant der Algorithmus einen Pfad, der deutlich erkennbar nicht optimal ist.
 Die einzelnen Schritte, die zur Generierung des Graphen führen finden sich im Anhang in der Abbildung \vref{app:fig:insert-closest-BAD-complete}.
 Der in \vref{subfig:insert-closest-BAD-5} gezeigt Pfad hat eine Gesamtdistanz von 15,336 \ac{LE}.
 Durch das Ändern der Reihenfolge der Knoten zu
-\begin{addmargin}[1em]{2em}
-    \lstinline{path = } $K_1, K_4, K_5, K_2, K_3$ 
-\end{addmargin}
+% \begin{addmargin}[1em]{2em}
+    $$P=K_1, K_4, K_5, K_2, K_3$$ 
+% \end{addmargin}
 könnte eine Verringerung der Distanz im Vergleich zum vorherigen Resultat um 3,208 \ac{LE}, bzw. 20,918\% erreicht werden.
 Auch hier wird der suboptimal geplante Pfad durch die Reihenfolge der Betrachtung der Knoten verursacht.
 Im konkreten Beispiel werden die ersten vier Knoten $K_1, K_2, K_4$ und $K_5$ zu einem für sich optimalen Pfad zusammengefügt.
