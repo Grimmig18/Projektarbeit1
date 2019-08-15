@@ -1,0 +1,39 @@
+\section{Ergebnisse und Bewertung der verschiedenen Algorithmen}
+Nachdem nun drei Algorithmen zur Generierung einer Route und zwei zu deren Nachbesserung vorgestellt wurden, gilt es nun Erkenntnisse über die Ergebnisse dieser Algorithmen im Vergleich zu den anderen zu gewinnen.
+Dafür wurde eine Testszenario angelegt, in dem für verschiedene Kombinationen dieser Algorithmen mehrmals getestet werden.
+Jeder der drei Algorithmen zur Routengenerierung wird für sich, mit Auflösen von Überkreuzungen, mit Nachbesserung und mit Auflösen von Überkreuzungen und Nachbesserung getestet, wodurch es zwölf verschiedene Kombinationen gibt.
+Diese Kombinationen werden $1\,000$ mal mit je $5,10,15,\cdots,100$ Knoten getestet und die Ergebnisse (Gesamtdistanz des finalen Graphs) vermerkt, wodurch $19\,000$ Datensätze entstehen. Wie aussagekräftigt diese Ergebnisse wird in dieser Arbeit nicht diskutiert.
+\\
+Tabelle \vref{tab:test-results1} zeigt die möglichen Kombinationen der vorgestellten Algorithmen, wie häufig die Kombination die beste Lösung (im Vergleich mit den anderen Kombinationen) generiert hat und die relative Häufigkeit der Kombination an den besten Ergebnissen.
+Eindeutig kann hier erkannt werden, dass -- unabhängig von der Strategie -- Routen, die nachgebessert wurden nach Algorithmus \vref{alg:after-control}, den größten Teil der besten Lösung beanspruchen.
+Insgesamt erzielte eine Kombination, die nachträglich den Nachbesserungs-Algorithmus anwendet $13\,083$ von $19\,000$ (68,86\%) besten Ergebnissen.
+Den größten Teil macht dabei die Kombination, die den Insert-First-Algorithmus verwendet aus.
+Danach folgen ebenfalls nur mit Nachbesserung der Insert-Furthest-Algorithmus mit $4\,228$ und der Insert-Closest-Algorithmus mit 3648 besten Ergebnissen.
+Insgesamt verwenden 11,69\% der besten Lösungen nur einen Algorithmus zu Generierung des Graphen, 0,72\% lösen zusätzlich Überkreuzungen auf, 68,86\% verwenden den Algorithmus \vref{alg:after-control} zur Nachbesserung und 18,73\% beide dieser Verfahren.
+Von den $19\,000$ besten Ergebnissen entfallen $7\,519$ (39,57\%) an den eine Kombination mit dem Insert-First-Algorithmus, $5\,279$ (27,78\%) an dne Insert-Closest-Algorithmus und $6\,202$ (32,64\%) an den Insert-Furthest-Algorithmus.
+Weiterhin lässt sich aus den Datensätzen ablesen, dass die Differenz zwischen den Ergebnissen der besten und der schlechtesten Kombination mit zunehmender Knotenanzahl steigt.
+Sind 
+\\\\
+Als statistisch beste Kombination kann also der Insert-First-Algorithmus in Verbindung mit der in \vref{sec:after-control} beschriebenen Nachbesserung angesehen werden.
+Dies ist 
+\begin{center}
+    \begin{table}
+\begin{tabular}{ l | l | l | l | l }
+\textbf{Strategie} & \textbf{Überkreuzungen} & \textbf{Nachbesserung} & \textbf{\# Beste} & \textbf{\% Beste} \\ \hline
+First & Nein & Nein & $1\,024$ & 5,39\% \\
+First & Nein & Ja & $5\,207$ & 27,41\% \\
+First & Ja & Nein & $51$ &  0,27\% \\
+First & Ja & Ja & $1\,237$ & 6,51\% \\ \hline
+Furthest & Nein & Nein &  481 & 2,53\% \\
+Furthest & Nein & Ja & $4\,228$ & 22,25\% \\
+Furthest & Ja & Nein & 44 & 0,23\% \\
+Furthest & Ja & Ja & $1\,449$ & 7,63\% \\ \hline
+Closest & Nein & Nein & 717 & 3,77\% \\
+Closest & Nein & Ja & $3\,648$ & 19,20\% \\
+Closest & Ja & Nein & 41 & 0,22\% \\
+Closest & Ja & Ja & 873 & 4,59\% \\ \hline
+\end{tabular}
+\caption{Beste Testergebnisse nach verwendeten Algorithmen}
+\label{tab:test-results1}
+\end{table}
+\end{center}
