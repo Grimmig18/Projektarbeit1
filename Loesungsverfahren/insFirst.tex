@@ -53,7 +53,7 @@ Dabei wird zu einem Zeitpunkt genau ein Knoten betrachtet und an der für ihn be
 % Zu Beginn des Insert-First-Verfahrens wird ein neuer Graph erzeugt, welcher als Eingabewerte eine Liste mit den Knoten $k_1, k_2,  \ldots ,k_n$, hier bezeichnet als \lstinline{nodes} und der Länge $n$ erhält.
 Als Eingabe erhält der Algorithmus einen Graphen mit einer ungeordneten Liste von $n$ Knoten $k_1,k_2,\ldots,k_n$ mit $n > 2$.
 Jeder Algorithmus erzeugt einen Pfad $P$, in dem die Knoten des Graphs $G$ eingefügt und angeordnet werden.
-Dabei kann jede gefüllte Position $p_k$ im Pfad $P$ mit einem Knoten des Graphs $G$ gleichgesetzt werden.
+Nach vorheriger Definition kann jede gefüllte Position $p_k$ im Pfad $P$ mit einem Knoten $k_l$ des Graphs $G$ gleichgesetzt werden.
 Es gilt also $\forall p \in G$.
 Wenn beispielsweise:
 $$G = k_1,k_2,k_3,k_4$$
@@ -123,7 +123,7 @@ Da in jedem Iterationsdurchlauf ein Element in $P$ eingefügt wird berechnet sic
 Für eine Funktion $f(n)$, welche die Komplexität des Algorithmus in der Form $f: \mathbb{N} \rightarrow \mathbb{N}$ abbildet, lässt sich also sagen
 $$f(n) = \sum_{a = 3}^n m_a$$
 $$f(n) = \sum_{a=3}^n a - 1$$
-$$f(n) = \frac{(n-1)\cdot (n-2)}{2}$$
+$$f(n) = \frac{(n-1)\cdot (n-2)}{2}-1$$
 Womit sich ergibt, dass der Algorithmus eine quadratische Laufzeit der Form
 $$f(n) = O(n^2)$$
 hat.

@@ -86,7 +86,7 @@ Auf diese Weise sollen Komplikationen beim Einfügen der letzten Knoten verhinde
 Der Insert-Furthest-Algorithmus fügt verglichen mit dem Insert-First-Algorithmus ein Auswahlkriterium hinzu.\\
 Dieses Kriterium drückt sich im Pseudocode im \ac{Alg.} \vref{alg:insert-furthest} durch eine zusätzliche Schleife in Zeile vier aus.
 Um nun die Zeitkomplexität zu ermitteln, reicht es die Laufzeit dieser Schleife, $n^2$, auf die in \vref{sec:time-comp-first} berechnete zu addieren, wodurch sich 
-$$f(n) = \frac{n^2+n}{2}+n^2$$
+$$f(n) = \frac{n^2+n}{2}+n^2 -1$$
 und dadurch auch hier eine Komplexität von
 $$f(n) = O(n^2)$$
 ergibt.

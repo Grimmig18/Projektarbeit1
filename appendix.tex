@@ -150,3 +150,23 @@
         % \State 
     \end{algorithmic}
 \end{algorithm}
+
+
+\begin{algorithm}
+    \caption{Einfügen eines Knotens in eine Kante}
+    \label{alg:after-control-merge}
+    \begin{algorithmic}[1]
+        \Require Pfad $P$, Kante $e_j$ und Knoten $p_i$
+        \Require $P=p_1,p_2,\cdots,p_n,e_j=(p_{k-1},p_k),n>3,k>1n,i,j,k\in \mathbb{N}$
+        \If{i < k}
+            \For{$a\gets i+1, a < k, a \gets a + 1$}
+                \State \textsc{swap}($p_i,p_a$)
+            \EndFor
+        \Else
+            \For{$a\gets i, a > k - 1, a \gets a - 1$}
+                \State \textsc{swap}($p_i,p_a$)
+            \EndFor
+        \EndIf\\
+        \Return $P$
+    \end{algorithmic}
+\end{algorithm}

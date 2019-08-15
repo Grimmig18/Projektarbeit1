@@ -19,11 +19,11 @@ $$G=(K,E) \textrm{ mit } K,E \neq \emptyset$$
 $$E \subseteq K \times K$$
 Da die Knoten des Graph Städte repräsentieren kann jedem Knoten ein $x$- und $y$- Wert zugeordnet werden, die Koordinaten und damit ihre Position darstellen.
 Ein Knoten wird durch $k_i$ repräsentiert.
-Eine Kante $E$ verbindet zwei Knoten in der Form $E_a = (k_b,k_c)$ mit $k_b \neq k_c$ und $a,b,c \in \mathbb{N}$ (mit $0 \not \in \mathbb{N}$).
+Eine Kante $E$ verbindet zwei Knoten in der Form $e_a = (k_b,k_c)$ mit $k_b \neq k_c$ und $a,b,c \in \mathbb{N}$ (mit $0 \not \in \mathbb{N}$).
 Damit gilt $K=\{k_1,k_2,...,k_n\}$ mit $n > 2, n \in \mathbb{N}$.
 Die Entfernung zwischen zwei Knoten, also die Länge einer Kante, kann als Abbildung $$\omega : E \rightarrow \mathbb{R}$$ 
 dargestellt werden mit 
-$$\omega(E_a) = \sqrt{|x_{k_b} - x_{k_c}|^2 + |y_{k_b} - y_{k_c}|^2}$$
+$$\omega(e_a) = \sqrt{|x_{k_b} - x_{k_c}|^2 + |y_{k_b} - y_{k_c}|^2}$$
 was hier gleichbedeutend mit $\omega(k_b,k_c) = \sqrt{|x_{k_b} - x_{k_c}|^2 + |y_{k_b} - y_{k_c}|^2}$ ist.
 \\\\
 Ein Lösungsverfahren versucht als einen Pfad $P$ über alle Knoten eines Graph so zu finden, dass gilt
@@ -36,8 +36,8 @@ Die in dieser Arbeit entwickelten Algorithmen versuchen das \ac{TSP} mit einem b
 \section{Exakte Lösungsverfahren und die Optimale Route}
 Wie schon angedeutet bedarf die Ermittlung der optimalen Lösung eines enormen Rechenaufwands für einen Computer dar.
 Bei $n$ Knoten und einem bereits gesetzten $p_1$ bestehen $n-1$ Optionen für $p_2$, $n-2$ für $p_3$ und so weiter.
-Die Gesamtanzahl $D$ aller möglichen Routen berechnet sich also aus
-$$D = \prod_{i=1}^{n-1} i = (n-1)!$$
+Die Gesamtanzahl aller möglichen Routen berechnet sich also aus
+$$\prod_{i=1}^{n-1} i = (n-1)!$$
 Für einen Algorithmus, der alle diese Lösungen mit einer Brute-Force-Methode berechnet, um die beste unter ihnen zu finden, bedeutet das eine Zeitkomplexität von $O((n-1)!)$ und somit einen extrem schnellen Anstieg der Rechenzeit bei steigern Eingabemenge.\autocite[18]{Gurski.2010}
 Es existieren zwar effizientere Algorithmen, wie der Help-Karp-Algorithmus\autocite[14]{Hutchinson.2016} mit einer Laufzeit von $O(2^nn^2)$, allerdings skalieren auch diese exponentiell.
 \\
