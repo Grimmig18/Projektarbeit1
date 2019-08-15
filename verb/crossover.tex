@@ -22,9 +22,9 @@ Anhand dieses Beispiels wird nun das Entstehen, Erkennen und Auflösen von Über
 % Allgemein
 Eine Überkreuzung repräsentiert das Auftreten eines Schnittpunkts von zwei Kanten eines Graphen in einem für den Graphen relevanten Bereich.
 Ein Schnittpunkt von zwei Kanten bedeutet hier, dass keine der vier Knoten gleich sein dürfen.
-Besteht eine Überkreuzung also aus den Knotenpaaren $A$ und $B$ mit $A=K_{A_1},K_{A_2}$ und $B=K_{B_1},K_{B_2}$, dann muss gelten $K_{A_1} \neq K_{A_2} \neq K_{B_1} \neq K_{B_2}$.
+Besteht eine Überkreuzung also aus den Knotenpaaren $A$ und $B$ mit $A=k_{A_1},k_{A_2}$ und $B=k_{B_1},k_{B_2}$, dann muss gelten $k_{A_1} \neq k_{A_2} \neq k_{B_1} \neq k_{B_2}$.
 Ist diese Bedingung nicht erfüllt, kann es keine Überkreuzung geben.
-Sind nur drei der vier benötigten Knoten einzigartig kann es nicht zu einer Überkreuzung kommen, da dies einen zusammenhängenden Streckenabschnitt der Form $K_1, K_2, K_3$ darstellen würde.
+Sind nur drei der vier benötigten Knoten einzigartig kann es nicht zu einer Überkreuzung kommen, da dies einen zusammenhängenden Streckenabschnitt der Form $k_1, k_2, k_3$ darstellen würde.
 
 \subsection{Erkennnen von Überkreuzungen}
 Um Überkreuzungen erkennen zu können ist die Bedingung \enquote{in einem für den Graphen relevanten Bereich} wichtig.
@@ -84,10 +84,10 @@ Dieses Verfahren wird jedoch in dieser Arbeit nicht diskutiert.
 
 Um einen Algorithmus zur Auflösung von Überkreuzungen entwickeln zu können, ist es wichtig die Knoten um eine Überkreuzung herum vor und nach deren Auflösung zu betrachten.
 Dazu kann als Beispiel wieder Abbildung \vref{fig:graph-with-and-without-crossover} dienen.
-Reihenfolge der Knoten in Abbildung \vref{subfig:graph-with-crossover-and-rect} ist $$P_{alt} = K_1, K_2, K_3, K_4, K_5, K_6, K_7$$
-Die Reihenfolge der Knoten nach dem Auflösen in Abbildung \vref{subfig:graph-without-crossover} ist $$P_{neu} = K_1, K_6, K_5, K_4, K_3, K_2, K_7$$
-In diesem Beispiel seien die betroffenen Kanten $A$ und $B$ mit den Knoten $A_1 = K_1$, $A_2 = K_2$ und $B_1 = K_6$, $B_2 = K_7$.
-Die hier interessanten Knoten sind $K_2$ bis $K_6$, da sich deren Reihenfolge umkehrt.
+Reihenfolge der Knoten in Abbildung \vref{subfig:graph-with-crossover-and-rect} ist $$P_{alt} = k_1, k_2, k_3, k_4, k_5, k_6, k_7$$
+Die Reihenfolge der Knoten nach dem Auflösen in Abbildung \vref{subfig:graph-without-crossover} ist $$P_{neu} = k_1, k_6, k_5, k_4, k_3, k_2, k_7$$
+In diesem Beispiel seien die betroffenen Kanten $A$ und $B$ mit den Knoten $A_1 = k_1$, $A_2 = k_2$ und $B_1 = k_6$, $B_2 = k_7$.
+Die hier interessanten Knoten sind $k_2$ bis $k_6$, da sich deren Reihenfolge umkehrt.
 Daraus kann gefolgert werden, dass zum Auflösen einer Überkreuzung das Umkehren der betroffenen Knoten in der Mitte reicht.
 Diese betroffenen Knoten bestimmen sich durch die Kanten $A$ und $B$ -- der erste umzukehrende Knoten ist immer $A_2$, während der letzte $B_1$ ist.
 Dies ist allerdings nur unter der Bedingung wahr, dass $A$ im Graph vor $B$ ist.
@@ -125,8 +125,8 @@ Eine simple Umsetzung davon, die alle beschriebenen Methodiken mit einschließt 
 \end{algorithm}
 
 Wird das Entfernen von Überkreuzungen nach diesem Prinzip implementiert, ergeben sich einige Randbedingungen, die es Wert sind erwähnt zu werden.
-Aufgrund der geschachtelten Iterationen über die Kanten des Graphs lässt sich eine Zeitkomplexität von $$O(n) = n^2$$ ermitteln, womit der Algorithmus im Rahmen der polynomialen Zeitkomplexitätsklasse liegt. 
-Dies bedeutet, dass die Laufzeit des Algorithmus proportional zum Quadrat seiner Eingabemenge wächst.\autocite[15]{Gurski.2010}
+Aufgrund der geschachtelten Iterationen über die Kanten des Graphs lässt sich eine Zeitkomplexität von $$f(n) = O(n^2)$$ ermitteln, womit der Algorithmus im Rahmen der polynomialen Zeitkomplexitätsklasse liegt. 
+Dies bedeutet, dass die Laufzeit des Algorithmus proportional zum Quadrat seiner Eingabemenge wächst.
 Als Eingabemenge können hier Knoten bzw. Kanten eines Graphen behandelt werden, wobei $n$ die Menge der Knoten repräsentiert.
 \\
 Ein Algorithmus, der Überkreuzungen aus einem Graph entfernt, arbeitet also mit einer ähnlichen Laufzeit wie die Heuristiken, die den Graph vorher erzeugen.

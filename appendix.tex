@@ -111,7 +111,7 @@
     \label{alg:swap-nodes-inbetween}
     \begin{algorithmic}[1]
         \Require Graph $G$, Knotenpaare $A_1,A_2$ und $B_1,B_2$
-        \Require $G=K_1,K_2,\cdots,K_n$, $n>4$
+        \Require $G=k_1,k_2,\cdots,k_n$, $n>4$
         \State $i_{A_2} \gets$ \textsc{index}($A_2$)
         \State $i_{B_1} \gets$ \textsc{index}($B_1$)
         \If{$i_{A_2} > i_{B_1}$}
@@ -119,7 +119,7 @@
             \Comment \textsc{swap} weißt beiden Parametern den Wert des anderen zu
         \EndIf
         \While{$i_{A_2} < i_{B_1}$}
-            \State \textsc{swap}($K_{i_{A_2}}$,$K_{i_{B_1}}$)
+            \State \textsc{swap}($k_{i_{A_2}}$,$k_{i_{B_1}}$)
         \EndWhile
     \end{algorithmic}
 \end{algorithm}

@@ -17,13 +17,13 @@ Das Insert-Closest-Verfahren bezeichnet im Grundprinzip die Umkehrung des Insert
 Anstatt des am weitesten entfernten Knotens wird hier der dem aktuellen Knoten nächste betrachtet.
 \\
 Zu Beginn beschreibt sich der Algorithmus identisch zum Insert-Furthest-Verfahren.
-Auch hier wird ein neuer Graph mit einem leerem Pfad \lstinline{path} und einer Liste von Knoten $K_1, \dots ,K_n$ der Länge $n$ erzeugt.
-Auch hier wird der erste Knoten $K_1$ als erster Knoten des Pfades festgelegt.
+Auch hier wird ein neuer Graph mit einem leerem Pfad \lstinline{path} und einer Liste von Knoten $k_1, \dots ,k_n$ der Länge $n$ erzeugt.
+Auch hier wird der erste Knoten $k_1$ als erster Knoten des Pfades festgelegt.
 Der als nächstes einzufügende Knoten wird wie beim Insert-Furthest-Verfahren durch seine Distanz zum vorherigen bestimmt.
 Für das Insert-Closest-Verfahren wird der dem Vorherigen Knoten nächste Knoten, unter der Bedingung, dass dieser nicht bereits Teil des Graph ist, in den Pfad eingefügt.
 Um die beste Stelle zum Einfügen des Knotens zu ermitteln wird das gleiche Verfahren wie bei den beiden vorherigen Algorithmen angewandt; die Stelle, die den geringsten Anstieg für die Gesamtdistanz des Pfads wird ausgewählt.
 Auch das Vorgehen beim Einfügen orientiert sich hier an den vorherigen Algorithmen.
-Der aktuelle Knoten $K_i$ wird nach dem in \vref{alg:merge-node-into-path} dargestelltem Prinzip an dem vorher festgelegten Index $j$ in den Graph eingefügt.
+Der aktuelle Knoten $k_i$ wird nach dem in \vref{alg:merge-node-into-path} dargestelltem Prinzip an dem vorher festgelegten Index $j$ in den Graph eingefügt.
 \\
 Der beschriebene Algorithmus befindet sich als Pseudocode in etwas ausführlicher Version unter \ac{Alg.} \vref{alg:insert-furthest}.
 \begin{algorithm}
@@ -31,8 +31,8 @@ Der beschriebene Algorithmus befindet sich als Pseudocode in etwas ausführliche
     \label{alg:insert-closest}
     \begin{algorithmic}[1]
         \Require Graph $G$, Pfad $P$
-        \Require $G = K_1,K_2,\ldots,K_n$, $n > 2$
-        \State $p_1 \gets K_1$
+        \Require $G = k_1,k_2,\ldots,k_n$, $n > 2$
+        \State $p_1 \gets k_1$
         \Comment Setzen des ersten Knoten
         % Find furthest
         \State $i \gets -1$
@@ -45,10 +45,10 @@ Der beschriebene Algorithmus befindet sich als Pseudocode in etwas ausführliche
             \State $d_S \gets -1$
 
             \For{$b \gets 2$, $b \leq n$, $b \gets b + 1$}
-                \Comment Finde $K_b$ mit der geringsten Distanz zu $p_m$
-                \State $d_C \gets$ \textsc{distance}($K_b$, $p_m$)
-                \Comment Distanz zwischen $K_b$ und letztem Knoten $p_m$
-                \If{$K_b \not \in P$ \textbf{and} ($j_S = -1$ \textbf(or) $d_C > d_S$)}
+                \Comment Finde $k_b$ mit der geringsten Distanz zu $p_m$
+                \State $d_C \gets$ \textsc{distance}($k_b$, $p_m$)
+                \Comment Distanz zwischen $k_b$ und letztem Knoten $p_m$
+                \If{$k_b \not \in P$ \textbf{and} ($j_S = -1$ \textbf(or) $d_C > d_S$)}
                     \State $d_S \gets d_C$
                     \State $j_S \gets b$
                 \EndIf
@@ -58,13 +58,13 @@ Der beschriebene Algorithmus befindet sich als Pseudocode in etwas ausführliche
             \State $d_S \gets -1$
 
             \For{$b \gets 2$, $b < n$, $b \gets b + 1$}
-                \State $d_C \gets$ \textsc{mergeAt}($P$, $b$, $K_{j_F}$) \textsc{distance}
+                \State $d_C \gets$ \textsc{mergeAt}($P$, $b$, $k_{j_F}$) \textsc{distance}
                 \If{$i_S = -1$ \textbf{or} $d_C < d_S$}
                     \State $i_S \gets b$
                     \State $d_S \gets d_C$
                 \EndIf
             \EndFor
-            \State $P \gets$ \textsc{mergeAt}($P$, $K_{j_S}$, $i_S$)
+            \State $P \gets$ \textsc{mergeAt}($P$, $k_{j_S}$, $i_S$)
             \Comment Siehe Alg. \vref{alg:merge-node-into-path}
         \EndFor \\
         \Return new Graph($P$)
@@ -73,7 +73,9 @@ Der beschriebene Algorithmus befindet sich als Pseudocode in etwas ausführliche
 
 \subsection{Zeitkomplexität}
 Da es sich beim Insert-Closest-Algorithmus im eine Abwandlung des Insert-Furthest handelt, ist die Struktur beider Algorithmen gleich -- nur eine Bedingung ändert sich.
-Daher kann auch für diesen Algorithmus eine Zeitkomplexität von $$O(n) = n^2$$ angenommen werden, womit auch dieser Algorithmus wie Insert-First skaliert.
+Daher kann auch für diesen Algorithmus eine Zeitkomplexität von 
+$$f(n) = O(n^2)$$ 
+angenommen werden, womit auch dieser Algorithmus wie Insert-First skaliert.
 
 \subsection{Ergebnis und Schwächen}
 Auch die Ergebnisse dieses Algorithmus gestalten sich sehr divers.
@@ -100,11 +102,11 @@ Die einzelnen Schritte, die zur Generierung des Graphen führen finden sich im A
 Der in \vref{subfig:insert-closest-BAD-5} gezeigt Pfad hat eine Gesamtdistanz von 15,336 \ac{LE}.
 Durch das Ändern der Reihenfolge der Knoten zu
 % \begin{addmargin}[1em]{2em}
-    $$P=K_1, K_4, K_5, K_2, K_3$$ 
+    $$P=k_1, k_4, k_5, k_2, k_3$$ 
 % \end{addmargin}
 könnte eine Verringerung der Distanz im Vergleich zum vorherigen Resultat um 3,208 \ac{LE}, bzw. 20,918\% erreicht werden.
 Auch hier wird der suboptimal geplante Pfad durch die Reihenfolge der Betrachtung der Knoten verursacht.
-Im konkreten Beispiel werden die ersten vier Knoten $K_1, K_2, K_4$ und $K_5$ zu einem für sich optimalen Pfad zusammengefügt.
-$K_3$ wird aufgrund seiner hohen Distanz zu den übrigen Knoten als letztes in den Pfad eingefügt.
+Im konkreten Beispiel werden die ersten vier Knoten $k_1, k_2, k_4$ und $k_5$ zu einem für sich optimalen Pfad zusammengefügt.
+$k_3$ wird aufgrund seiner hohen Distanz zu den übrigen Knoten als letztes in den Pfad eingefügt.
 Im gezeigten Beispiel kommt es also genau zu der Umkehrung des Problems, welches beim Insert-Furthest Algorithmus besteht; dort werden Knoten aufgrund ihrer zu niedrigen Distanz teilweise zu spät eingefügt.
-Diese Problem hat hier zur Folge, dass $K_3$ als letzter Knoten des Pfads nach dem von ihm am weitesten entfernten Knoten eingefügt wird, was zu einem hohen Zuwachs der Gesamtdistanz führt.
+Diese Problem hat hier zur Folge, dass $k_3$ als letzter Knoten des Pfads nach dem von ihm am weitesten entfernten Knoten eingefügt wird, was zu einem hohen Zuwachs der Gesamtdistanz führt.

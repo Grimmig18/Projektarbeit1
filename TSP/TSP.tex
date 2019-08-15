@@ -1,3 +1,58 @@
 \chapter{Das Travelling Salesman Problem}
-\section{Exakte Löungsverfahren und die Optimale Route}
+\section{Beschreibung des \ac{TSP}}
+Das \ac{TSP} beschreibt ein die Herausforderung eines Reisenden, der vor Aufgabe steht eine Route durch eine beliebige Anzahl von Städten so zu planen, dass alle Städte genau einmal besucht werden und die Gesamtdistanz der Route möglichst gering ist.
+Geprägt wurde dieses Problem durch die Handlungsreisenden, welche schon seit langer Zeit vor eben dieser Aufgabe stehen -- möglichst viele Kunden mit möglichst wenig Aufwand (hier gleichzusetzten mit Strecke) zu erreichen.
+Literatur, welche sich mit eben diesem Problem beschäftigt findet sich im deutschsprächigen Raum bereits in der ersten Hälfte des 19. Jahrhunderts. \autocite[siehe Abb. 1.1, S. 3]{Applegate.2006}
+Warum das \ac{TSP} als ein Problem bezeichnet wird ist recht einfach zu erklären.
+Mit steigender Anzahl an Städten, die es zu besuchen gilt, steigt die Menge der möglichen Routen exponentiell an. TODO: Dazu später mehr
+Studien haben gezeigt, dass Menschen in der Lage sind eine Route durch eine geringe Anzahl an optimal zu planen.
+Bei etwas weniger als zehn zu planenden Städten liegt die durchschnittliche Gesamtdistanz der vom Mensch geplanten Strecken weniger als 1\% über der optimalen Route. \autocite[530]{Macgregor.1996}
+Steigt die Anzahl der Städte jedoch weiter an, wird es schwieriger für den Menschen gute Ergebnisse zu produzieren.
+Beginnt man nun Algorithmen zu entwickeln, um dieses Problem computergestützt du lösen, wird schnell auf die Grenze des Computers erreicht.
+Zwar gibt es mit fünf Städten noch 120 mögliche Routen, bei zehn Städten werden es bereits 3 628 800.
+\\\\
+Um einen Algorithmus zu entwickeln, der fähig ist aus dieser Vielzahl von Möglichkeiten die optimale, oder wenigstens eine gute Route, auszuwählen muss das Problem zuerst mathematisch beschrieben werden.
+\\
+Das \ac{TSP} lässt sich am besten als ein Problem der Graphentheorie darstellen.
+Die Städte und Wege zwischen ihnen werden hier als ein Graph $G$, einer Menge von Knoten $K$ und Kanten $E$ dargestellt und wie folgt definiert: \autocite[S. 71ff.]{Domschke.2015}
+$$G=(K,E) \textrm{ mit } K,E \neq \emptyset$$
+$$E \subseteq K \times K$$
+Da die Knoten des Graph Städte repräsentieren kann jedem Knoten ein $x$- und $y$- Wert zugeordnet werden, die Koordinaten und damit ihre Position darstellen.
+Ein Knoten wird durch $k_i$ repräsentiert.
+Eine Kante $E$ verbindet zwei Knoten in der Form $E_a = (k_b,k_c)$ mit $k_b \neq k_c$ und $a,b,c \in \mathbb{N}$ (mit $0 \not \in \mathbb{N}$).
+Damit gilt $K=\{k_1,k_2,...,k_n\}$ mit $n > 2, n \in \mathbb{N}$.
+Die Entfernung zwischen zwei Knoten, also die Länge einer Kante, kann als Abbildung $$\omega : E \rightarrow \mathbb{R}$$ 
+dargestellt werden mit 
+$$\omega(E_a) = \sqrt{|x_{k_b} - x_{k_c}|^2 + |y_{k_b} - y_{k_c}|^2}$$
+was hier gleichbedeutend mit $\omega(k_b,k_c) = \sqrt{|x_{k_b} - x_{k_c}|^2 + |y_{k_b} - y_{k_c}|^2}$ ist.
+\\\\
+Ein Lösungsverfahren versucht als einen Pfad $P$ über alle Knoten eines Graph so zu finden, dass gilt
+$$\forall k \in P,k_a \neq k_b, a,b\in \mathbb{N},a\neq b \textrm{, sodass für $n$ Knoten gilt } \sum_{i=2}^n \omega(k_{i-1},k_i)$$
+ist möglichst gering.
+Ein Pfad beschreibt damit eine Abfolge von Knoten. In dieser Arbeit wird ein Pfad durch
+$$P=p_1,\cdots,p_m \textrm{ mit } m\in\mathbb{N},m \geq 2, \forall p \in K$$
+dargestellt.
+Die in dieser Arbeit entwickelten Algorithmen versuchen das \ac{TSP} mit einem bereits gesetzten Ausgangsknoten zu lösen, was impliziert, dass auf einem Pfad $P$ $p_1 = k_1$ ist.
+\section{Exakte Lösungsverfahren und die Optimale Route}
+Wie schon angedeutet bedarf die Ermittlung der optimalen Lösung eines enormen Rechenaufwands für einen Computer dar.
+Bei $n$ Knoten und einem bereits gesetzten $p_1$ bestehen $n-1$ Optionen für $p_2$, $n-2$ für $p_3$ und so weiter.
+Die Gesamtanzahl $D$ aller möglichen Routen berechnet sich also aus
+$$D = \prod_{i=1}^{n-1} i = (n-1)!$$
+Für einen Algorithmus, der alle diese Lösungen mit einer Brute-Force-Methode berechnet, um die beste unter ihnen zu finden, bedeutet das eine Zeitkomplexität von $O((n-1)!)$ und somit einen extrem schnellen Anstieg der Rechenzeit bei steigern Eingabemenge.\autocite[18]{Gurski.2010}
+Es existieren zwar effizientere Algorithmen, wie der Help-Karp-Algorithmus\autocite[14]{Hutchinson.2016} mit einer Laufzeit von $O(2^nn^2)$, allerdings skalieren auch diese exponentiell.
+\\
+Das Ermitteln der optimalen Route ist also in der Praxis, wo teilweise mehr als 100 Knoten in einer Route verplant werden sollen, nicht wirklich denkbar, jedenfalls solange es keine relevanten Durchbrüche in Computertechnik oder Algorithmik gibt.
+
 \section{Heuristische Lösungsverfahren}
+Aufgrund der hohen Ressourcen, die das Ermitteln der optimalen Route kostet, werden in der Praxis häufig Heuristiken verwendet.
+Im Allgemeinen bezeichnet eine Heuristik ein Vorgehen zur Entscheidungsfindung, bei dem nicht alle gegebenen Informationen berücksichtigt werden.
+Ziel ist es also mit begrenzten Ressourcen, wie Zeit, Speicherplatz, etc., eine gute Entscheidung zu treffen.\autocite[S. 14f.]{Gigerenzer.1999}
+Dies findet nicht nur in der Mathematik und in Computerwissenschaften Anwendung.
+Beispielsweise werden auch in der Medizin Entscheidungen, die schnell getroffenen werden müssen und über Leben und Tod eines Patienten entscheiden können, ohne Betrachtung aller existierenden Informationen getroffen.\autocite[3]{Gigerenzer.1999}
+\\
+Eine Heuristik zur Lösung des \ac{TSP} versucht, anders als ein Algorithmus zur Berechnung der optimalen Lösung, nur eine gute Route in kurzer Zeit zu berechnen.
+\enquote{Gute Lösung} definiert sich dabei an der Abweichung vom Optimum.
+\\\\
+Vertreter solcher Heuristiken sind beispielsweise der Nearest-Neighbor-Algorithmus und der Greedy-Algorithmus.
+Diese sind in der Lage innerhalb weniger Sekunden hunderte und sogar tausende Knoten in einer Route zu verplanen.
+Der Nachteil solcher Heuristiken ist allerdings, dass die Abweichung vom Optimum sehr hoch sein kann und mit steigender Anzahl von Knoten weiter zunimmt.\autocite[22]{Johnson.2001}
