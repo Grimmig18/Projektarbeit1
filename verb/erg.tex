@@ -10,12 +10,21 @@ Insgesamt erzielte eine Kombination, die nachträglich den Nachbesserungs-Algori
 Den größten Teil macht dabei die Kombination, die den Insert-First-Algorithmus verwendet aus.
 Danach folgen ebenfalls nur mit Nachbesserung der Insert-Furthest-Algorithmus mit $4\,228$ und der Insert-Closest-Algorithmus mit 3648 besten Ergebnissen.
 Insgesamt verwenden 11,69\% der besten Lösungen nur einen Algorithmus zu Generierung des Graphen, 0,72\% lösen zusätzlich Überkreuzungen auf, 68,86\% verwenden den Algorithmus \vref{alg:after-control} zur Nachbesserung und 18,73\% beide dieser Verfahren.
-Von den $19\,000$ besten Ergebnissen entfallen $7\,519$ (39,57\%) an den eine Kombination mit dem Insert-First-Algorithmus, $5\,279$ (27,78\%) an dne Insert-Closest-Algorithmus und $6\,202$ (32,64\%) an den Insert-Furthest-Algorithmus.
+Von den $19\,000$ besten Ergebnissen entfallen $7\,519$ (39,57\%) an den eine Kombination mit dem Insert-First-Algorithmus, $5\,279$ (27,78\%) an den Insert-Closest-Algorithmus und $6\,202$ (32,64\%) an den Insert-Furthest-Algorithmus.
 Weiterhin lässt sich aus den Datensätzen ablesen, dass die Differenz zwischen den Ergebnissen der besten und der schlechtesten Kombination mit zunehmender Knotenanzahl steigt.
-Sind 
+Weicht die schlechteste Lösung bei 15 Knoten nur um 2,75\% von der Besten ab sind es bei 100 Knoten bereits 8,23\%.
+\\
+Weiterhin kann festgestellt werden, dass Kombinationen, die sich bei der Nachbesserung nur auf das Entfernen von Überkreuzungen verlassen, einen sehr geringen Teil der besten Ergebnisse ausmachen.
+Dies kann allerdings damit erklärt werden, dass wenn ein generierter Graph von Beginn an keine Überkreuzungen enthält, die Kombination ohne Ausbesserung dieser Überkreuzungen die gleiche Gesamtdistanz vorweist wie eine Kombination, die Überkreuzungen entfernt.
+Ist dies der Fall wird die erste nur Kombination gezählt.
 \\\\
 Als statistisch beste Kombination kann also der Insert-First-Algorithmus in Verbindung mit der in \vref{sec:after-control} beschriebenen Nachbesserung angesehen werden.
-Dies ist 
+Dies ist entgegen der gestellten Erwartungen, da in \vref{sec:insert-closest-verfahren} und \vref{sec:insert-furthest-verfahren} versucht wurde den Insert-First-Algorithmus zu verbessern.
+Nach Auswertung der Daten scheint es aber so, als seien die Ergebnisse der Variationen des Insert-First-Verfahrens insgesamt schlechter als die des Originals.
+Vergleicht man die durchschnittlichen Ergebnisse des Insert-First-Algorithmus in Kombination mit dem Nachbesserungs-Algorithmus mit den besten Durchschnittswerten aller Kombinationen, kann festgestellt werden, dass diese Kombination durchschnittlich 0,49\% vom besten Durchschnitt abweicht.
+
+
+
 \begin{center}
     \begin{table}
 \begin{tabular}{ l | l | l | l | l }
