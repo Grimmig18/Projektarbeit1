@@ -46,7 +46,7 @@ Der beschriebene Algorithmus befindet sich als Pseudocode in etwas ausführliche
 
             \For{$b \gets 2$, $b \leq n$, $b \gets b + 1$}
                 \Comment Finde $k_b$ mit der geringsten Distanz zu $p_m$
-                \State $d_C \gets$ \textsc{distance}($k_b$, $p_m$)
+                \State $d_C \gets \omega$($k_b$, $p_m$)
                 \Comment Distanz zwischen $k_b$ und letztem Knoten $p_m$
                 \If{$k_b \not \in P$ \textbf{and} ($j_S = -1$ \textbf(or) $d_C > d_S$)}
                     \State $d_S \gets d_C$

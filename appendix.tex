@@ -1,18 +1,5 @@
 \chapter{Anhang}
 \section{Bilder}
-% TODO: Bilder insertFirst Good (4)
-% TODO: Bilder insertFirst Bad (4)
-% TODO: Bilder insertFurthest Good (5)
-% TODO: Bilder insertFurthest Bad (5?)
-% TODO: Merge Algorithmus in Anhang
-
-
-% \section{Subtestanhang}
-
-% \chapter{Noch ein Testanhang}
-
-% -------------------------------------------------------------- 
-% INSERT CLOSEST BAD COMPLETE
 \begin{figure}[H]
     \begin{center}
         \subfloat[$m = 2$\label{app:subfig:insert-closest-BAD-m1}]{%
@@ -58,9 +45,6 @@
     \label{app:fig:insert-closest-BAD-complete}
 \end{figure}
 
-
-% -------------------------------------------------------------- 
-% Crossover Example 40 Nodes
 \begin{figure}[H]
     \begin{center}
         \subfloat[Pfad mit einem Crossover\label{app:subfig:40-nodes-with-crossover}]{%
@@ -79,9 +63,6 @@
     \caption{Pfad aus 40 Knoten mit und ohne Crossover}
     \label{app:fig:40-nodes-crossover-example}
 \end{figure}
-
-% -------------------------------------------------------------- 
-% After Control Example 40 Nodes
 
 \begin{figure}[H]
     \begin{center}
@@ -119,9 +100,9 @@
     \end{algorithmic}
 \end{algorithm}
 
+
 \begin{algorithm}
-    \caption{Tauschen von Knoten auf einem Graph zwischen zwei eingegebenen Knoten}
-    \label{alg:swap-nodes-inbetween}
+    \caption{Tauschen von Knoten auf einem Graph zwischen zwei eingegebenen Knoten}\label{alg:test-alg}
     \begin{algorithmic}[1]
         \Require Graph $G$, Knotenpaare $A_1,A_2$ und $B_1,B_2$
         \Require $G=k_1,k_2,\cdots,k_n$, $n>4$
@@ -164,22 +145,32 @@
     \end{algorithmic}
 \end{algorithm}
 
-
 \begin{algorithm}
-    \caption{Einfügen eines Knotens in eine Kante}
-    \label{alg:after-control-merge}
+    \caption{Erkennen von Überkreuzungen}
+    \label{alg:check-point-in-rect}
     \begin{algorithmic}[1]
-        \Require Pfad $P$, Kante $e_j$ und Knoten $p_i$
-        \Require $P=p_1,p_2,\cdots,p_n,e_j=(p_{k-1},p_k),n>3,k>1n,i,j,k\in \mathbb{N}$
-        \If{i < k}
-            \For{$a\gets i+1, a < k, a \gets a + 1$}
-                \State \textsc{swap}($p_i,p_a$)
-            \EndFor
+        \Require Knoten $A_1,A_2$, Punkt $P$
+        \State score $\gets 0$
+        \If{$x_{A_1} > x_{A_2}$}
+            \If{$x_P > x_{A_2}$ \textbf{and} $x_P < x_{A_1}$}
+                \State score $\gets$ score $+ 1$
+            \EndIf
         \Else
-            \For{$a\gets i, a > k - 1, a \gets a - 1$}
-                \State \textsc{swap}($p_i,p_a$)
-            \EndFor
+            \If{$x_P < x_{A_2}$ \textbf{and} $x_P > x_{A_1}$}
+                \State score $\gets$ score $+ 1$
+            \EndIf
+        \EndIf
+
+        \If{$y_{A_1} > y_{A_2}$}
+            \If{$y_P < y_{A_1}$ \textbf{and} $y_P > y_{A_2}$}
+                \State score $\gets$ score $+ 1$
+            \EndIf
+        \Else
+            \If{$y_P > y_{A_1}$ \textbf{and} $y_P < y_{A_2}$}
+                \State score $\gets$ score $+ 1$
+            \EndIf
         \EndIf\\
-        \Return $P$
+        \Return (score $== 2$)
+        \Comment score $==2$ gibt wahr zurück und signalisiert, dass $P$ im Rechteck von $A_1$ und $A_2$ ist
     \end{algorithmic}
 \end{algorithm}

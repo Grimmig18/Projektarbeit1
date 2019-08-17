@@ -57,7 +57,7 @@ Auf diese Weise sollen Komplikationen beim Einfügen der letzten Knoten verhinde
 
             \For{$b \gets 2$, $b \leq n$, $b \gets b + 1$}
                 \Comment Finde $k_b$ mit der höchsten Distanz zu $p_m$
-                \State $d_C \gets$ \textsc{distance}($k_b$, $p_m$)
+                \State $d_C \gets \omega$($k_b$, $p_m$)
                 \Comment Distanz zwischen $k_b$ und letztem Knoten $p_m$
                 \If{$k_b \not \in P$ \textbf{and} ($j_F = -1$ \textbf(or) $d_C > d_F$)}
                     \State $d_F \gets d_C$
@@ -101,7 +101,7 @@ Testet man des Insert-Furthest-Verfahren anhand der Knoten des Beispiels \vref{f
         % \includegraphics[width=0.35\textwidth]{./Bilder/insertFurthest/insert_furthest_ex_1.PNG}
         % }
         % \hfil
-        \subfloat[$m = 2$\label{subfig:insert-furthest-BAD-m2}]{%
+        \subfloat[$m = 2$\label{subfig:insert-furthest-GOOD-m2}]{%
         \includegraphics[width=0.35\textwidth]{./Bilder/insertFurthest/insert_furthest_ex_2.PNG}
         }
         % \\
@@ -109,18 +109,18 @@ Testet man des Insert-Furthest-Verfahren anhand der Knoten des Beispiels \vref{f
         % \includegraphics[width=0.35\textwidth]{./Bilder/insertFurthest/insert_furthest_ex_3.PNG}
         % }
         \hfil
-        \subfloat[$m = 5$\label{subfig:insert-furthest-BAD-m5}]{%
+        \subfloat[$m = 5$\label{subfig:insert-furthest-GOOD-m5}]{%
         \includegraphics[width=0.35\textwidth]{./Bilder/insertFurthest/insert_furthest_ex_5.PNG}
         }
-        \caption{Insert-First führt zu schlechtem Ergebnis}
+        \caption{Insert-First führt zu einem gutem Ergebnis}
         \label{fig:insert-furthest-good}
     \end{center}
 \end{figure}
 
 % TODO: Alle Schritte/Bilder in den Anhang
-In \vref{subfig:insert-furthest-BAD-m2} ist zu erkennen, dass, anstatt wie in \vref{subfig:insert-first-BAD-m2} $k_2$ als erster Knoten, $k_4$ eingefügt wird.
+In \vref{subfig:insert-furthest-GOOD-m2} ist zu erkennen, dass, anstatt wie in \vref{subfig:insert-first-BAD-m2} $k_2$ als erster Knoten, $k_4$ eingefügt wird.
 Dieses Verhalten ist nach der in \vref{sec:insert-furthest-funkt} definierten Funktionsweise zu erwarten, da $k_4$ der Knoten mit der größten Distanz zu $k_1$ ist und daher als erstes in den Pfad des Graphen eingefügt wird.
-Nach der Ausführung aller Schritte des Algorithmus erhält man den in \vref{subfig:insert-furthest-BAD-m5} zu sehenden Graphen.
+Nach der Ausführung aller Schritte des Algorithmus erhält man den in \vref{subfig:insert-furthest-GOOD-m5} zu sehenden Graphen.
 Dieser hat eine Gesamtdistanz von 13,327 \ac{LE} und ist somit im Vergleich mit dem in \vref{fig:insert-first-bad} durch das Insert-First-Verfahren erzeugten Graph 2,618 \ac{LE} oder 16,41\% kürzer.
 \\\\
 Ebenso wie das Insert-First-Verfahren kann das Insert-Furthest-Verfahren auch Graphen generieren die in ihrer Gesamtdistanz vom Optimum abweichen. Am folgenden Beispiel wird deutlich, dass auch dieser Algorithmus von ähnlichen Schwächen betroffen ist.
@@ -141,7 +141,7 @@ Ebenso wie das Insert-First-Verfahren kann das Insert-Furthest-Verfahren auch Gr
         \subfloat[$m = 5$\label{subfig:insert-furthest-BAD-m5}]{%
         \includegraphics[width=0.35\textwidth]{./Bilder/insertFurthest/insert_furthest_ex_BAD_5.PNG}
         }
-        \caption{Insert-First führt zu schlechtem Ergebnis}
+        \caption{Insert-First führt zu einem schlechtem Ergebnis}
         \label{fig:insert-furthest-bad}
     \end{center}
 \end{figure}

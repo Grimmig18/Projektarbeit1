@@ -1,0 +1,21 @@
+[0] Config.pm:304> INFO - This is Biber 2.12
+[1] Config.pm:307> INFO - Logfile is 'master.blg'
+[75] biber-MSWIN64:315> INFO - === 
+[137] Biber.pm:371> INFO - Reading 'master.bcf'
+[330] Biber.pm:889> INFO - Found 11 citekeys in bib section 0
+[361] Biber.pm:4093> INFO - Processing section 0
+[387] Biber.pm:4254> INFO - Looking for bibtex format file 'bibliography.bib' for section 0
+[408] bibtex.pm:1523> INFO - LaTeX decoding ...
+[464] bibtex.pm:1340> INFO - Found BibTeX data source 'bibliography.bib'
+[474] Utils.pm:193> WARN - month field 'Dec' in entry 'Scholte.1951' is not an integer - this will probably not sort properly.
+[482] Utils.pm:193> WARN - Entry 'o.A..1832' (bibliography.bib): Invalid format '15.08.2019' of date field 'urldate' - ignoring
+[490] Utils.pm:193> WARN - year field 'o. J.' in entry 'o.A..o.J.' is not an integer - this will probably not sort properly.
+[496] Utils.pm:193> WARN - year field 'o. J.' in entry 'Stephen.o.J.' is not an integer - this will probably not sort properly.
+[594] Utils.pm:193> WARN - Entry 'Hutchinson.2016' (bibliography.bib): Invalid format '12.08.2019' of date field 'urldate' - ignoring
+[667] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[667] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[667] Biber.pm:3921> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'de-DE'
+[667] Biber.pm:3927> INFO - No sort tailoring available for locale 'de-DE'
+[704] bbl.pm:636> INFO - Writing 'master.bbl' with encoding 'UTF-8'
+[722] bbl.pm:739> INFO - Output to master.bbl
+[724] Biber.pm:110> INFO - WARNINGS: 5

@@ -1,0 +1,549 @@
+PWD c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler
+INPUT C:\Users\d073426\AppData\Local\MiKTeX\2.9\miktex\data\le\pdftex\pdflatex.fmt
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\master.tex
+OUTPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\master.log
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\koma-script\scrreprt.cls
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\koma-script\scrreprt.cls
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\koma-script\scrkbase.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\koma-script\scrkbase.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\koma-script\scrbase.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\koma-script\scrbase.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\keyval.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\keyval.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\koma-script\scrlfile.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\koma-script\scrlfile.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\koma-script\tocbasic.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\koma-script\tocbasic.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\koma-script\scrsize12pt.clo
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\koma-script\scrsize12pt.clo
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmr12.tfm
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\koma-script\typearea.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\koma-script\typearea.sty
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\config.tex
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\config.tex
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\babel.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\babel.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\switch.def
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\arabi\bblopts.cfg
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\arabi\bblopts.cfg
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\babel-german\ngerman.ldf
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\babel-german\ngerman.ldf
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\babel-german\ngermanb.ldf
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\babel.def
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\txtbabel.def
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\inputenc.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\inputenc.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\csquotes\csquotes.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\csquotes\csquotes.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\etoolbox\etoolbox.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\etoolbox\etoolbox.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\csquotes\csquotes.def
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\csquotes\csquotes.def
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\csquotes\csquotes.cfg
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\csquotes\csquotes.cfg
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\fontenc.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\fontenc.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t1enc.def
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t1enc.def
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecrm1200.tfm
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lipsum\lipsum.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lipsum\lipsum.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3kernel\expl3.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3kernel\expl3.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3kernel\expl3-code.tex
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3kernel\expl3-code.tex
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmr10.tfm
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmr10.tfm
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmr10.tfm
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmr10.tfm
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmr10.tfm
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmr10.tfm
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmr10.tfm
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmr10.tfm
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmr10.tfm
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmr10.tfm
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\generic\unicode-data\UnicodeData.txt
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\generic\unicode-data\UnicodeData.txt
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\nul:.tex
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\nul:.tex
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3kernel\l3pdfmode.def
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3kernel\l3pdfmode.def
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3packages\xparse\xparse.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3packages\xparse\xparse.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lipsum\lipsum.ltd.tex
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lipsum\lipsum.ltd.tex
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\hobsub-hyperref.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\hobsub-hyperref.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\hobsub-hyperref.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\hobsub-generic.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\hobsub-generic.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\auxhook.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\auxhook.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\url\url.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\url\url.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fnpct\fnpct.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fnpct\fnpct.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3packages\l3keys2e\l3keys2e.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3packages\l3keys2e\l3keys2e.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\translations\translations.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\translations\translations.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\calc.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\calc.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\biblatex.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\biblatex.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\logreq\logreq.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\logreq\logreq.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\logreq\logreq.def
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\logreq\logreq.def
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ifthen.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ifthen.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\blx-dm.def
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\blx-dm.def
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\blx-compat.def
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\blx-compat.def
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\biblatex.def
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\biblatex.def
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\bbx\authoryear.bbx
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\bbx\authoryear.bbx
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\bbx\standard.bbx
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\bbx\standard.bbx
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\cbx\authoryear.cbx
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\cbx\authoryear.cbx
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\biblatex.cfg
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\biblatex.cfg
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\lbx\ngerman.lbx
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\chngcntr\chngcntr.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\chngcntr\chngcntr.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\acronym\acronym.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\acronym\acronym.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\bigfoot\suffix.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\bigfoot\suffix.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xstring\xstring.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xstring\xstring.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xstring\xstring.tex
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\color.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\color.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\color.cfg
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\color.cfg
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\listings.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\listings.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstmisc.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstmisc.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\listings.cfg
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\listings.cfg
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstlang1.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstlang1.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\koma-script\scrextend.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\koma-script\scrextend.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\subfig\subfig.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\subfig\subfig.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption3.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption3.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphicx.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphicx.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphics.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphics.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\trig.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\trig.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\graphics.cfg
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\graphics.cfg
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\varioref.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\varioref.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\booktabs\booktabs.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\booktabs\booktabs.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\array.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\array.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\fontenc.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\fontenc.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t1enc.def
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t1enc.def
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\algorithmicx\algcompatible.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\algorithmicx\algcompatible.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\algorithmicx\algorithmicx.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\algorithmicx\algorithmicx.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\mwe\mwe.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\mwe\mwe.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lipsum\lipsum.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\blindtext\blindtext.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\blindtext\blindtext.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\blindtext\blindtext.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\xspace.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\xspace.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\algorithms\algorithm.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\algorithms\algorithm.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\float\float.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\float\float.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\algorithmicx\algpseudocode.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\algorithmicx\algpseudocode.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\lmodern.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\lmodern.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\koma-script\scrpage2.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\koma-script\scrpage2.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\lbx\ngerman.lbx
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\lbx\ngerman.lbx
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\lbx\german.lbx
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\lbx\german.lbx
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\lbx\german.lbx
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\lbx\german.lbx
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\master.aux
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\master.aux
+OUTPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\master.aux
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\t1lmr.fd
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\t1lmr.fd
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmr12.tfm
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\nameref.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\nameref.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\master.out
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\master.out
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\master.out
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\master.out
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\master.out
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\master.out
+OUTPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\master.out
+OUTPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\master.pdf
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\bookmark.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\bookmark.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\bkm-pdftex.def
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\bkm-pdftex.def
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\translations\dicts\translations-basic-dictionary-german.trsl
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\translations\dicts\translations-basic-dictionary-german.trsl
+OUTPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\master.bcf
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\master.bbl
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\master.bbl
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\master.bbl
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\mkii\supp-pdf.mkii
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\mkii\supp-pdf.mkii
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\titlepage.tex
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\titlepage.tex
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\img\firmenlogo.jpg
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\img\firmenlogo.jpg
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\img\firmenlogo.jpg
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\img\firmenlogo.jpg
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\img\firmenlogo.jpg
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\img\logo.jpg
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\img\logo.jpg
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\img\logo.jpg
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\img\logo.jpg
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\img\logo.jpg
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\ot1lmr.fd
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\ot1lmr.fd
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\rm-lmr12.tfm
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\rm-lmr8.tfm
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\rm-lmr6.tfm
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\omllmm.fd
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\omllmm.fd
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\lmmi12.tfm
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\lmmi8.tfm
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\lmmi6.tfm
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\omslmsy.fd
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\omslmsy.fd
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\lmsy10.tfm
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\lmsy8.tfm
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\lmsy6.tfm
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\omxlmex.fd
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\omxlmex.fd
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\lmex10.tfm
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msam10.tfm
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msam10.tfm
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msam7.tfm
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\t1lmss.fd
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\t1lmss.fd
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmss12.tfm
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmss12.tfm
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmssbx10.tfm
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmssbx10.tfm
+INPUT C:\Users\d073426\AppData\Local\MiKTeX\2.9\pdftex\config\pdftex.map
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\abstract.tex
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\abstract.tex
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmssbx10.tfm
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\master.toc
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\master.toc
+OUTPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\master.toc
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\master.lof
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\master.lof
+OUTPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\master.lof
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\master.lot
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\master.lot
+OUTPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\master.lot
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\master.lol
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\master.lol
+OUTPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\master.lol
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\master.loa
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\master.loa
+OUTPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\master.loa
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Verzeichnisse\acronyms.tex
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Verzeichnisse\acronyms.tex
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmbx12.tfm
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Einleitung\einleitung.tex
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Einleitung\einleitung.tex
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmr8.tfm
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmr10.tfm
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\rm-lmr10.tfm
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\rm-lmr7.tfm
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\rm-lmr5.tfm
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\lmmi10.tfm
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\lmmi7.tfm
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\lmmi5.tfm
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\lmsy10.tfm
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\lmsy7.tfm
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\lmsy5.tfm
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msam10.tfm
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msam7.tfm
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msam5.tfm
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmr7.tfm
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\TSP\TSP.tex
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\TSP\TSP.tex
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Loesungsverfahren\Loesungsverfahren.tex
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Loesungsverfahren\Loesungsverfahren.tex
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Loesungsverfahren\insFirst.tex
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Loesungsverfahren\insFirst.tex
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmssbx10.tfm
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmcsc10.tfm
+INPUT Bilder\insertFirst\insert_first_BAD_ex_1.PNG
+INPUT .\Bilder\insertFirst\insert_first_BAD_ex_1.PNG
+INPUT .\Bilder\insertFirst\insert_first_BAD_ex_1.PNG
+INPUT .\Bilder\insertFirst\insert_first_BAD_ex_1.PNG
+INPUT .\Bilder\insertFirst\insert_first_BAD_ex_1.PNG
+INPUT Bilder\insertFirst\insert_first_BAD_ex_2.PNG
+INPUT .\Bilder\insertFirst\insert_first_BAD_ex_2.PNG
+INPUT .\Bilder\insertFirst\insert_first_BAD_ex_2.PNG
+INPUT .\Bilder\insertFirst\insert_first_BAD_ex_2.PNG
+INPUT .\Bilder\insertFirst\insert_first_BAD_ex_2.PNG
+INPUT Bilder\insertFirst\insert_first_BAD_ex_3.PNG
+INPUT .\Bilder\insertFirst\insert_first_BAD_ex_3.PNG
+INPUT .\Bilder\insertFirst\insert_first_BAD_ex_3.PNG
+INPUT .\Bilder\insertFirst\insert_first_BAD_ex_3.PNG
+INPUT .\Bilder\insertFirst\insert_first_BAD_ex_3.PNG
+INPUT Bilder\insertFirst\insert_first_BAD_ex_4.PNG
+INPUT .\Bilder\insertFirst\insert_first_BAD_ex_4.PNG
+INPUT .\Bilder\insertFirst\insert_first_BAD_ex_4.PNG
+INPUT .\Bilder\insertFirst\insert_first_BAD_ex_4.PNG
+INPUT .\Bilder\insertFirst\insert_first_BAD_ex_4.PNG
+INPUT Bilder\insertFirst\insert_first_ex_1.PNG
+INPUT .\Bilder\insertFirst\insert_first_ex_1.PNG
+INPUT .\Bilder\insertFirst\insert_first_ex_1.PNG
+INPUT .\Bilder\insertFirst\insert_first_ex_1.PNG
+INPUT .\Bilder\insertFirst\insert_first_ex_1.PNG
+INPUT Bilder\insertFirst\insert_first_ex_2.PNG
+INPUT .\Bilder\insertFirst\insert_first_ex_2.PNG
+INPUT .\Bilder\insertFirst\insert_first_ex_2.PNG
+INPUT .\Bilder\insertFirst\insert_first_ex_2.PNG
+INPUT .\Bilder\insertFirst\insert_first_ex_2.PNG
+INPUT Bilder\insertFirst\insert_first_ex_3.PNG
+INPUT .\Bilder\insertFirst\insert_first_ex_3.PNG
+INPUT .\Bilder\insertFirst\insert_first_ex_3.PNG
+INPUT .\Bilder\insertFirst\insert_first_ex_3.PNG
+INPUT .\Bilder\insertFirst\insert_first_ex_3.PNG
+INPUT Bilder\insertFirst\insert_first_ex_4.PNG
+INPUT .\Bilder\insertFirst\insert_first_ex_4.PNG
+INPUT .\Bilder\insertFirst\insert_first_ex_4.PNG
+INPUT .\Bilder\insertFirst\insert_first_ex_4.PNG
+INPUT .\Bilder\insertFirst\insert_first_ex_4.PNG
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Loesungsverfahren\insFurth.tex
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Loesungsverfahren\insFurth.tex
+INPUT Bilder\insertFurthest\insert_furthest_ex_2.PNG
+INPUT .\Bilder\insertFurthest\insert_furthest_ex_2.PNG
+INPUT .\Bilder\insertFurthest\insert_furthest_ex_2.PNG
+INPUT .\Bilder\insertFurthest\insert_furthest_ex_2.PNG
+INPUT .\Bilder\insertFurthest\insert_furthest_ex_2.PNG
+INPUT Bilder\insertFurthest\insert_furthest_ex_5.PNG
+INPUT .\Bilder\insertFurthest\insert_furthest_ex_5.PNG
+INPUT .\Bilder\insertFurthest\insert_furthest_ex_5.PNG
+INPUT .\Bilder\insertFurthest\insert_furthest_ex_5.PNG
+INPUT .\Bilder\insertFurthest\insert_furthest_ex_5.PNG
+INPUT Bilder\insertFurthest\insert_furthest_ex_BAD_4.PNG
+INPUT .\Bilder\insertFurthest\insert_furthest_ex_BAD_4.PNG
+INPUT .\Bilder\insertFurthest\insert_furthest_ex_BAD_4.PNG
+INPUT .\Bilder\insertFurthest\insert_furthest_ex_BAD_4.PNG
+INPUT .\Bilder\insertFurthest\insert_furthest_ex_BAD_4.PNG
+INPUT Bilder\insertFurthest\insert_furthest_ex_BAD_5.PNG
+INPUT .\Bilder\insertFurthest\insert_furthest_ex_BAD_5.PNG
+INPUT .\Bilder\insertFurthest\insert_furthest_ex_BAD_5.PNG
+INPUT .\Bilder\insertFurthest\insert_furthest_ex_BAD_5.PNG
+INPUT .\Bilder\insertFurthest\insert_furthest_ex_BAD_5.PNG
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Loesungsverfahren\MinDist.tex
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Loesungsverfahren\MinDist.tex
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\t1lmtt.fd
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\t1lmtt.fd
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmtt12.tfm
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmtt10.tfm
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\insertClosest\insert_closest_ex_BAD_4.PNG
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\insertClosest\insert_closest_ex_BAD_4.PNG
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\insertClosest\insert_closest_ex_BAD_4.PNG
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\insertClosest\insert_closest_ex_BAD_4.PNG
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\insertClosest\insert_closest_ex_BAD_4.PNG
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\insertClosest\insert_closest_ex_BAD_5.PNG
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\insertClosest\insert_closest_ex_BAD_5.PNG
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\insertClosest\insert_closest_ex_BAD_5.PNG
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\insertClosest\insert_closest_ex_BAD_5.PNG
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\insertClosest\insert_closest_ex_BAD_5.PNG
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Loesungsverfahren\allBet.tex
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Loesungsverfahren\allBet.tex
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\verb\verb.tex
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\verb\verb.tex
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\verb\crossover.tex
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\verb\crossover.tex
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\crossover\7_nodes_with_crossover.PNG
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\crossover\7_nodes_with_crossover.PNG
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\crossover\7_nodes_with_crossover.PNG
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\crossover\7_nodes_with_crossover.PNG
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\crossover\7_nodes_with_crossover.PNG
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\crossover\7_nodes_without_crossover.PNG
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\crossover\7_nodes_without_crossover.PNG
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\crossover\7_nodes_without_crossover.PNG
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\crossover\7_nodes_without_crossover.PNG
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\crossover\7_nodes_without_crossover.PNG
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\verb\aftercontrol.tex
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\verb\aftercontrol.tex
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\afterControl\after_control_ex1.PNG
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\afterControl\after_control_ex1.PNG
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\afterControl\after_control_ex1.PNG
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\afterControl\after_control_ex1.PNG
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\afterControl\after_control_ex1.PNG
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\afterControl\after_control_ex2.PNG
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\afterControl\after_control_ex2.PNG
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\afterControl\after_control_ex2.PNG
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\afterControl\after_control_ex2.PNG
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\afterControl\after_control_ex2.PNG
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\verb\erg.tex
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\verb\erg.tex
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\ZuFa\Fazit.tex
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\ZuFa\Fazit.tex
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmri12.tfm
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\appendix.tex
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\appendix.tex
+INPUT Bilder\insertClosest\insert_closest_ex_BAD_1.PNG
+INPUT .\Bilder\insertClosest\insert_closest_ex_BAD_1.PNG
+INPUT .\Bilder\insertClosest\insert_closest_ex_BAD_1.PNG
+INPUT .\Bilder\insertClosest\insert_closest_ex_BAD_1.PNG
+INPUT .\Bilder\insertClosest\insert_closest_ex_BAD_1.PNG
+INPUT Bilder\insertClosest\insert_closest_ex_BAD_2.PNG
+INPUT .\Bilder\insertClosest\insert_closest_ex_BAD_2.PNG
+INPUT .\Bilder\insertClosest\insert_closest_ex_BAD_2.PNG
+INPUT .\Bilder\insertClosest\insert_closest_ex_BAD_2.PNG
+INPUT .\Bilder\insertClosest\insert_closest_ex_BAD_2.PNG
+INPUT Bilder\insertClosest\insert_closest_ex_BAD_3.PNG
+INPUT .\Bilder\insertClosest\insert_closest_ex_BAD_3.PNG
+INPUT .\Bilder\insertClosest\insert_closest_ex_BAD_3.PNG
+INPUT .\Bilder\insertClosest\insert_closest_ex_BAD_3.PNG
+INPUT .\Bilder\insertClosest\insert_closest_ex_BAD_3.PNG
+INPUT Bilder\insertClosest\insert_closest_ex_BAD_4.PNG
+INPUT .\Bilder\insertClosest\insert_closest_ex_BAD_4.PNG
+INPUT .\Bilder\insertClosest\insert_closest_ex_BAD_4.PNG
+INPUT .\Bilder\insertClosest\insert_closest_ex_BAD_4.PNG
+INPUT .\Bilder\insertClosest\insert_closest_ex_BAD_4.PNG
+INPUT Bilder\insertClosest\insert_closest_ex_BAD_5.PNG
+INPUT .\Bilder\insertClosest\insert_closest_ex_BAD_5.PNG
+INPUT .\Bilder\insertClosest\insert_closest_ex_BAD_5.PNG
+INPUT .\Bilder\insertClosest\insert_closest_ex_BAD_5.PNG
+INPUT .\Bilder\insertClosest\insert_closest_ex_BAD_5.PNG
+INPUT Bilder\crossover\40_nodes_with_crossover.png
+INPUT .\Bilder\crossover\40_nodes_with_crossover.png
+INPUT .\Bilder\crossover\40_nodes_with_crossover.png
+INPUT .\Bilder\crossover\40_nodes_with_crossover.png
+INPUT .\Bilder\crossover\40_nodes_with_crossover.png
+INPUT Bilder\crossover\40_nodes_without_crossover.PNG
+INPUT .\Bilder\crossover\40_nodes_without_crossover.PNG
+INPUT .\Bilder\crossover\40_nodes_without_crossover.PNG
+INPUT .\Bilder\crossover\40_nodes_without_crossover.PNG
+INPUT .\Bilder\crossover\40_nodes_without_crossover.PNG
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\afterControl\before_after_control.PNG
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\afterControl\before_after_control.PNG
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\afterControl\before_after_control.PNG
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\afterControl\before_after_control.PNG
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\afterControl\before_after_control.PNG
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\afterControl\after_after_control.PNG
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\afterControl\after_after_control.PNG
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\afterControl\after_after_control.PNG
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\afterControl\after_after_control.PNG
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\afterControl\after_after_control.PNG
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\ewerkl.tex
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\ewerkl.tex
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\master.aux
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\master.out
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\master.out
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\master.run.xml
+OUTPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\master.run.xml
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\enc\dvips\lm\lm-ec.enc
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\enc\dvips\lm\lm-rm.enc
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\enc\dvips\lm\lm-mathit.enc
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\enc\dvips\lm\lm-mathsy.enc
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\enc\dvips\lm\lm-mathex.enc
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmbx12.pfb
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmbx12.pfb
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmcsc10.pfb
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmcsc10.pfb
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmex10.pfb
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmex10.pfb
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmmi10.pfb
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmmi10.pfb
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmmi12.pfb
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmmi12.pfb
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmmi6.pfb
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmmi6.pfb
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmmi8.pfb
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmmi8.pfb
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmr10.pfb
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmr10.pfb
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmr12.pfb
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmr12.pfb
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmr6.pfb
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmr6.pfb
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmr7.pfb
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmr7.pfb
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmr8.pfb
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmr8.pfb
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmri12.pfb
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmri12.pfb
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmss12.pfb
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmss12.pfb
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmssbx10.pfb
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmssbx10.pfb
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmsy10.pfb
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmsy10.pfb
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmsy8.pfb
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmsy8.pfb
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmtt10.pfb
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmtt10.pfb
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmtt12.pfb
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmtt12.pfb
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\symbols\msbm10.pfb
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\symbols\msbm10.pfb

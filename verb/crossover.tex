@@ -46,38 +46,9 @@ Mit $x_S$ und $y_S$ lässt sich der Punkt $S(x_S|y_S)$ konstruieren.
 Mit Hilfe des Punkts $S$ gilt es nun zu überprüfen, ob sich dieser im relevanten Bereich befindet.
 Um dies zu bestimmen wird um die Knoten beider Kanten jeweils ein Recht simuliert, wie es beispielhaft in Abbildung \vref{subfig:graph-with-crossover-and-rect} eingezeichnet ist.
 Eine Überkreuzung ist genau dann für den Algorithmus relevant, wenn sie in den Rechtecken beider Kanten liegt.
-Um dies zu überprüfen wird folgender Algorithmus angewandt:
-\begin{algorithm}[H] %TODO: In den Anhang
-    \caption{Erkennen von Überkreuzungen}
-    \label{alg:check-point-in-rect}
-    \begin{algorithmic}[1]
-        \Require Knoten $A_1,A_2$, Punkt $P$
-        \State score $\gets 0$
-        \If{$x_{A_1} > x_{A_2}$}
-            \If{$x_P > x_{A_2}$ \textbf{and} $x_P < x_{A_1}$}
-                \State score $\gets$ score $+ 1$
-            \EndIf
-        \Else
-            \If{$x_P < x_{A_2}$ \textbf{and} $x_P > x_{A_1}$}
-                \State score $\gets$ score $+ 1$
-            \EndIf
-        \EndIf
-
-        \If{$y_{A_1} > y_{A_2}$}
-            \If{$y_P < y_{A_1}$ \textbf{and} $y_P > y_{A_2}$}
-                \State score $\gets$ score $+ 1$
-            \EndIf
-        \Else
-            \If{$y_P > y_{A_1}$ \textbf{and} $y_P < y_{A_2}$}
-                \State score $\gets$ score $+ 1$
-            \EndIf
-        \EndIf\\
-        \Return (score $== 2$)
-        \Comment score $==2$ gibt wahr zurück und signalisiert, dass $P$ im Rechteck von $A_1$ und $A_2$ ist
-    \end{algorithmic}
-\end{algorithm}
+Um dies zu überprüfen wird der in \vref{alg:check-point-in-rect} beschriebene Algorithmus verwandt.
 An dieser Stelle sei angemerkt, dass das Problem der Überkreuzungserkennung auch mit Hilfe von Vektorenskalierung lösbar ist.
-Dieses Verfahren wird jedoch in dieser Arbeit nicht diskutiert.
+Ein solches Verfahren wird jedoch in dieser Arbeit nicht diskutiert.
 
 
 \subsection{Auflösen von Überkreuzungen}
