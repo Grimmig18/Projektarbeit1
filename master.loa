@@ -9,17 +9,17 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {algorithm}{\numberline {1}{\ignorespaces Insert-First-Algorithmus\relax }}{6}{algorithm.1}% 
+\contentsline {algorithm}{\numberline {1}{\ignorespaces Insert-First-Algorithmus\relax }}{7}{algorithm.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {algorithm}{\numberline {2}{\ignorespaces Insert-Furthest-Algorithmus\relax }}{13}{algorithm.2}% 
+\contentsline {algorithm}{\numberline {2}{\ignorespaces Insert-Furthest-Algorithmus\relax }}{14}{algorithm.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {algorithm}{\numberline {3}{\ignorespaces Insert-Closest-Algorithmus\relax }}{17}{algorithm.3}% 
+\contentsline {algorithm}{\numberline {3}{\ignorespaces Insert-Closest-Algorithmus\relax }}{18}{algorithm.3}% 
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
 \contentsline {algorithm}{\numberline {4}{\ignorespaces Erkennen und Aufl\IeC {\"o}sen von \IeC {\"U}berkreuzungen auf einem Pfad\relax }}{24}{algorithm.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {algorithm}{\numberline {5}{\ignorespaces Nachbesserung eines Pfads\relax }}{26}{algorithm.5}% 
+\contentsline {algorithm}{\numberline {5}{\ignorespaces Nachbesserung eines Pfads\relax }}{27}{algorithm.5}% 
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
@@ -29,12 +29,14 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {algorithm}{\numberline {6}{\ignorespaces Einf\IeC {\"u}gen eines neuen Knoten in einen Pfad\relax }}{35}{algorithm.6}% 
+\contentsline {algorithm}{\numberline {6}{\ignorespaces Einf\IeC {\"u}gen eines neuen Knoten in einen Pfad\relax }}{49}{algorithm.6}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {algorithm}{\numberline {7}{\ignorespaces Tauschen von Knoten auf einem Graph zwischen zwei eingegebenen Knoten\relax }}{36}{algorithm.7}% 
+\contentsline {algorithm}{\numberline {7}{\ignorespaces Tauschen von Knoten auf einem Graph zwischen zwei eingegebenen Knoten\relax }}{49}{algorithm.7}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {algorithm}{\numberline {8}{\ignorespaces Berechnung der Distanz zwischen zwei Knoten\relax }}{36}{algorithm.8}% 
+\contentsline {algorithm}{\numberline {8}{\ignorespaces Berechnung der Distanz zwischen zwei Knoten\relax }}{50}{algorithm.8}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {algorithm}{\numberline {9}{\ignorespaces Berechnung der Gesamtdistanz eines Pfads\relax }}{36}{algorithm.9}% 
+\contentsline {algorithm}{\numberline {9}{\ignorespaces Berechnung der Gesamtdistanz eines Pfads\relax }}{50}{algorithm.9}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {algorithm}{\numberline {10}{\ignorespaces Erkennen von \IeC {\"U}berkreuzungen\relax }}{37}{algorithm.10}% 
+\contentsline {algorithm}{\numberline {10}{\ignorespaces Erkennen von \IeC {\"U}berkreuzungen\relax }}{50}{algorithm.10}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {algorithm}{\numberline {11}{\ignorespaces Tauschen von Knoten auf einem Graph zwischen zwei eingegebenen Knoten\relax }}{51}{algorithm.11}% 

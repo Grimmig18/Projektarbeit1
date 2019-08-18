@@ -331,6 +331,7 @@ INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfon
 INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmr7.tfm
 INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\TSP\TSP.tex
 INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\TSP\TSP.tex
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmri12.tfm
 INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Loesungsverfahren\Loesungsverfahren.tex
 INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Loesungsverfahren\Loesungsverfahren.tex
 INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Loesungsverfahren\insFirst.tex
@@ -401,55 +402,108 @@ INPUT .\Bilder\insertFurthest\insert_furthest_ex_BAD_5.PNG
 INPUT .\Bilder\insertFurthest\insert_furthest_ex_BAD_5.PNG
 INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Loesungsverfahren\MinDist.tex
 INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Loesungsverfahren\MinDist.tex
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\insertClosest\insert_closest_ex_BAD_4.PNG
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\insertClosest\insert_closest_ex_BAD_4.PNG
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\insertClosest\insert_closest_ex_BAD_4.PNG
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\insertClosest\insert_closest_ex_BAD_4.PNG
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\insertClosest\insert_closest_ex_BAD_4.PNG
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\insertClosest\insert_closest_ex_BAD_5.PNG
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\insertClosest\insert_closest_ex_BAD_5.PNG
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\insertClosest\insert_closest_ex_BAD_5.PNG
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\insertClosest\insert_closest_ex_BAD_5.PNG
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\insertClosest\insert_closest_ex_BAD_5.PNG
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Loesungsverfahren\allBet.tex
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Loesungsverfahren\allBet.tex
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\verb\verb.tex
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\verb\verb.tex
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\verb\crossover.tex
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\verb\crossover.tex
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\crossover\7_nodes_with_crossover.PNG
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\crossover\7_nodes_with_crossover.PNG
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\crossover\7_nodes_with_crossover.PNG
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\crossover\7_nodes_with_crossover.PNG
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\crossover\7_nodes_with_crossover.PNG
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\crossover\7_nodes_without_crossover.PNG
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\crossover\7_nodes_without_crossover.PNG
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\crossover\7_nodes_without_crossover.PNG
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\crossover\7_nodes_without_crossover.PNG
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\crossover\7_nodes_without_crossover.PNG
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\verb\aftercontrol.tex
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\verb\aftercontrol.tex
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\afterControl\after_control_ex1.PNG
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\afterControl\after_control_ex1.PNG
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\afterControl\after_control_ex1.PNG
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\afterControl\after_control_ex1.PNG
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\afterControl\after_control_ex1.PNG
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\afterControl\after_control_ex2.PNG
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\afterControl\after_control_ex2.PNG
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\afterControl\after_control_ex2.PNG
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\afterControl\after_control_ex2.PNG
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\afterControl\after_control_ex2.PNG
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\verb\erg.tex
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\verb\erg.tex
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmri10.tfm
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\ZuFa\Fazit.tex
+INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\ZuFa\Fazit.tex
 INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\t1lmtt.fd
 INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\t1lmtt.fd
 INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmtt12.tfm
-INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmtt10.tfm
-INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\insertClosest\insert_closest_ex_BAD_4.PNG
-INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\insertClosest\insert_closest_ex_BAD_4.PNG
-INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\insertClosest\insert_closest_ex_BAD_4.PNG
-INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\insertClosest\insert_closest_ex_BAD_4.PNG
-INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\insertClosest\insert_closest_ex_BAD_4.PNG
-INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\insertClosest\insert_closest_ex_BAD_5.PNG
-INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\insertClosest\insert_closest_ex_BAD_5.PNG
-INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\insertClosest\insert_closest_ex_BAD_5.PNG
-INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\insertClosest\insert_closest_ex_BAD_5.PNG
-INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\insertClosest\insert_closest_ex_BAD_5.PNG
-INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Loesungsverfahren\allBet.tex
-INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Loesungsverfahren\allBet.tex
-INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\verb\verb.tex
-INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\verb\verb.tex
-INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\verb\crossover.tex
-INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\verb\crossover.tex
-INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\crossover\7_nodes_with_crossover.PNG
-INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\crossover\7_nodes_with_crossover.PNG
-INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\crossover\7_nodes_with_crossover.PNG
-INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\crossover\7_nodes_with_crossover.PNG
-INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\crossover\7_nodes_with_crossover.PNG
-INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\crossover\7_nodes_without_crossover.PNG
-INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\crossover\7_nodes_without_crossover.PNG
-INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\crossover\7_nodes_without_crossover.PNG
-INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\crossover\7_nodes_without_crossover.PNG
-INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\crossover\7_nodes_without_crossover.PNG
-INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\verb\aftercontrol.tex
-INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\verb\aftercontrol.tex
-INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\afterControl\after_control_ex1.PNG
-INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\afterControl\after_control_ex1.PNG
-INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\afterControl\after_control_ex1.PNG
-INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\afterControl\after_control_ex1.PNG
-INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\afterControl\after_control_ex1.PNG
-INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\afterControl\after_control_ex2.PNG
-INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\afterControl\after_control_ex2.PNG
-INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\afterControl\after_control_ex2.PNG
-INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\afterControl\after_control_ex2.PNG
-INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Bilder\afterControl\after_control_ex2.PNG
-INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\verb\erg.tex
-INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\verb\erg.tex
-INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\ZuFa\Fazit.tex
-INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\ZuFa\Fazit.tex
-INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\lm\ec-lmri12.tfm
 INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\appendix.tex
 INPUT c:\Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\appendix.tex
+INPUT Bilder\insertFirst\insert_first_BAD_ex_1.PNG
+INPUT .\Bilder\insertFirst\insert_first_BAD_ex_1.PNG
+INPUT Bilder\insertFirst\insert_first_BAD_ex_2.PNG
+INPUT .\Bilder\insertFirst\insert_first_BAD_ex_2.PNG
+INPUT Bilder\insertFirst\insert_first_BAD_ex_3.PNG
+INPUT .\Bilder\insertFirst\insert_first_BAD_ex_3.PNG
+INPUT Bilder\insertFirst\insert_first_BAD_ex_4.PNG
+INPUT .\Bilder\insertFirst\insert_first_BAD_ex_4.PNG
+INPUT Bilder\insertFirst\insert_first_ex_1.PNG
+INPUT .\Bilder\insertFirst\insert_first_ex_1.PNG
+INPUT Bilder\insertFirst\insert_first_ex_2.PNG
+INPUT .\Bilder\insertFirst\insert_first_ex_2.PNG
+INPUT Bilder\insertFirst\insert_first_ex_3.PNG
+INPUT .\Bilder\insertFirst\insert_first_ex_3.PNG
+INPUT Bilder\insertFirst\insert_first_ex_4.PNG
+INPUT .\Bilder\insertFirst\insert_first_ex_4.PNG
+INPUT Bilder\insertFurthest\insert_furthest_ex_BAD_1.PNG
+INPUT .\Bilder\insertFurthest\insert_furthest_ex_BAD_1.PNG
+INPUT .\Bilder\insertFurthest\insert_furthest_ex_BAD_1.PNG
+INPUT .\Bilder\insertFurthest\insert_furthest_ex_BAD_1.PNG
+INPUT .\Bilder\insertFurthest\insert_furthest_ex_BAD_1.PNG
+INPUT Bilder\insertFurthest\insert_furthest_ex_BAD_2.PNG
+INPUT .\Bilder\insertFurthest\insert_furthest_ex_BAD_2.PNG
+INPUT .\Bilder\insertFurthest\insert_furthest_ex_BAD_2.PNG
+INPUT .\Bilder\insertFurthest\insert_furthest_ex_BAD_2.PNG
+INPUT .\Bilder\insertFurthest\insert_furthest_ex_BAD_2.PNG
+INPUT Bilder\insertFurthest\insert_furthest_ex_BAD_3.PNG
+INPUT .\Bilder\insertFurthest\insert_furthest_ex_BAD_3.PNG
+INPUT .\Bilder\insertFurthest\insert_furthest_ex_BAD_3.PNG
+INPUT .\Bilder\insertFurthest\insert_furthest_ex_BAD_3.PNG
+INPUT .\Bilder\insertFurthest\insert_furthest_ex_BAD_3.PNG
+INPUT Bilder\insertFurthest\insert_furthest_ex_BAD_4.PNG
+INPUT .\Bilder\insertFurthest\insert_furthest_ex_BAD_4.PNG
+INPUT Bilder\insertFurthest\insert_furthest_ex_BAD_5.PNG
+INPUT .\Bilder\insertFurthest\insert_furthest_ex_BAD_5.PNG
+INPUT Bilder\insertFurthest\insert_furthest_ex_1.PNG
+INPUT .\Bilder\insertFurthest\insert_furthest_ex_1.PNG
+INPUT .\Bilder\insertFurthest\insert_furthest_ex_1.PNG
+INPUT .\Bilder\insertFurthest\insert_furthest_ex_1.PNG
+INPUT .\Bilder\insertFurthest\insert_furthest_ex_1.PNG
+INPUT Bilder\insertFurthest\insert_furthest_ex_2.PNG
+INPUT .\Bilder\insertFurthest\insert_furthest_ex_2.PNG
+INPUT Bilder\insertFurthest\insert_furthest_ex_3.PNG
+INPUT .\Bilder\insertFurthest\insert_furthest_ex_3.PNG
+INPUT .\Bilder\insertFurthest\insert_furthest_ex_3.PNG
+INPUT .\Bilder\insertFurthest\insert_furthest_ex_3.PNG
+INPUT .\Bilder\insertFurthest\insert_furthest_ex_3.PNG
+INPUT Bilder\insertFurthest\insert_furthest_ex_4.PNG
+INPUT .\Bilder\insertFurthest\insert_furthest_ex_4.PNG
+INPUT .\Bilder\insertFurthest\insert_furthest_ex_4.PNG
+INPUT .\Bilder\insertFurthest\insert_furthest_ex_4.PNG
+INPUT .\Bilder\insertFurthest\insert_furthest_ex_4.PNG
+INPUT Bilder\insertFurthest\insert_furthest_ex_5.PNG
+INPUT .\Bilder\insertFurthest\insert_furthest_ex_5.PNG
 INPUT Bilder\insertClosest\insert_closest_ex_BAD_1.PNG
 INPUT .\Bilder\insertClosest\insert_closest_ex_BAD_1.PNG
 INPUT .\Bilder\insertClosest\insert_closest_ex_BAD_1.PNG
@@ -531,6 +585,8 @@ INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\l
 INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmr7.pfb
 INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmr8.pfb
 INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmr8.pfb
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmri10.pfb
+INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmri10.pfb
 INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmri12.pfb
 INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmri12.pfb
 INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmss12.pfb
@@ -541,8 +597,6 @@ INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\l
 INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmsy10.pfb
 INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmsy8.pfb
 INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmsy8.pfb
-INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmtt10.pfb
-INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmtt10.pfb
 INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmtt12.pfb
 INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\lm\lmtt12.pfb
 INPUT C:\Users\d073426\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\symbols\msbm10.pfb

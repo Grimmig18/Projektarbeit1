@@ -7,18 +7,17 @@ Anhand der vorherigen Beispiele wurde deutlich, dass die Algorithmen zwar in der
 Dies trifft sowohl auf das Insert-First Verfahren, als auch auf die anderen vorgestellten Algorithmen zu.
 \\
 Bezüglich des Verhältnis' von Komplexität und Nutzen lässt sich keine genaue Aussage treffen, welcher Algorithmus effizienter arbeitet.
-Alle drei Algorithmen weisen eine Komplexität von $O(n) = n^2$ und erzeugen gleichzeitig Ergebnisse, die in ihrer Qualität von optimal bis erkennbar verbesserbar reichen. 
+Alle drei Algorithmen weisen eine Komplexität von $O(n^2)$ auf und erzeugen Ergebnisse, die in ihrer Qualität von optimal bis erkennbar verbesserbar reichen. 
 \\
-Weiterhin ist in Abbildung \vref{fig:insert-closest-BAD} ist ein Phänomen zu beobachten, welches gerade bei Anwendung der beschriebenen Algorithmen mit mehr Knoten häufig auftritt.
+Weiterhin ist in Abbildung \vref{fig:insert-closest-BAD} ein Phänomen zu beobachten, welches gerade bei Anwendung der beschriebenen Algorithmen mit mehr Knoten häufig auftritt.
 Das Entstehen von Überkreuzungen von Kanten zwischen zwei Knoten (siehe hierzu Abbildung \vref{app:fig:40-nodes-crossover-example}).
 Gerade bei solchen Überkreuzungen besteht immer die Möglichkeit den Graph so umzulegen, dass die Gesamtdistanz sinkt.
 Daher ist es sinnvoll einen Algorithmus zu entwickeln, der versucht Überkreuzungen aufzulösen.
 \\
-Weiterhin fallen bei manchen Graphen Konstellationen von Knoten und bestehenden Kanten auf, bei denen durch ein einfaches Umlegen der Kanten, bzw. der Knotenreihenfolge, signifikante Verringerungen in der Distanz erzielt werden können.
+Weiterhin fallen bei manchen Graphen Konstellationen von Knoten und bestehenden Kanten auf, bei denen durch ein einfaches Umlegen der Kanten, bzw. der Knotenreihenfolge, signifikante Verringerungen in der Distanz erzielt werden können (siehe hierzu Abbildung \vref{app:subfig:40-nodes-before-after-control}).
 \\\\
 % Beispielsweise erkennt man in der Veränderung von Abbildung \vref{app:subfig:40-nodes-before-after-control} zu \vref{app:subfig:40-nodes-after-after-control} ein solches Umlegen und die einhergehende Distanzverminderung.
 Auch hier kann ein Algorithmus, der gezielt nach solchen Konstellationen sucht und diese aufhebt, Abhilfe schaffen.
 \\\\
-Nachdem diese Algorithmen im nächsten Kapitel implementiert werden folgt eine Analyse der Ergebnisse verschiedener Kombinationen der vorgestellten Algorithmen, basierend auf mehreren Testläufen mit zufällig erzeugten Knoten.
+Nachdem diese Algorithmen im nächsten Kapitel erarbeitet werden folgt eine Analyse der Ergebnisse verschiedener Kombinationen der vorgestellten Algorithmen, basierend auf mehreren Testläufen mit zufällig erzeugten Knoten.
 Dadurch soll es möglich sein die Algorithmen untereinander und in Verbindung miteinander zu vergleichen.
-% TODO: schreiben

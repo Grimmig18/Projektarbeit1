@@ -26,12 +26,12 @@ Besteht eine Überkreuzung also aus den Knotenpaaren $A$ und $B$ mit $A=k_{A_1},
 Ist diese Bedingung nicht erfüllt, kann es keine Überkreuzung geben.
 Sind nur drei der vier benötigten Knoten einzigartig kann es nicht zu einer Überkreuzung kommen, da dies einen zusammenhängenden Streckenabschnitt der Form $k_1, k_2, k_3$ darstellen würde.
 
-\subsection{Erkennnen von Überkreuzungen}
-Um Überkreuzungen erkennen zu können ist die Bedingung \enquote{in einem für den Graphen relevanten Bereich} wichtig.
+\subsection{Erkennen von Überkreuzungen} \label{sec:erkennen-von-ueberkreuzungen}
+Um Überkreuzungen erkennen zu können, ist die Bedingung \enquote{in einem für den Graphen relevanten Bereich} wichtig.
 Betrachtet man zwei zufällig ausgewählte Kanten als unendliche Linien, stellt man sie also in der zweidimensionalen Ebene als lineare Funktion, mit einer Steigung und einem Schnittpunkt mit der Ordinate, dar, dann schneiden sich alle diese Funktionen an irgendeinem Punkt, es sei denn sie sind parallel zueinander.
 Um zu überprüfen, ob eine Überkreuzung im für die Generierung eines Graphen relevanten Bereich ist, wird zuerst der Schnittpunkt der beiden Kanten berechnet.
 Dazu wird aus zwei Knoten einer Kante eine lineare Funktion der Form $f(x) =mx+n$ simuliert, wobei $m=\frac{\Delta y}{\Delta x}$ und $n=y - mx$.
-Sind die Knoten der beiden Kanten nun $A_1,A_2$ und $B_1,B_2$, dann ergibt sich für die Berechnung der Schnittstelle:
+Sind die Knoten der beiden Kanten nun $A_1,A_2$ und $B_1,B_2$, dann ergibt sich für die Berechnung der Schnittstelle unter der Bedingung, dass $m_A \neq m_B$:
 \begin{equation}
     \label{eq:calculation-xs}
     % x_S = (y_{B_1} - (x_{B_1}\cdot \frac{(y_{A_2} - y_{A_1})}{(x_{A_2} - xy_{A_1})}))
@@ -41,34 +41,34 @@ Sind die Knoten der beiden Kanten nun $A_1,A_2$ und $B_1,B_2$, dann ergibt sich 
     \label{eq:calculation-ys}
     y_S = \frac{y_{A_2} - y_{A_1}}{x_{A_2} - x_{A_1}}\cdot x_S + (y_{A_1} - \frac{y_{A_2} - y_{A_1}}{x_{A_2} - x_{A_1}}\cdot x_{A_1})
 \end{equation}
-Mit $x_S$ und $y_S$ lässt sich der Punkt $S(x_S|y_S)$ konstruieren.
+Mit $x_S$ und $y_S$ lässt sich der Schnittpunkt $S(x_S|y_S)$ konstruieren.
 \\\\
 Mit Hilfe des Punkts $S$ gilt es nun zu überprüfen, ob sich dieser im relevanten Bereich befindet.
-Um dies zu bestimmen wird um die Knoten beider Kanten jeweils ein Recht simuliert, wie es beispielhaft in Abbildung \vref{subfig:graph-with-crossover-and-rect} eingezeichnet ist.
+Um dies zu bestimmen wird um die Knoten beider Kanten jeweils ein Rechteck simuliert, wie es beispielhaft in Abbildung \vref{subfig:graph-with-crossover-and-rect} eingezeichnet ist.
 Eine Überkreuzung ist genau dann für den Algorithmus relevant, wenn sie in den Rechtecken beider Kanten liegt.
-Um dies zu überprüfen wird der in \vref{alg:check-point-in-rect} beschriebene Algorithmus verwandt.
+Um dies zu überprüfen wird der in Algorithmus \vref{alg:check-point-in-rect} beschriebene Algorithmus verwandt.
 An dieser Stelle sei angemerkt, dass das Problem der Überkreuzungserkennung auch mit Hilfe von Vektorenskalierung lösbar ist.
-Ein solches Verfahren wird jedoch in dieser Arbeit nicht diskutiert.
+Ein solches Verfahren wird jedoch in dieser Arbeit nicht ausgearbeitet.
 
 
 \subsection{Auflösen von Überkreuzungen}
 
 Um einen Algorithmus zur Auflösung von Überkreuzungen entwickeln zu können, ist es wichtig die Knoten um eine Überkreuzung herum vor und nach deren Auflösung zu betrachten.
 Dazu kann als Beispiel wieder Abbildung \vref{fig:graph-with-and-without-crossover} dienen.
-Reihenfolge der Knoten in Abbildung \vref{subfig:graph-with-crossover-and-rect} ist $$P_{alt} = k_1, k_2, k_3, k_4, k_5, k_6, k_7$$
-Die Reihenfolge der Knoten nach dem Auflösen in Abbildung \vref{subfig:graph-without-crossover} ist $$P_{neu} = k_1, k_6, k_5, k_4, k_3, k_2, k_7$$
-In diesem Beispiel seien die betroffenen Kanten $A$ und $B$ mit den Knoten $A_1 = k_1$, $A_2 = k_2$ und $B_1 = k_6$, $B_2 = k_7$.
+Die Reihenfolge der Knoten in Abbildung \vref{subfig:graph-with-crossover-and-rect} ist $$P_{alt} = k_1, k_2, k_3, k_4, k_5, k_6, k_7$$
+Die Reihenfolge der Knoten nach dem Auflösen der Überkreuzung in Abbildung \vref{subfig:graph-without-crossover} ist $$P_{neu} = k_1, k_6, k_5, k_4, k_3, k_2, k_7$$
+In diesem Beispiel seien die betroffenen Kanten $A$ und $B$ mit den Knoten $k_{A_1} = k_1$, $k_{A_2} = k_2$ und $k_{B_1} = k_6$, $k_{B_2} = k_7$.
 Die hier interessanten Knoten sind $k_2$ bis $k_6$, da sich deren Reihenfolge umkehrt.
-Daraus kann gefolgert werden, dass zum Auflösen einer Überkreuzung das Umkehren der betroffenen Knoten in der Mitte reicht.
-Diese betroffenen Knoten bestimmen sich durch die Kanten $A$ und $B$ -- der erste umzukehrende Knoten ist immer $A_2$, während der letzte $B_1$ ist.
-Dies ist allerdings nur unter der Bedingung wahr, dass $A$ im Graph vor $B$ ist.
+Daraus kann gefolgert werden, dass das Auflösen einer Überkreuzung das Umkehren der betroffenen Knoten in der Mitte bedeutet.
+Die betroffenen Knoten bestimmen sich durch die Kanten $A$ und $B$ -- der erste umzukehrende Knoten ist immer $k_{A_2}$, während der letzte $k_{B_1}$ ist.
+Dies trifft allerdings nur unter der Bedingung zu, dass $A$ im Graph vor $B$ liegt.
 % Ist dies nicht der Fall müssen $A$ und $B$ getauscht werden, sodass 
-Ist dies nicht der Fall kehren sich die Rollen der Knoten um und $B_1$ ist der erste, während $A_2$ der letzte umzukehrende Knoten ist.
-Ein Algorithmus, der auf einem Pfad mit Überkreuzung und bekannten $A$ und $B$ eben dieses Tauschen ausführt, findet sich im Anhang unter Algorithmus \vref{alg:swap-nodes-inbetween}.
+Ist dies nicht der Fall kehren sich die Rollen der Knoten um und $k_{B_1}$ ist der erste, während $k_{A_2}$ der letzte umzukehrende Knoten ist.
+Ein Algorithmus, der auf einem Pfad mit Überkreuzung und bekannten $A$ und $B$ eben dieses Tauschen ausführt, findet sich unter Algorithmus 11 im Anhang. %\vref{alg:swap-nodes-inbetween}.
 \\\\
 % Ein vollständiger Algorithmus, der die aufgeführten Methodiken anwendet um Überkreuzungen zu erkennen und aufzulösen könnte beispielhaft
-Ein vollständiger Algorithmus, der die aufgeführten Methodiken anwenden soll, um Überkreuzungen zu erkennen und aufzulösen, müssen also alle Kanten gegeneinander geprüft werden.
-Eine simple Umsetzung davon, die alle beschriebenen Methodiken mit einschließt kann sein
+Ein vollständiger Algorithmus, der die aufgeführten Methodiken anwenden soll, um Überkreuzungen zu erkennen und aufzulösen, muss also alle Kanten gegeneinander prüfen.
+Eine Umsetzung eines solchen Algorithmus findet sich unter Algorithmus \vref{alg:handle-crossover}.
 \begin{algorithm}
     \caption{Erkennen und Auflösen von Überkreuzungen auf einem Pfad}
     \label{alg:handle-crossover}
@@ -86,23 +86,23 @@ Eine simple Umsetzung davon, die alle beschriebenen Methodiken mit einschließt 
                 \State $y_S \gets $ nach \vref{eq:calculation-ys}
                 \Comment $p_b$ und $p_{b-1}$ entsprechen $B_1$ und $B_2$ 
                 \If{\textsc{check}($p_a,p_{a-1},S(x_S|y_S)$) \textbf{and} \textsc{check}($p_b,p_{b-1},S(x_S|y_S)$)} 
-                \Comment \textsc{check} repräsentiert dabei \ac{Alg.} \vref{alg:check-point-in-rect}
+                % \Comment \textsc{check} repräsentiert dabei Algorithmus 9 im Anhang
                     \State $P \gets $ \textsc{resolve}($P$, $p_a$, $p_{b-1}$)
-                    \Comment Auflösen der Überkreuzung mit \ac{Alg.} \vref{alg:swap-nodes-inbetween}
+                %     \Comment Auflösen der Überkreuzung mit Algorithmus 11 im Anhang % \vref{alg:swap-nodes-inbetween}
                 \EndIf
             \EndFor
         \EndFor
     \end{algorithmic}
 \end{algorithm}
 
-Wird das Entfernen von Überkreuzungen nach diesem Prinzip implementiert, ergeben sich einige Randbedingungen, die es Wert sind erwähnt zu werden.
+Wird das Entfernen von Überkreuzungen nach diesem Prinzip implementiert, gilt es auch hier wieder die Implikationen einer solchen Implementierung zu betrachten.
 Aufgrund der geschachtelten Iterationen über die Kanten des Graphs lässt sich eine Zeitkomplexität von $$f(n) = O(n^2)$$ ermitteln, womit der Algorithmus im Rahmen der polynomialen Zeitkomplexitätsklasse liegt. 
-Dies bedeutet, dass die Laufzeit des Algorithmus proportional zum Quadrat seiner Eingabemenge wächst.
+Dies bedeutet, dass die Laufzeit des Algorithmus, wie auch schon bei den vorher vorgestellten Algorithmen, proportional zum Quadrat seiner Eingabemenge wächst.
 Als Eingabemenge können hier Knoten bzw. Kanten eines Graphen behandelt werden, wobei $n$ die Menge der Knoten repräsentiert.
 \\
 Ein Algorithmus, der Überkreuzungen aus einem Graph entfernt, arbeitet also mit einer ähnlichen Laufzeit wie die Heuristiken, die den Graph vorher erzeugen.
 \\\\
 Weiterhin ist es möglich, dass durch das Auflösen einer Überkreuzung eine weitere, neue entsteht.
-Falls dies so geschieht, dass in den restlichen Iterationen über die Kanten diese Überkreuzung nicht mehr erkannt wird, beispielsweise, wenn dies in der letzten Iteration passiert, dann wird die Überkreuzung nicht vom Algorithmus aufgelöst.
+Geschieht dies unter der Bedingung, dass in den restlichen Iterationen über die Kanten diese Überkreuzung nicht mehr erkannt wird, beispielsweise, wenn dies in der letzten Iteration passiert, dann wird die Überkreuzung nicht vom Algorithmus aufgelöst.
 Eine Möglichkeit dies zu umgehen ist durch das rekursive Aufrufen des Algorithmus, damit mehrmals auf Überkreuzungen überprüft wird.
 Allerdings besteht hier Bedarf eine solche Implementierung genauer zu untersuchen, was in dieser Arbeit nicht behandelt wird.

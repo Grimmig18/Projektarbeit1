@@ -1,7 +1,7 @@
 \section{Nachbesserung eines Pfads}
 \label{sec:after-control}
 \subsection{Beschreibung des Problems}
-Neben den im vorherigen Abschnitt beschriebenen Überkreuzungen kommt es bei den generierten Graphen auch zu solchen, die durch ein einfaches Umlegen der Route verbessert werden können.
+Neben den im vorherigen Abschnitt beschriebenen Überkreuzungen kommt es bei den generierten Graphen auch zu solchen suboptimalen Teilrouten, die durch ein einfaches Umlegen dieser verbessert werden können.
 
 \begin{figure}[h]
     \begin{center}
@@ -19,7 +19,7 @@ Neben den im vorherigen Abschnitt beschriebenen Überkreuzungen kommt es bei den
 \end{figure}
 
 Das Beispiel in \vref{fig:after-control-ex1} zeigt einen Graphen mit einer initialen Knotenreihenfolge
-$$P_{alt} = k_1,k_2,k_3,k_4$$
+$$P_{alt} = k_1,k_2,k_3,k_4\textrm{.}$$
 Durch das Umlegen zu
 $$P_{neu} =k_1,k_3,k_2,k_4$$
 erfolgt eine Verringerung der Gesamtdistanz.
@@ -33,14 +33,14 @@ Im konkreten Beispiel in \vref{fig:after-control-ex1} drückt sich das durch ein
 
 
 \subsection{Algorithmus zur Nachbesserung}
-Ein Algorithmus, der Nachbesserung auf genau diese Art vornehmen soll, kann wie folgt vorgehen.
+Ein Algorithmus, der Nachbesserungen auf genau diese Art vornehmen soll, kann wie folgt vorgehen.
 Betrachte beginnend mit dem zweiten Knoten in einem Pfad jeden Knoten.
 Für jeden zu betrachteten Knoten wird jede Kante, an dessen Ende der aktuelle Knoten nicht steht, betrachtet.
 Es gilt zu überprüfen, ob es für die Gesamtdistanz besser ist, wenn der aktuelle Knoten in die aktuelle Kante eingefügt wird.
 Anders ausgedrückt: $p_i$ mit $i \geq 2,i\in\mathbb{N}$ sei ein Knoten in einem vollständigen Pfad mit $n$ Knoten und $n-1$ Kanten. Zusammen mit $p_i$ wird auch immer eine Kante $e_j=(p_{k-1},p_{k})$ betrachtet, sodass gilt $p_i \not \in e_j$.
 Um nun zu überprüfen, ob es möglich ist eine Verbesserung des Graphs vorzunehmen wird überprüft ob 
 $$\omega(p_{i-1},p_{i}) + \omega(p_{i},p_{i+1}) + \omega(e_j) > \omega(p_{i-1},p_{i+1}) + \omega(p_{k-1},p_i) + \omega(p_i,p_{k})$$
-Ist dies der Fall wird die Reihenfolge der Knoten entsprechend geändert und $p_i$ zwischen $p_{i-1}$ und $p_{i+1}$ entfernt und zwischen $p_{k-1}$ und $p_k$ eingefügt. Wie genau das Einfügen in die Kante funktioniert kann in Algorithmus \vref{alg:after-control-merge} nachvollzogen werden.
+Ist dies der Fall wird die Reihenfolge der Knoten entsprechend geändert und $p_i$ zwischen $p_{i-1}$ und $p_{i+1}$ entfernt und zwischen $p_{k-1}$ und $p_k$ eingefügt. Wie genau das Einfügen in die Kante funktioniert kann in Algorithmus \vref{alg:swap-nodes-inbetween} nachvollzogen werden.
 \\\\
 Eine vollständige Implementierung eines Algorithmus, der Verbesserung an einem bestehenden Graph vornimmt kann wie in Algorithmus \vref{alg:after-control} aussehen.
 \begin{algorithm}[h]
@@ -65,4 +65,4 @@ Eine vollständige Implementierung eines Algorithmus, der Verbesserung an einem 
 \end{algorithm}
 Damit beschreibt sich die Zeitkomplexität dieses Algorithmus mit 
 $$f(n) = O(n^2)$$
-Womit er, wie der Algorithmus \vref{alg:handle-crossover} Entfernen von Überkreuzungen, quadratisch zur Eingabemenge skaliert.
+Womit er, wie der Algorithmus \vref{alg:handle-crossover} zum Entfernen von Überkreuzungen, quadratisch zur Eingabemenge skaliert.

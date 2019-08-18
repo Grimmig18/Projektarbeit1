@@ -1,1 +1,50 @@
 \chapter{Zusammenfassung und Ausblick}
+% Performance Insert First
+
+% Gründe für Schwäche
+
+% Ideen zur ausbesserung
+%   1. Als ersten weit entfernte Einfügen
+%       Performt in manchen Szenarien besser, in manchen schlechter
+%       Abhängig von reihenfolge
+%   2. Als erstes nahe Knoten einfügen
+%       Performt auch besser in manchen Szenarien, aber hat die selben schwächen
+
+% nachträgliche Überarbeitung von existierenden Routen
+% Auflösen von Überkreuzungen
+% Algorithmus bringt das zu erwartende Ergebnis 
+% und Routen ohne Überkreuzungen kürzer
+
+% Nachbesserungs-Algorithmus
+% Verringert die Distanz von Routen
+
+% Was lohnt sich
+% Hier keine Definition von was sich lohnt aber: Überkreuzungen???
+
+% Da Zwei Variationen nicht wirklich etwas gebracht: Anderes Kriterium?
+% Verhalten der Algorithmen bei Größeren mengen von Knoten (Qualität und Laufzeit)
+
+
+Rückblickend auf die Ergebnisse dieser Arbeit, insbesondere in Bezug auf den Insert-First-Algorithmus lässt sich feststellen, dass eine Heuristik zur Lösung des \ac{TSP} immer Schwächen irgendeiner Form haben wird.
+Im Falle des Insert-First-Algorithmus liegt erkennbar in der Reihenfolge, in der die Knoten zu einer vollständigen Route zusammengefügt werden.
+Wie gezeigt ist der Insert-First-Algorithmus zwar in der Lage gute, aber ebenso schlechte, Ergebnisse zu generieren.
+\\
+Ein Versuch diesen Schwächen entgegen zu wirken ist der Insert-Furthest Algorithmus, der die Knoten, die am weitesten voneinander entfernt sind zuerst betrachtet.
+Dieser Algorithmus ist in der Lage in einigen Szenarien Ergebnisse einer höheren Qualität zu erzeugen, ebenso leidet er aber unter den gleichen Schwächen wie der Insert-First-Algorithmus und erzeugt durch das späte Einfügen von Knoten, die eine geringe Entfernung zu anderen aufweisen, suboptimale Ergebnisse.
+Träg man den Ansatz des Insert-Furthest-Algorithmus in die andere Richtung entspringt dabei der Insert-Closest-Algorithmus, der anstatt der am weitesten entfernten Knoten die nächsten einfügt.
+Auch hier lassen sich wieder die gleichen Schwächen, die schon in beiden anderen Variationen des Algorithmus aufgetreten sind, feststellen.
+Betrachtet man die Laufzeit der Algorithmen lassen sich keine großen Unterschiede feststellen -- alle drei liegen in der Zeitkomplexitätsklasse $O(n^2)$.
+Dies begründet sich darin, dass die Algorithmen basieren auf dem gleichen Prinzip basieren, nur steigt bei Insert-Closest und -Furthest aufgrund des Auswahlkriteriums für Knoten die Laufzeit etwas schneller.
+\\\\
+Betrachtet man nun also die Algorithmen, die zur nachträglichen Überarbeitung von bereits bestehenden Routen entwickelt wurden, lässt sich über diese sagen, dass sie sich wie erwartet verhalten.
+Der Algorithmus zur Auflösung von Überkreuzungen in einer Route löst Überkreuzungen auf und verringert so die Gesamtdistanz einer Route. 
+An dieser Stelle sei angemerkt, dass es zu untersuchen gilt, ob das Entfernen von Überkreuzungen für Computer effizienter gestaltet werden kann, beispielsweise durch die Berechnung von Überkreuzungen durch Vektoren, wie in \vref{sec:erkennen-von-ueberkreuzungen} angemerkt.
+\\
+Bezüglich des Algorithmus zur Nachbesserung von Routen ist, aufbauend auf den in \vref{sec:result} vorgestellten Ergebnissen, eine klare Verbesserung in der Qualität der Ergebnisse zu erkennen.
+Die in \vref{sec:result} vorgestellten Algorithmenkombinationen, die den Nachbesserungs-Algorithmus verwenden machen über zwei Drittel der besten Ergebnisse aus und können somit als Lösungen angesehen werden, die häufig sehr gute Ergebnisse erzeugen, die nur geringfügig vom optimalen Ergebnis abweichen.
+\\\\
+Eine Empfehlung ob oder welche Kombination von Algorithmen am effizientesten arbeitet und in der Praxis verwendet werden sollte, wird hier nicht gegeben, da dieser Arbeit nicht nur Praxisnähe sondern auch eine passende Definition von Effizienz fehlt.
+Interessant wäre aber die zukünftige Untersuchung eben dieser Empfehlung.
+Weiterhin sei angemerkt, dass die zwei Versuche den Insert-First-Algorithmus zu verbessern nicht zum erwartetenden Ergebnis führen, weshalb sich hier die Untersuchung weiterer Variationen mit anderen Auswahlkriterien empfiehlt.
+Außerdem widmet sich diese Arbeit nicht dem Verhalten der vorgestellten Algorithmen bei einer größeren Menge von Knoten.
+Auch hier gilt es die Qualität der Ergebnisse und die Laufzeit der Algorithmen zu untersuchen.
