@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.3.21)  18 AUG 2019 15:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.3.21)  18 AUG 2019 18:47
 entering extended mode
 **c:/Users/d073426/Documents/DHBW/Projektarbeit/scheiss_compiler/master.tex
 (c:/Users/d073426/Documents/DHBW/Projektarbeit/scheiss_compiler/master.tex
@@ -1116,7 +1116,7 @@ Overfull \hbox (0.71107pt too wide) in paragraph at lines 5--11
 
 ] (c:/Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\master.toc
 Package acronym Info: Label `acro:TSP' newly defined as it shall be overridden
-although it is yet undefined on input line 18.
+although it is yet undefined on input line 16.
  [2
 
 ])
@@ -1145,7 +1145,7 @@ Class scrreprt Warning: \float@listhead detected!
 (scrreprt)              Loading of package `scrhack' may help to
 (scrreprt)              avoid this warning, if you are using a
 (scrreprt)              a package that still implements the
-(scrreprt)              deprecated \float@listhead interface  on input line 65.
+(scrreprt)              deprecated \float@listhead interface  on input line 68.
 
 [5
 
@@ -1166,35 +1166,13 @@ Class scrreprt Warning: \float@addtolists detected!
 (scrreprt)              a package that still implements the
 (scrreprt)              deprecated \float@addtolist interface .
 
-(c:/Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\master.lol)
-\tf@lol=\write8
-\openout8 = `master.lol'.
-
-
-
-Class scrreprt Warning: \float@listhead detected!
-(scrreprt)              Implementation of \float@listhead became
-(scrreprt)              deprecated in KOMA-Script v3.01 2008/11/14 and
-(scrreprt)              has been replaced by several more flexible
-(scrreprt)              features of package `tocbasic`.
-(scrreprt)              Maybe implementation of \float@listhead will
-(scrreprt)              be removed from KOMA-Script soon.
-(scrreprt)              Loading of package `scrhack' may help to
-(scrreprt)              avoid this warning, if you are using a
-(scrreprt)              a package that still implements the
-(scrreprt)              deprecated \float@listhead interface  on input line 68.
-
-[6
-
-]
-chapter without number
 (c:/Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\master.loa)
-\tf@loa=\write9
-\openout9 = `master.loa'.
+\tf@loa=\write8
+\openout8 = `master.loa'.
 
- (c:/Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Verzeichnisse/acronyms.tex [7
+ (c:/Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Verzeichnisse/acronyms.tex [6
 
-]) [8
+]) [7
 
 
 ] (c:/Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Einleitung/einleitung.tex
@@ -1271,22 +1249,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 133--140
  []
 
 [9]
-<./Bilder/insertFirst/insert_first_BAD_ex_1.PNG, id=302, 560.8453pt x 560.8453pt>
+<./Bilder/insertFirst/insert_first_BAD_ex_1.PNG, id=296, 560.8453pt x 560.8453pt>
 File: ./Bilder/insertFirst/insert_first_BAD_ex_1.PNG Graphic file (type png)
 <use ./Bilder/insertFirst/insert_first_BAD_ex_1.PNG>
 Package pdftex.def Info: ./Bilder/insertFirst/insert_first_BAD_ex_1.PNG  used on input line 145.
 (pdftex.def)             Requested size: 153.11407pt x 153.10757pt.
-<./Bilder/insertFirst/insert_first_BAD_ex_2.PNG, id=303, 560.8453pt x 558.58687pt>
+<./Bilder/insertFirst/insert_first_BAD_ex_2.PNG, id=297, 560.8453pt x 558.58687pt>
 File: ./Bilder/insertFirst/insert_first_BAD_ex_2.PNG Graphic file (type png)
 <use ./Bilder/insertFirst/insert_first_BAD_ex_2.PNG>
 Package pdftex.def Info: ./Bilder/insertFirst/insert_first_BAD_ex_2.PNG  used on input line 149.
 (pdftex.def)             Requested size: 153.11407pt x 152.49104pt.
-<./Bilder/insertFirst/insert_first_BAD_ex_3.PNG, id=304, 560.0925pt x 560.0925pt>
+<./Bilder/insertFirst/insert_first_BAD_ex_3.PNG, id=298, 560.0925pt x 560.0925pt>
 File: ./Bilder/insertFirst/insert_first_BAD_ex_3.PNG Graphic file (type png)
 <use ./Bilder/insertFirst/insert_first_BAD_ex_3.PNG>
 Package pdftex.def Info: ./Bilder/insertFirst/insert_first_BAD_ex_3.PNG  used on input line 156.
 (pdftex.def)             Requested size: 153.11407pt x 153.11572pt.
-<./Bilder/insertFirst/insert_first_BAD_ex_4.PNG, id=305, 560.8453pt x 560.0925pt>
+<./Bilder/insertFirst/insert_first_BAD_ex_4.PNG, id=299, 560.8453pt x 560.0925pt>
 File: ./Bilder/insertFirst/insert_first_BAD_ex_4.PNG Graphic file (type png)
 <use ./Bilder/insertFirst/insert_first_BAD_ex_4.PNG>
 Package pdftex.def Info: ./Bilder/insertFirst/insert_first_BAD_ex_4.PNG  used on input line 160.
@@ -1296,22 +1274,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 182--187
 
  []
 
-<./Bilder/insertFirst/insert_first_ex_1.PNG, id=323, 562.35094pt x 562.35094pt>
+<./Bilder/insertFirst/insert_first_ex_1.PNG, id=316, 562.35094pt x 562.35094pt>
 File: ./Bilder/insertFirst/insert_first_ex_1.PNG Graphic file (type png)
 <use ./Bilder/insertFirst/insert_first_ex_1.PNG>
 Package pdftex.def Info: ./Bilder/insertFirst/insert_first_ex_1.PNG  used on input line 192.
 (pdftex.def)             Requested size: 153.11407pt x 153.11531pt.
-<./Bilder/insertFirst/insert_first_ex_2.PNG, id=324, 560.8453pt x 561.59813pt>
+<./Bilder/insertFirst/insert_first_ex_2.PNG, id=317, 560.8453pt x 561.59813pt>
 File: ./Bilder/insertFirst/insert_first_ex_2.PNG Graphic file (type png)
 <use ./Bilder/insertFirst/insert_first_ex_2.PNG>
 Package pdftex.def Info: ./Bilder/insertFirst/insert_first_ex_2.PNG  used on input line 196.
 (pdftex.def)             Requested size: 153.11407pt x 153.3131pt.
-<./Bilder/insertFirst/insert_first_ex_3.PNG, id=325, 562.35094pt x 561.59813pt>
+<./Bilder/insertFirst/insert_first_ex_3.PNG, id=318, 562.35094pt x 561.59813pt>
 File: ./Bilder/insertFirst/insert_first_ex_3.PNG Graphic file (type png)
 <use ./Bilder/insertFirst/insert_first_ex_3.PNG>
 Package pdftex.def Info: ./Bilder/insertFirst/insert_first_ex_3.PNG  used on input line 203.
 (pdftex.def)             Requested size: 153.11407pt x 152.91034pt.
-<./Bilder/insertFirst/insert_first_ex_4.PNG, id=326, 562.35094pt x 561.59813pt>
+<./Bilder/insertFirst/insert_first_ex_4.PNG, id=319, 562.35094pt x 561.59813pt>
 File: ./Bilder/insertFirst/insert_first_ex_4.PNG Graphic file (type png)
 <use ./Bilder/insertFirst/insert_first_ex_4.PNG>
 Package pdftex.def Info: ./Bilder/insertFirst/insert_first_ex_4.PNG  used on input line 207.
@@ -1322,31 +1300,31 @@ Underfull \hbox (badness 10000) in paragraph at lines 212--223
  []
 
 ) (c:/Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\Loesungsverfahren/insFurth.tex [12 <./Bilder/insertFirst/insert_first_ex_1.PNG> <./Bilder/insertFirst/insert_first_ex_2.PNG> <./Bilder/insertFirst/insert_first_ex_3.PNG> <./Bilder/insertFirst/insert_first_ex_4.PNG>] [13] [14]
-<./Bilder/insertFurthest/insert_furthest_ex_2.PNG, id=359, 561.59813pt x 561.59813pt>
+<./Bilder/insertFurthest/insert_furthest_ex_2.PNG, id=353, 561.59813pt x 561.59813pt>
 File: ./Bilder/insertFurthest/insert_furthest_ex_2.PNG Graphic file (type png)
 <use ./Bilder/insertFurthest/insert_furthest_ex_2.PNG>
 Package pdftex.def Info: ./Bilder/insertFurthest/insert_furthest_ex_2.PNG  used on input line 107.
 (pdftex.def)             Requested size: 153.11407pt x 153.10744pt.
-<./Bilder/insertFurthest/insert_furthest_ex_5.PNG, id=361, 560.8453pt x 561.59813pt>
+<./Bilder/insertFurthest/insert_furthest_ex_5.PNG, id=354, 561.59813pt x 561.59813pt>
 File: ./Bilder/insertFurthest/insert_furthest_ex_5.PNG Graphic file (type png)
 <use ./Bilder/insertFurthest/insert_furthest_ex_5.PNG>
 Package pdftex.def Info: ./Bilder/insertFurthest/insert_furthest_ex_5.PNG  used on input line 115.
-(pdftex.def)             Requested size: 153.11407pt x 153.3131pt.
+(pdftex.def)             Requested size: 153.11407pt x 153.10744pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 120--121
 
  []
 
-<./Bilder/insertFurthest/insert_furthest_ex_BAD_4.PNG, id=369, 562.35094pt x 561.59813pt>
+<./Bilder/insertFurthest/insert_furthest_ex_BAD_4.PNG, id=362, 562.35094pt x 562.35094pt>
 File: ./Bilder/insertFurthest/insert_furthest_ex_BAD_4.PNG Graphic file (type png)
 <use ./Bilder/insertFurthest/insert_furthest_ex_BAD_4.PNG>
 Package pdftex.def Info: ./Bilder/insertFurthest/insert_furthest_ex_BAD_4.PNG  used on input line 137.
-(pdftex.def)             Requested size: 153.11407pt x 152.91034pt.
-<./Bilder/insertFurthest/insert_furthest_ex_BAD_5.PNG, id=370, 558.58687pt x 560.8453pt>
+(pdftex.def)             Requested size: 153.11407pt x 153.11531pt.
+<./Bilder/insertFurthest/insert_furthest_ex_BAD_5.PNG, id=363, 562.35094pt x 562.35094pt>
 File: ./Bilder/insertFurthest/insert_furthest_ex_BAD_5.PNG Graphic file (type png)
 <use ./Bilder/insertFurthest/insert_furthest_ex_BAD_5.PNG>
 Package pdftex.def Info: ./Bilder/insertFurthest/insert_furthest_ex_BAD_5.PNG  used on input line 145.
-(pdftex.def)             Requested size: 153.11407pt x 153.7323pt.
+(pdftex.def)             Requested size: 153.11407pt x 153.11531pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 123--149
 
@@ -1373,12 +1351,12 @@ Overfull \hbox (0.51651pt too wide) in paragraph at lines 16--74
  []
 
 [17] [18]
-<Bilder/insertClosest/insert_closest_ex_BAD_4.PNG, id=412, 560.0925pt x 560.8453pt>
+<Bilder/insertClosest/insert_closest_ex_BAD_4.PNG, id=401, 560.0925pt x 560.8453pt>
 File: Bilder/insertClosest/insert_closest_ex_BAD_4.PNG Graphic file (type png)
 <use Bilder/insertClosest/insert_closest_ex_BAD_4.PNG>
 Package pdftex.def Info: Bilder/insertClosest/insert_closest_ex_BAD_4.PNG  used on input line 91.
 (pdftex.def)             Requested size: 153.11407pt x 153.32152pt.
-<Bilder/insertClosest/insert_closest_ex_BAD_5.PNG, id=413, 560.8453pt x 560.8453pt>
+<Bilder/insertClosest/insert_closest_ex_BAD_5.PNG, id=402, 560.8453pt x 560.8453pt>
 File: Bilder/insertClosest/insert_closest_ex_BAD_5.PNG Graphic file (type png)
 <use Bilder/insertClosest/insert_closest_ex_BAD_5.PNG>
 Package pdftex.def Info: Bilder/insertClosest/insert_closest_ex_BAD_5.PNG  used on input line 95.
@@ -1401,12 +1379,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--6
 [20]) (c:/Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\verb/verb.tex [21]
 chapter 4.
 (c:/Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\verb/crossover.tex
-<Bilder/crossover/7_nodes_with_crossover.PNG, id=437, 560.8453pt x 560.8453pt>
+<Bilder/crossover/7_nodes_with_crossover.PNG, id=426, 560.8453pt x 560.8453pt>
 File: Bilder/crossover/7_nodes_with_crossover.PNG Graphic file (type png)
 <use Bilder/crossover/7_nodes_with_crossover.PNG>
 Package pdftex.def Info: Bilder/crossover/7_nodes_with_crossover.PNG  used on input line 11.
 (pdftex.def)             Requested size: 153.11407pt x 153.10757pt.
-<Bilder/crossover/7_nodes_without_crossover.PNG, id=438, 560.8453pt x 563.10374pt>
+<Bilder/crossover/7_nodes_without_crossover.PNG, id=427, 560.8453pt x 563.10374pt>
 File: Bilder/crossover/7_nodes_without_crossover.PNG Graphic file (type png)
 <use Bilder/crossover/7_nodes_without_crossover.PNG>
 Package pdftex.def Info: Bilder/crossover/7_nodes_without_crossover.PNG  used on input line 15.
@@ -1429,12 +1407,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 99--4
  []
 
 (c:/Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\verb/aftercontrol.tex
-<Bilder/afterControl/after_control_ex1.PNG, id=466, 558.58687pt x 559.33969pt>
+<Bilder/afterControl/after_control_ex1.PNG, id=455, 558.58687pt x 559.33969pt>
 File: Bilder/afterControl/after_control_ex1.PNG Graphic file (type png)
 <use Bilder/afterControl/after_control_ex1.PNG>
 Package pdftex.def Info: Bilder/afterControl/after_control_ex1.PNG  used on input line 11.
 (pdftex.def)             Requested size: 153.11407pt x 153.3196pt.
-<Bilder/afterControl/after_control_ex2.PNG, id=467, 560.8453pt x 560.0925pt>
+<Bilder/afterControl/after_control_ex2.PNG, id=456, 560.8453pt x 560.0925pt>
 File: Bilder/afterControl/after_control_ex2.PNG Graphic file (type png)
 <use Bilder/afterControl/after_control_ex2.PNG>
 Package pdftex.def Info: Bilder/afterControl/after_control_ex2.PNG  used on input line 15.
@@ -1524,33 +1502,33 @@ File: ./Bilder/insertFirst/insert_first_ex_4.PNG Graphic file (type png)
 Package pdftex.def Info: ./Bilder/insertFirst/insert_first_ex_4.PNG  used on input line 68.
 (pdftex.def)             Requested size: 262.47937pt x 262.1259pt.
  [36] [37]
-<./Bilder/insertFurthest/insert_furthest_ex_BAD_1.PNG, id=576, 561.59813pt x 562.35094pt>
+<./Bilder/insertFurthest/insert_furthest_ex_BAD_1.PNG, id=565, 561.59813pt x 562.35094pt>
 File: ./Bilder/insertFurthest/insert_furthest_ex_BAD_1.PNG Graphic file (type png)
 <use ./Bilder/insertFurthest/insert_furthest_ex_BAD_1.PNG>
 Package pdftex.def Info: ./Bilder/insertFurthest/insert_furthest_ex_BAD_1.PNG  used on input line 79.
 (pdftex.def)             Requested size: 262.47937pt x 262.82909pt.
-<./Bilder/insertFurthest/insert_furthest_ex_BAD_2.PNG, id=577, 562.35094pt x 562.35094pt>
+<./Bilder/insertFurthest/insert_furthest_ex_BAD_2.PNG, id=566, 562.35094pt x 562.35094pt>
 File: ./Bilder/insertFurthest/insert_furthest_ex_BAD_2.PNG Graphic file (type png)
 <use ./Bilder/insertFurthest/insert_furthest_ex_BAD_2.PNG>
 Package pdftex.def Info: ./Bilder/insertFurthest/insert_furthest_ex_BAD_2.PNG  used on input line 87.
 (pdftex.def)             Requested size: 262.47937pt x 262.47726pt.
  [38]
-<./Bilder/insertFurthest/insert_furthest_ex_BAD_3.PNG, id=583, 561.59813pt x 560.8453pt>
+<./Bilder/insertFurthest/insert_furthest_ex_BAD_3.PNG, id=572, 562.35094pt x 562.35094pt>
 File: ./Bilder/insertFurthest/insert_furthest_ex_BAD_3.PNG Graphic file (type png)
 <use ./Bilder/insertFurthest/insert_furthest_ex_BAD_3.PNG>
 Package pdftex.def Info: ./Bilder/insertFurthest/insert_furthest_ex_BAD_3.PNG  used on input line 95.
-(pdftex.def)             Requested size: 262.47937pt x 262.12538pt.
+(pdftex.def)             Requested size: 262.47937pt x 262.47726pt.
 File: ./Bilder/insertFurthest/insert_furthest_ex_BAD_4.PNG Graphic file (type png)
 <use ./Bilder/insertFurthest/insert_furthest_ex_BAD_4.PNG>
 Package pdftex.def Info: ./Bilder/insertFurthest/insert_furthest_ex_BAD_4.PNG  used on input line 103.
-(pdftex.def)             Requested size: 262.47937pt x 262.1259pt.
+(pdftex.def)             Requested size: 262.47937pt x 262.47726pt.
  [39 <./Bilder/insertFurthest/insert_furthest_ex_BAD_1.PNG> <./Bilder/insertFurthest/insert_furthest_ex_BAD_2.PNG>]
 File: ./Bilder/insertFurthest/insert_furthest_ex_BAD_5.PNG Graphic file (type png)
 <use ./Bilder/insertFurthest/insert_furthest_ex_BAD_5.PNG>
 Package pdftex.def Info: ./Bilder/insertFurthest/insert_furthest_ex_BAD_5.PNG  used on input line 111.
-(pdftex.def)             Requested size: 262.47937pt x 263.54597pt.
+(pdftex.def)             Requested size: 262.47937pt x 262.47726pt.
  [40 <./Bilder/insertFurthest/insert_furthest_ex_BAD_3.PNG>]
-<./Bilder/insertFurthest/insert_furthest_ex_1.PNG, id=604, 560.8453pt x 560.0925pt>
+<./Bilder/insertFurthest/insert_furthest_ex_1.PNG, id=589, 560.8453pt x 560.0925pt>
 File: ./Bilder/insertFurthest/insert_furthest_ex_1.PNG Graphic file (type png)
 <use ./Bilder/insertFurthest/insert_furthest_ex_1.PNG>
 Package pdftex.def Info: ./Bilder/insertFurthest/insert_furthest_ex_1.PNG  used on input line 122.
@@ -1560,67 +1538,67 @@ File: ./Bilder/insertFurthest/insert_furthest_ex_2.PNG Graphic file (type png)
 Package pdftex.def Info: ./Bilder/insertFurthest/insert_furthest_ex_2.PNG  used on input line 130.
 (pdftex.def)             Requested size: 262.47937pt x 262.47723pt.
  [41]
-<./Bilder/insertFurthest/insert_furthest_ex_3.PNG, id=610, 560.8453pt x 560.8453pt>
+<./Bilder/insertFurthest/insert_furthest_ex_3.PNG, id=596, 561.59813pt x 561.59813pt>
 File: ./Bilder/insertFurthest/insert_furthest_ex_3.PNG Graphic file (type png)
 <use ./Bilder/insertFurthest/insert_furthest_ex_3.PNG>
 Package pdftex.def Info: ./Bilder/insertFurthest/insert_furthest_ex_3.PNG  used on input line 138.
-(pdftex.def)             Requested size: 262.47937pt x 262.47626pt.
-<./Bilder/insertFurthest/insert_furthest_ex_4.PNG, id=611, 560.8453pt x 560.8453pt>
+(pdftex.def)             Requested size: 262.47937pt x 262.47723pt.
+<./Bilder/insertFurthest/insert_furthest_ex_4.PNG, id=597, 561.59813pt x 561.59813pt>
 File: ./Bilder/insertFurthest/insert_furthest_ex_4.PNG Graphic file (type png)
 <use ./Bilder/insertFurthest/insert_furthest_ex_4.PNG>
 Package pdftex.def Info: ./Bilder/insertFurthest/insert_furthest_ex_4.PNG  used on input line 146.
-(pdftex.def)             Requested size: 262.47937pt x 262.47626pt.
+(pdftex.def)             Requested size: 262.47937pt x 262.47723pt.
  [42 <./Bilder/insertFurthest/insert_furthest_ex_1.PNG>]
 File: ./Bilder/insertFurthest/insert_furthest_ex_5.PNG Graphic file (type png)
 <use ./Bilder/insertFurthest/insert_furthest_ex_5.PNG>
 Package pdftex.def Info: ./Bilder/insertFurthest/insert_furthest_ex_5.PNG  used on input line 154.
-(pdftex.def)             Requested size: 262.47937pt x 262.82858pt.
+(pdftex.def)             Requested size: 262.47937pt x 262.47723pt.
  [43 <./Bilder/insertFurthest/insert_furthest_ex_3.PNG> <./Bilder/insertFurthest/insert_furthest_ex_4.PNG>]
-<./Bilder/insertClosest/insert_closest_ex_BAD_1.PNG, id=631, 560.0925pt x 559.33969pt>
+<./Bilder/insertClosest/insert_closest_ex_BAD_1.PNG, id=614, 560.0925pt x 559.33969pt>
 File: ./Bilder/insertClosest/insert_closest_ex_BAD_1.PNG Graphic file (type png)
 <use ./Bilder/insertClosest/insert_closest_ex_BAD_1.PNG>
 Package pdftex.def Info: ./Bilder/insertClosest/insert_closest_ex_BAD_1.PNG  used on input line 165.
 (pdftex.def)             Requested size: 262.47937pt x 262.13863pt.
-<./Bilder/insertClosest/insert_closest_ex_BAD_2.PNG, id=632, 560.0925pt x 560.8453pt>
+<./Bilder/insertClosest/insert_closest_ex_BAD_2.PNG, id=615, 560.0925pt x 560.8453pt>
 File: ./Bilder/insertClosest/insert_closest_ex_BAD_2.PNG Graphic file (type png)
 <use ./Bilder/insertClosest/insert_closest_ex_BAD_2.PNG>
 Package pdftex.def Info: ./Bilder/insertClosest/insert_closest_ex_BAD_2.PNG  used on input line 173.
 (pdftex.def)             Requested size: 262.47937pt x 262.84424pt.
  [44]
-<./Bilder/insertClosest/insert_closest_ex_BAD_3.PNG, id=638, 560.8453pt x 562.35094pt>
+<./Bilder/insertClosest/insert_closest_ex_BAD_3.PNG, id=621, 560.8453pt x 562.35094pt>
 File: ./Bilder/insertClosest/insert_closest_ex_BAD_3.PNG Graphic file (type png)
 <use ./Bilder/insertClosest/insert_closest_ex_BAD_3.PNG>
 Package pdftex.def Info: ./Bilder/insertClosest/insert_closest_ex_BAD_3.PNG  used on input line 181.
 (pdftex.def)             Requested size: 262.47937pt x 263.1809pt.
-<./Bilder/insertClosest/insert_closest_ex_BAD_4.PNG, id=639, 560.0925pt x 560.8453pt>
+<./Bilder/insertClosest/insert_closest_ex_BAD_4.PNG, id=622, 560.0925pt x 560.8453pt>
 File: ./Bilder/insertClosest/insert_closest_ex_BAD_4.PNG Graphic file (type png)
 <use ./Bilder/insertClosest/insert_closest_ex_BAD_4.PNG>
 Package pdftex.def Info: ./Bilder/insertClosest/insert_closest_ex_BAD_4.PNG  used on input line 190.
 (pdftex.def)             Requested size: 262.47937pt x 262.84424pt.
  [45 <./Bilder/insertClosest/insert_closest_ex_BAD_1.PNG> <./Bilder/insertClosest/insert_closest_ex_BAD_2.PNG>]
-<./Bilder/insertClosest/insert_closest_ex_BAD_5.PNG, id=648, 560.8453pt x 560.8453pt>
+<./Bilder/insertClosest/insert_closest_ex_BAD_5.PNG, id=631, 560.8453pt x 560.8453pt>
 File: ./Bilder/insertClosest/insert_closest_ex_BAD_5.PNG Graphic file (type png)
 <use ./Bilder/insertClosest/insert_closest_ex_BAD_5.PNG>
 Package pdftex.def Info: ./Bilder/insertClosest/insert_closest_ex_BAD_5.PNG  used on input line 199.
 (pdftex.def)             Requested size: 240.60498pt x 240.60252pt.
  [46 <./Bilder/insertClosest/insert_closest_ex_BAD_3.PNG> <./Bilder/insertClosest/insert_closest_ex_BAD_4.PNG>]
-<./Bilder/crossover/40_nodes_with_crossover.png, id=658, 563.10374pt x 561.59813pt>
+<./Bilder/crossover/40_nodes_with_crossover.png, id=640, 563.10374pt x 561.59813pt>
 File: ./Bilder/crossover/40_nodes_with_crossover.png Graphic file (type png)
 <use ./Bilder/crossover/40_nodes_with_crossover.png>
 Package pdftex.def Info: ./Bilder/crossover/40_nodes_with_crossover.png  used on input line 211.
 (pdftex.def)             Requested size: 240.60498pt x 239.95715pt.
-<./Bilder/crossover/40_nodes_without_crossover.PNG, id=659, 562.35094pt x 562.35094pt>
+<./Bilder/crossover/40_nodes_without_crossover.PNG, id=642, 562.35094pt x 562.35094pt>
 File: ./Bilder/crossover/40_nodes_without_crossover.PNG Graphic file (type png)
 <use ./Bilder/crossover/40_nodes_without_crossover.PNG>
 Package pdftex.def Info: ./Bilder/crossover/40_nodes_without_crossover.PNG  used on input line 220.
 (pdftex.def)             Requested size: 240.60498pt x 240.60487pt.
  [47 <./Bilder/insertClosest/insert_closest_ex_BAD_5.PNG> <./Bilder/crossover/40_nodes_with_crossover.png>]
-<Bilder/afterControl/before_after_control.PNG, id=668, 317.68687pt x 380.17032pt>
+<Bilder/afterControl/before_after_control.PNG, id=652, 317.68687pt x 380.17032pt>
 File: Bilder/afterControl/before_after_control.PNG Graphic file (type png)
 <use Bilder/afterControl/before_after_control.PNG>
 Package pdftex.def Info: Bilder/afterControl/before_after_control.PNG  used on input line 230.
 (pdftex.def)             Requested size: 131.23969pt x 157.05423pt.
-<Bilder/afterControl/after_after_control.PNG, id=669, 316.18124pt x 347.79938pt>
+<Bilder/afterControl/after_after_control.PNG, id=653, 316.18124pt x 347.79938pt>
 File: Bilder/afterControl/after_after_control.PNG Graphic file (type png)
 <use Bilder/afterControl/after_after_control.PNG>
 Package pdftex.def Info: Bilder/afterControl/after_after_control.PNG  used on input line 240.
@@ -1651,17 +1629,17 @@ Package logreq Info: Writing requests to 'master.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 32321 strings out of 492945
- 605467 string characters out of 3125364
- 1250478 words of memory out of 3000000
- 35529 multiletter control sequences out of 15000+200000
+ 32313 strings out of 492945
+ 605273 string characters out of 3125364
+ 1250474 words of memory out of 3000000
+ 35526 multiletter control sequences out of 15000+200000
  600940 words of font info for 72 fonts, out of 3000000 for 9000
  1143 hyphenation exceptions out of 8191
  53i,11n,78p,9148b,2253s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/d073426/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Users/d073426/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/d073426/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/d073426/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Users/d073426/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathex.enc}<C:/Users/d073426/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Users/d073426/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/d073426/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmex10.pfb><C:/Users/d073426/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmmi10.pfb><C:/Users/d073426/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmmi12.pfb><C:/Users/d073426/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmmi6.pfb><C:/Users/d073426/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmmi8.pfb><C:/Users/d073426/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Users/d073426/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Users/d073426/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr6.pfb><C:/Users/d073426/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr7.pfb><C:/Users/d073426/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Users/d073426/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pfb><C:/Users/d073426/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmri12.pfb><C:/Users/d073426/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmss12.pfb><C:/Users/d073426/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/d073426/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Users/d073426/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Users/d073426/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmtt12.pfb><C:/Users/d073426/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on c:/Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\master.pdf (61 pages, 837812 bytes).
+Output written on c:/Users\d073426\Documents\DHBW\Projektarbeit\scheiss_compiler\master.pdf (60 pages, 838527 bytes).
 PDF statistics:
- 934 PDF objects out of 1000 (max. 8388607)
- 225 named destinations out of 1000 (max. 500000)
- 480 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 914 PDF objects out of 1000 (max. 8388607)
+ 223 named destinations out of 1000 (max. 500000)
+ 472 words of extra memory for PDF output out of 10000 (max. 10000000)
 

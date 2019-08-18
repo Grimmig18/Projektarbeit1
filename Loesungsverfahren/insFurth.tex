@@ -152,11 +152,11 @@ Der vollständige Generierungsvorgang befindet sich im Anhang (Abbildung A.4 im 
 \\\\
 Auch hier lässt sich das Problem der Reihenfolge beobachten, welches in \vref{sec:inserst-first-erg} beschrieben wurde.
 Durch das Einfügen des letzten Knotens $k_4$ in den Pfad entsteht ein suboptimaler Graph.
-Werden die Distanzen zwischen den Knoten $k_4$ und $k_1$ (6,129 \ac{LE}) mit den zwischen $k_1$ und $k_2$ (5,019 \ac{LE}) verglichen, wird schnell ersichtlich, dass eine Verminderung der Distanz durch das Umlegen der Knoten erreicht werden kann.
+Werden die Distanzen zwischen den Knoten $k_4$ und $k_5$ (6,129 \ac{LE}) mit den zwischen $k_5$ und $k_2$ (5,019 \ac{LE}) verglichen, wird schnell ersichtlich, dass eine Verminderung der Distanz durch das Umlegen der Knoten erreicht werden kann.
 Verursacht wird diese Abweichung vom Optimum dadurch, dass $k_4$ als letztes in den Graphen eingefügt wird, da der Knoten sich, relativ zu den restlichen Knoten, in der Mitte der Fläche befindet und somit aufgrund seiner geringeren Entfernung zu anderen Knoten vom Algorithmus als letztes betrachtet wird.
 Die optimale Route
 % \begin{addmargin}[1em]{2em}
-$$P = k_1, k_3, k_4, k_2, k_1$$ 
+$$P = k_1, k_3, k_4, k_2, k_5$$ 
     % \end{addmargin}
  würde es jedoch erfordern, dass $k_4$ früher betrachtet und in den Pfad eingefügt wird.
 Der durch den Algorithmus erzeugte Graph hat eine Gesamtlänge von 21,138 \ac{LE}, während durch das Umlegen zum optimalen Graph eine Länge von 20,028 \ac{LE}, also Reduktion der Distanz um 1,11 \ac{LE} oder 5,251\% erreicht werden kann.

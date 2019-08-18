@@ -9,9 +9,7 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Insert-First f\IeC {\"u}hrt zu schlechtem Ergebnis\relax }}{10}{figure.caption.11}% 
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Insert-First f\IeC {\"u}hrt zu schlechtem Ergebnis\relax }}{10}{figure.caption.10}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {$m = 2$}}}{10}{subfigure.1.1}% 
 \defcounter {refsection}{0}\relax 
@@ -21,7 +19,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(d)}{\ignorespaces {$m = 5$}}}{10}{subfigure.1.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Insert-First f\IeC {\"u}hrt zu guten Ergebnis\relax }}{12}{figure.caption.12}% 
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Insert-First f\IeC {\"u}hrt zu guten Ergebnis\relax }}{12}{figure.caption.11}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {$m = 2$}}}{12}{subfigure.2.1}% 
 \defcounter {refsection}{0}\relax 
@@ -31,19 +29,19 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(d)}{\ignorespaces {$m = 5$}}}{12}{subfigure.2.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Insert-First f\IeC {\"u}hrt zu einem gutem Ergebnis\relax }}{15}{figure.caption.13}% 
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Insert-First f\IeC {\"u}hrt zu einem gutem Ergebnis\relax }}{15}{figure.caption.12}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {$m = 2$}}}{15}{subfigure.3.1}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {$m = 5$}}}{15}{subfigure.3.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Insert-First f\IeC {\"u}hrt zu einem schlechtem Ergebnis\relax }}{16}{figure.caption.14}% 
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Insert-First f\IeC {\"u}hrt zu einem schlechtem Ergebnis\relax }}{16}{figure.caption.13}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {$m = 4$}}}{16}{subfigure.4.1}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {$m = 5$}}}{16}{subfigure.4.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Der Insert-Closest Algorithmus kommt zu einem schlechten Ergebnis\relax }}{19}{figure.caption.15}% 
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Der Insert-Closest Algorithmus kommt zu einem schlechten Ergebnis\relax }}{19}{figure.caption.14}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {$m=4$ }}}{19}{subfigure.5.1}% 
 \defcounter {refsection}{0}\relax 
@@ -51,13 +49,13 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Graph mit und ohne \IeC {\"U}berkreuzung (Das rote Rechteck in Abbildung a) dient sp\IeC {\"a}teren Illustrationszwecken)\relax }}{22}{figure.caption.16}% 
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Graph mit und ohne \IeC {\"U}berkreuzung (Das rote Rechteck in Abbildung a) dient sp\IeC {\"a}teren Illustrationszwecken)\relax }}{22}{figure.caption.15}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Graph mit einer \IeC {\"U}berkreuzung}}}{22}{subfigure.1.1}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Aufgel\IeC {\"o}ste \IeC {\"U}berkreuzung}}}{22}{subfigure.1.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Graph vor und nach der Nachbesserung\relax }}{26}{figure.caption.17}% 
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Graph vor und nach der Nachbesserung\relax }}{26}{figure.caption.16}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Verbesserungsf\IeC {\"a}higer Graph }}}{26}{subfigure.2.1}% 
 \defcounter {refsection}{0}\relax 
@@ -77,7 +75,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(c)}{\ignorespaces {$m = 4$}}}{34}{subfigure.1.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Insert-First: Schlechtes Beispiel\relax }}{35}{figure.caption.23}% 
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Insert-First: Schlechtes Beispiel\relax }}{35}{figure.caption.22}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(d)}{\ignorespaces {$m = 5$}}}{35}{subfigure.1.4}% 
 \defcounter {refsection}{0}\relax 
@@ -87,7 +85,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(g)}{\ignorespaces {$m = 4$}}}{37}{subfigure.2.7}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {A.2}{\ignorespaces Insert-First: Gutes Beispiel\relax }}{38}{figure.caption.27}% 
+\contentsline {figure}{\numberline {A.2}{\ignorespaces Insert-First: Gutes Beispiel\relax }}{38}{figure.caption.26}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(h)}{\ignorespaces {$m = 5$}}}{38}{subfigure.2.8}% 
 \defcounter {refsection}{0}\relax 
@@ -99,7 +97,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(l)}{\ignorespaces {$m = 4$}}}{40}{subfigure.3.12}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {A.3}{\ignorespaces Insert-Furthest: Schlechtes Beispiel\relax }}{41}{figure.caption.32}% 
+\contentsline {figure}{\numberline {A.3}{\ignorespaces Insert-Furthest: Schlechtes Beispiel\relax }}{41}{figure.caption.31}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(m)}{\ignorespaces {$m = 5$}}}{41}{subfigure.3.13}% 
 \defcounter {refsection}{0}\relax 
@@ -111,7 +109,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(q)}{\ignorespaces {$m = 4$}}}{43}{subfigure.4.17}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {A.4}{\ignorespaces Insert-Furthest: Gutes Beispiel\relax }}{44}{figure.caption.37}% 
+\contentsline {figure}{\numberline {A.4}{\ignorespaces Insert-Furthest: Gutes Beispiel\relax }}{44}{figure.caption.36}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(r)}{\ignorespaces {$m = 5$}}}{44}{subfigure.4.18}% 
 \defcounter {refsection}{0}\relax 
@@ -123,18 +121,18 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(v)}{\ignorespaces {$m = 4$}}}{46}{subfigure.5.22}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {A.5}{\ignorespaces Insert-Closest: Schlechtes Beispiel\relax }}{47}{figure.caption.42}% 
+\contentsline {figure}{\numberline {A.5}{\ignorespaces Insert-Closest: Schlechtes Beispiel\relax }}{47}{figure.caption.41}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(w)}{\ignorespaces {$m = 5$}}}{47}{subfigure.5.23}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(x)}{\ignorespaces {Pfad mit einem Crossover}}}{47}{subfigure.6.24}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {A.7}{\ignorespaces Pfad aus 40 Knoten mit und ohne Crossover\relax }}{48}{figure.caption.44}% 
+\contentsline {figure}{\numberline {A.7}{\ignorespaces Pfad aus 40 Knoten mit und ohne Crossover\relax }}{48}{figure.caption.43}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Pfad mit aufgel\IeC {\"o}stem Crossover}}}{48}{subfigure.7.1}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Teilpfad vor Nachbesserung}}}{48}{subfigure.8.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {A.9}{\ignorespaces Beispiel f\IeC {\"u}r eine Nachbesserung, Teilpfad\relax }}{49}{figure.caption.46}% 
+\contentsline {figure}{\numberline {A.9}{\ignorespaces Beispiel f\IeC {\"u}r eine Nachbesserung, Teilpfad\relax }}{49}{figure.caption.45}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Teilpfad nach Nachbesserung}}}{49}{subfigure.9.1}% 

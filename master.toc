@@ -5,11 +5,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\nonumberline Tabellenverzeichnis}{v}{chapter*.6}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Quelltextverzeichnis}{vi}{chapter*.7}% 
+\contentsline {chapter}{\nonumberline Algorithmenverzeichnis }{vi}{chapter*.7}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Algorithmenverzeichnis }{vii}{chapter*.8}% 
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Abk\IeC {\"u}rzungsverzeichnis}{viii}{chapter*.9}% 
+\contentsline {chapter}{Abk\IeC {\"u}rzungsverzeichnis}{vii}{chapter*.8}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {1}Einleitung}{1}{chapter.1}% 
 \defcounter {refsection}{0}\relax 
@@ -69,7 +67,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {6}Zusammenfassung und Ausblick}{30}{chapter.6}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Literaturverzeichnis}{32}{chapter*.19}% 
+\contentsline {chapter}{\nonumberline Literaturverzeichnis}{32}{chapter*.18}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {A}Anhang}{33}{appendix.A}% 
 \defcounter {refsection}{0}\relax 
